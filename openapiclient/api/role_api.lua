@@ -40,7 +40,7 @@ local function new_role_api(authority, basePath, schemes)
 	return setmetatable({
 		host = host;
 		port = port;
-		basePath = basePath or "https://the.gayest.dev/api";
+		basePath = basePath;
 		schemes = schemes_map;
 		default_scheme = default_scheme;
 		http_username = nil;
