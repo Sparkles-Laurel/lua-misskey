@@ -11,8 +11,8 @@
 -- notes___schedule___list_200_response_inner class
 local notes___schedule___list_200_response_inner = {}
 local notes___schedule___list_200_response_inner_mt = {
-	__name = "notes___schedule___list_200_response_inner";
-	__index = notes___schedule___list_200_response_inner;
+	__name = "notes___schedule___list_200_response_inner",
+	__index = notes___schedule___list_200_response_inner,
 }
 
 local function cast_notes___schedule___list_200_response_inner(t)
@@ -21,14 +21,14 @@ end
 
 local function new_notes___schedule___list_200_response_inner(id, note, user_id, scheduled_at)
 	return cast_notes___schedule___list_200_response_inner({
-		["id"] = id;
-		["note"] = note;
-		["userId"] = user_id;
-		["scheduledAt"] = scheduled_at;
+		["id"] = id,
+		["note"] = note,
+		["userId"] = user_id,
+		["scheduledAt"] = scheduled_at,
 	})
 end
 
 return {
-	cast = cast_notes___schedule___list_200_response_inner;
-	new = new_notes___schedule___list_200_response_inner;
+	cast = cast_notes___schedule___list_200_response_inner,
+	new = new_notes___schedule___list_200_response_inner,
 }

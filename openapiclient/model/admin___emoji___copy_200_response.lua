@@ -11,8 +11,8 @@
 -- admin___emoji___copy_200_response class
 local admin___emoji___copy_200_response = {}
 local admin___emoji___copy_200_response_mt = {
-	__name = "admin___emoji___copy_200_response";
-	__index = admin___emoji___copy_200_response;
+	__name = "admin___emoji___copy_200_response",
+	__index = admin___emoji___copy_200_response,
 }
 
 local function cast_admin___emoji___copy_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___emoji___copy_200_response(id)
 	return cast_admin___emoji___copy_200_response({
-		["id"] = id;
+		["id"] = id,
 	})
 end
 
 return {
-	cast = cast_admin___emoji___copy_200_response;
-	new = new_admin___emoji___copy_200_response;
+	cast = cast_admin___emoji___copy_200_response,
+	new = new_admin___emoji___copy_200_response,
 }

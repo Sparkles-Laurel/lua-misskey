@@ -11,8 +11,8 @@
 -- flash___my_likes_200_response_inner class
 local flash___my_likes_200_response_inner = {}
 local flash___my_likes_200_response_inner_mt = {
-	__name = "flash___my_likes_200_response_inner";
-	__index = flash___my_likes_200_response_inner;
+	__name = "flash___my_likes_200_response_inner",
+	__index = flash___my_likes_200_response_inner,
 }
 
 local function cast_flash___my_likes_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_flash___my_likes_200_response_inner(id, flash)
 	return cast_flash___my_likes_200_response_inner({
-		["id"] = id;
-		["flash"] = flash;
+		["id"] = id,
+		["flash"] = flash,
 	})
 end
 
 return {
-	cast = cast_flash___my_likes_200_response_inner;
-	new = new_flash___my_likes_200_response_inner;
+	cast = cast_flash___my_likes_200_response_inner,
+	new = new_flash___my_likes_200_response_inner,
 }

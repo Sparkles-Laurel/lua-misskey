@@ -11,8 +11,8 @@
 -- i___update_request_muted_words_inner class
 local i___update_request_muted_words_inner = {}
 local i___update_request_muted_words_inner_mt = {
-	__name = "i___update_request_muted_words_inner";
-	__index = i___update_request_muted_words_inner;
+	__name = "i___update_request_muted_words_inner",
+	__index = i___update_request_muted_words_inner,
 }
 
 local function cast_i___update_request_muted_words_inner(t)
@@ -25,6 +25,6 @@ local function new_i___update_request_muted_words_inner()
 end
 
 return {
-	cast = cast_i___update_request_muted_words_inner;
-	new = new_i___update_request_muted_words_inner;
+	cast = cast_i___update_request_muted_words_inner,
+	new = new_i___update_request_muted_words_inner,
 }

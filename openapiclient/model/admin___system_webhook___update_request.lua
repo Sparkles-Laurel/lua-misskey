@@ -11,8 +11,8 @@
 -- admin___system_webhook___update_request class
 local admin___system_webhook___update_request = {}
 local admin___system_webhook___update_request_mt = {
-	__name = "admin___system_webhook___update_request";
-	__index = admin___system_webhook___update_request;
+	__name = "admin___system_webhook___update_request",
+	__index = admin___system_webhook___update_request,
 }
 
 local function cast_admin___system_webhook___update_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___system_webhook___update_request(id, is_active, name, on, url, secret)
 	return cast_admin___system_webhook___update_request({
-		["id"] = id;
-		["isActive"] = is_active;
-		["name"] = name;
-		["on"] = on;
-		["url"] = url;
-		["secret"] = secret;
+		["id"] = id,
+		["isActive"] = is_active,
+		["name"] = name,
+		["on"] = on,
+		["url"] = url,
+		["secret"] = secret,
 	})
 end
 
 return {
-	cast = cast_admin___system_webhook___update_request;
-	new = new_admin___system_webhook___update_request;
+	cast = cast_admin___system_webhook___update_request,
+	new = new_admin___system_webhook___update_request,
 }

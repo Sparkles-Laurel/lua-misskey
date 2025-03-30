@@ -11,8 +11,8 @@
 -- notes___polls___vote_request class
 local notes___polls___vote_request = {}
 local notes___polls___vote_request_mt = {
-	__name = "notes___polls___vote_request";
-	__index = notes___polls___vote_request;
+	__name = "notes___polls___vote_request",
+	__index = notes___polls___vote_request,
 }
 
 local function cast_notes___polls___vote_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___polls___vote_request(note_id, choice)
 	return cast_notes___polls___vote_request({
-		["noteId"] = note_id;
-		["choice"] = choice;
+		["noteId"] = note_id,
+		["choice"] = choice,
 	})
 end
 
 return {
-	cast = cast_notes___polls___vote_request;
-	new = new_notes___polls___vote_request;
+	cast = cast_notes___polls___vote_request,
+	new = new_notes___polls___vote_request,
 }

@@ -25,8 +25,8 @@ local openapiclient_i___pin_request = require "openapiclient.model.i___pin_reque
 
 local clips_api = {}
 local clips_api_mt = {
-	__name = "clips_api";
-	__index = clips_api;
+	__name = "clips_api",
+	__index = clips_api,
 }
 
 local function new_clips_api(authority, basePath, schemes)
@@ -37,25 +37,25 @@ local function new_clips_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, clips_api_mt)
 end
 
 function clips_api:clips_create(clips___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -103,11 +103,11 @@ end
 
 function clips_api:clips_delete(clips___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -144,11 +144,11 @@ end
 
 function clips_api:clips_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -193,11 +193,11 @@ end
 
 function clips_api:clips_show(clips___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -245,11 +245,11 @@ end
 
 function clips_api:clips_update(clips___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -297,11 +297,11 @@ end
 
 function clips_api:notes_clips(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/clips",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -351,5 +351,5 @@ function clips_api:notes_clips(i___pin_request)
 end
 
 return {
-	new = new_clips_api;
+	new = new_clips_api,
 }

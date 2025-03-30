@@ -11,8 +11,8 @@
 -- admin___roles___users_200_response_inner class
 local admin___roles___users_200_response_inner = {}
 local admin___roles___users_200_response_inner_mt = {
-	__name = "admin___roles___users_200_response_inner";
-	__index = admin___roles___users_200_response_inner;
+	__name = "admin___roles___users_200_response_inner",
+	__index = admin___roles___users_200_response_inner,
 }
 
 local function cast_admin___roles___users_200_response_inner(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___roles___users_200_response_inner(id, created_at, user, expires_at)
 	return cast_admin___roles___users_200_response_inner({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["user"] = user;
-		["expiresAt"] = expires_at;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["user"] = user,
+		["expiresAt"] = expires_at,
 	})
 end
 
 return {
-	cast = cast_admin___roles___users_200_response_inner;
-	new = new_admin___roles___users_200_response_inner;
+	cast = cast_admin___roles___users_200_response_inner,
+	new = new_admin___roles___users_200_response_inner,
 }

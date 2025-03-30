@@ -11,8 +11,8 @@
 -- queue_count class
 local queue_count = {}
 local queue_count_mt = {
-	__name = "queue_count";
-	__index = queue_count;
+	__name = "queue_count",
+	__index = queue_count,
 }
 
 local function cast_queue_count(t)
@@ -21,15 +21,15 @@ end
 
 local function new_queue_count(waiting, active, completed, failed, delayed)
 	return cast_queue_count({
-		["waiting"] = waiting;
-		["active"] = active;
-		["completed"] = completed;
-		["failed"] = failed;
-		["delayed"] = delayed;
+		["waiting"] = waiting,
+		["active"] = active,
+		["completed"] = completed,
+		["failed"] = failed,
+		["delayed"] = delayed,
 	})
 end
 
 return {
-	cast = cast_queue_count;
-	new = new_queue_count;
+	cast = cast_queue_count,
+	new = new_queue_count,
 }

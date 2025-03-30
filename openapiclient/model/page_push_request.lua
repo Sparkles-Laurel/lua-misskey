@@ -11,8 +11,8 @@
 -- page_push_request class
 local page_push_request = {}
 local page_push_request_mt = {
-	__name = "page_push_request";
-	__index = page_push_request;
+	__name = "page_push_request",
+	__index = page_push_request,
 }
 
 local function cast_page_push_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_page_push_request(page_id, event, var)
 	return cast_page_push_request({
-		["pageId"] = page_id;
-		["event"] = event;
-		["var"] = var;
+		["pageId"] = page_id,
+		["event"] = event,
+		["var"] = var,
 	})
 end
 
 return {
-	cast = cast_page_push_request;
-	new = new_page_push_request;
+	cast = cast_page_push_request,
+	new = new_page_push_request,
 }

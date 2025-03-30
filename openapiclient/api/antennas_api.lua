@@ -26,8 +26,8 @@ local openapiclient_antennas___update_request = require "openapiclient.model.ant
 
 local antennas_api = {}
 local antennas_api_mt = {
-	__name = "antennas_api";
-	__index = antennas_api;
+	__name = "antennas_api",
+	__index = antennas_api,
 }
 
 local function new_antennas_api(authority, basePath, schemes)
@@ -38,25 +38,25 @@ local function new_antennas_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, antennas_api_mt)
 end
 
 function antennas_api:antennas_create(antennas___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -104,11 +104,11 @@ end
 
 function antennas_api:antennas_delete(antennas___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -145,11 +145,11 @@ end
 
 function antennas_api:antennas_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -194,11 +194,11 @@ end
 
 function antennas_api:antennas_notes(antennas___notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -249,11 +249,11 @@ end
 
 function antennas_api:antennas_show(antennas___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -301,11 +301,11 @@ end
 
 function antennas_api:antennas_update(antennas___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/antennas/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -352,5 +352,5 @@ function antennas_api:antennas_update(antennas___update_request)
 end
 
 return {
-	new = new_antennas_api;
+	new = new_antennas_api,
 }

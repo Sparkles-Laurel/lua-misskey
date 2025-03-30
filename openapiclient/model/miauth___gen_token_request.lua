@@ -11,8 +11,8 @@
 -- miauth___gen_token_request class
 local miauth___gen_token_request = {}
 local miauth___gen_token_request_mt = {
-	__name = "miauth___gen_token_request";
-	__index = miauth___gen_token_request;
+	__name = "miauth___gen_token_request",
+	__index = miauth___gen_token_request,
 }
 
 local function cast_miauth___gen_token_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_miauth___gen_token_request(session, name, description, icon_url, permission)
 	return cast_miauth___gen_token_request({
-		["session"] = session;
-		["name"] = name;
-		["description"] = description;
-		["iconUrl"] = icon_url;
-		["permission"] = permission;
+		["session"] = session,
+		["name"] = name,
+		["description"] = description,
+		["iconUrl"] = icon_url,
+		["permission"] = permission,
 	})
 end
 
 return {
-	cast = cast_miauth___gen_token_request;
-	new = new_miauth___gen_token_request;
+	cast = cast_miauth___gen_token_request,
+	new = new_miauth___gen_token_request,
 }

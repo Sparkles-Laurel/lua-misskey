@@ -11,8 +11,8 @@
 -- charts___active_users_request_1 class
 local charts___active_users_request_1 = {}
 local charts___active_users_request_1_mt = {
-	__name = "charts___active_users_request_1";
-	__index = charts___active_users_request_1;
+	__name = "charts___active_users_request_1",
+	__index = charts___active_users_request_1,
 }
 
 local function cast_charts___active_users_request_1(t)
@@ -21,13 +21,13 @@ end
 
 local function new_charts___active_users_request_1(span, limit, offset)
 	return cast_charts___active_users_request_1({
-		["span"] = span;
-		["limit"] = limit;
-		["offset"] = offset;
+		["span"] = span,
+		["limit"] = limit,
+		["offset"] = offset,
 	})
 end
 
 return {
-	cast = cast_charts___active_users_request_1;
-	new = new_charts___active_users_request_1;
+	cast = cast_charts___active_users_request_1,
+	new = new_charts___active_users_request_1,
 }

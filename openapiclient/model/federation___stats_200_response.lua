@@ -11,8 +11,8 @@
 -- federation___stats_200_response class
 local federation___stats_200_response = {}
 local federation___stats_200_response_mt = {
-	__name = "federation___stats_200_response";
-	__index = federation___stats_200_response;
+	__name = "federation___stats_200_response",
+	__index = federation___stats_200_response,
 }
 
 local function cast_federation___stats_200_response(t)
@@ -21,14 +21,14 @@ end
 
 local function new_federation___stats_200_response(top_sub_instances, other_followers_count, top_pub_instances, other_following_count)
 	return cast_federation___stats_200_response({
-		["topSubInstances"] = top_sub_instances;
-		["otherFollowersCount"] = other_followers_count;
-		["topPubInstances"] = top_pub_instances;
-		["otherFollowingCount"] = other_following_count;
+		["topSubInstances"] = top_sub_instances,
+		["otherFollowersCount"] = other_followers_count,
+		["topPubInstances"] = top_pub_instances,
+		["otherFollowingCount"] = other_following_count,
 	})
 end
 
 return {
-	cast = cast_federation___stats_200_response;
-	new = new_federation___stats_200_response;
+	cast = cast_federation___stats_200_response,
+	new = new_federation___stats_200_response,
 }

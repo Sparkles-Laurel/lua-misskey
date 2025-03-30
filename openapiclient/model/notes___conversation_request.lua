@@ -11,8 +11,8 @@
 -- notes___conversation_request class
 local notes___conversation_request = {}
 local notes___conversation_request_mt = {
-	__name = "notes___conversation_request";
-	__index = notes___conversation_request;
+	__name = "notes___conversation_request",
+	__index = notes___conversation_request,
 }
 
 local function cast_notes___conversation_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_notes___conversation_request(note_id, limit, offset)
 	return cast_notes___conversation_request({
-		["noteId"] = note_id;
-		["limit"] = limit;
-		["offset"] = offset;
+		["noteId"] = note_id,
+		["limit"] = limit,
+		["offset"] = offset,
 	})
 end
 
 return {
-	cast = cast_notes___conversation_request;
-	new = new_notes___conversation_request;
+	cast = cast_notes___conversation_request,
+	new = new_notes___conversation_request,
 }

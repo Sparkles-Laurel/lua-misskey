@@ -11,8 +11,8 @@
 -- users___lists___create_request class
 local users___lists___create_request = {}
 local users___lists___create_request_mt = {
-	__name = "users___lists___create_request";
-	__index = users___lists___create_request;
+	__name = "users___lists___create_request",
+	__index = users___lists___create_request,
 }
 
 local function cast_users___lists___create_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_users___lists___create_request(name)
 	return cast_users___lists___create_request({
-		["name"] = name;
+		["name"] = name,
 	})
 end
 
 return {
-	cast = cast_users___lists___create_request;
-	new = new_users___lists___create_request;
+	cast = cast_users___lists___create_request,
+	new = new_users___lists___create_request,
 }

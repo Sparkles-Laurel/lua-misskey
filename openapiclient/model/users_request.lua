@@ -11,8 +11,8 @@
 -- users_request class
 local users_request = {}
 local users_request_mt = {
-	__name = "users_request";
-	__index = users_request;
+	__name = "users_request",
+	__index = users_request,
 }
 
 local function cast_users_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_users_request(limit, offset, sort, state, origin, hostname)
 	return cast_users_request({
-		["limit"] = limit;
-		["offset"] = offset;
-		["sort"] = sort;
-		["state"] = state;
-		["origin"] = origin;
-		["hostname"] = hostname;
+		["limit"] = limit,
+		["offset"] = offset,
+		["sort"] = sort,
+		["state"] = state,
+		["origin"] = origin,
+		["hostname"] = hostname,
 	})
 end
 
 return {
-	cast = cast_users_request;
-	new = new_users_request;
+	cast = cast_users_request,
+	new = new_users_request,
 }

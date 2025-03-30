@@ -11,8 +11,8 @@
 -- admin___accounts___delete_request class
 local admin___accounts___delete_request = {}
 local admin___accounts___delete_request_mt = {
-	__name = "admin___accounts___delete_request";
-	__index = admin___accounts___delete_request;
+	__name = "admin___accounts___delete_request",
+	__index = admin___accounts___delete_request,
 }
 
 local function cast_admin___accounts___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___accounts___delete_request(user_id)
 	return cast_admin___accounts___delete_request({
-		["userId"] = user_id;
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_admin___accounts___delete_request;
-	new = new_admin___accounts___delete_request;
+	cast = cast_admin___accounts___delete_request,
+	new = new_admin___accounts___delete_request,
 }

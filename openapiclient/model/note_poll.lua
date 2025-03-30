@@ -11,8 +11,8 @@
 -- note_poll class
 local note_poll = {}
 local note_poll_mt = {
-	__name = "note_poll";
-	__index = note_poll;
+	__name = "note_poll",
+	__index = note_poll,
 }
 
 local function cast_note_poll(t)
@@ -21,13 +21,13 @@ end
 
 local function new_note_poll(expires_at, multiple, choices)
 	return cast_note_poll({
-		["expiresAt"] = expires_at;
-		["multiple"] = multiple;
-		["choices"] = choices;
+		["expiresAt"] = expires_at,
+		["multiple"] = multiple,
+		["choices"] = choices,
 	})
 end
 
 return {
-	cast = cast_note_poll;
-	new = new_note_poll;
+	cast = cast_note_poll,
+	new = new_note_poll,
 }

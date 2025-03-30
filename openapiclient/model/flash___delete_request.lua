@@ -11,8 +11,8 @@
 -- flash___delete_request class
 local flash___delete_request = {}
 local flash___delete_request_mt = {
-	__name = "flash___delete_request";
-	__index = flash___delete_request;
+	__name = "flash___delete_request",
+	__index = flash___delete_request,
 }
 
 local function cast_flash___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_flash___delete_request(flash_id)
 	return cast_flash___delete_request({
-		["flashId"] = flash_id;
+		["flashId"] = flash_id,
 	})
 end
 
 return {
-	cast = cast_flash___delete_request;
-	new = new_flash___delete_request;
+	cast = cast_flash___delete_request,
+	new = new_flash___delete_request,
 }

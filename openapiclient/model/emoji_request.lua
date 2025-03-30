@@ -11,8 +11,8 @@
 -- emoji_request class
 local emoji_request = {}
 local emoji_request_mt = {
-	__name = "emoji_request";
-	__index = emoji_request;
+	__name = "emoji_request",
+	__index = emoji_request,
 }
 
 local function cast_emoji_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_emoji_request(name)
 	return cast_emoji_request({
-		["name"] = name;
+		["name"] = name,
 	})
 end
 
 return {
-	cast = cast_emoji_request;
-	new = new_emoji_request;
+	cast = cast_emoji_request,
+	new = new_emoji_request,
 }

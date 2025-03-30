@@ -11,8 +11,8 @@
 -- channels___followed_request class
 local channels___followed_request = {}
 local channels___followed_request_mt = {
-	__name = "channels___followed_request";
-	__index = channels___followed_request;
+	__name = "channels___followed_request",
+	__index = channels___followed_request,
 }
 
 local function cast_channels___followed_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_channels___followed_request(since_id, until_id, limit)
 	return cast_channels___followed_request({
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_channels___followed_request;
-	new = new_channels___followed_request;
+	cast = cast_channels___followed_request,
+	new = new_channels___followed_request,
 }

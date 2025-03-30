@@ -11,8 +11,8 @@
 -- reversi___match_request class
 local reversi___match_request = {}
 local reversi___match_request_mt = {
-	__name = "reversi___match_request";
-	__index = reversi___match_request;
+	__name = "reversi___match_request",
+	__index = reversi___match_request,
 }
 
 local function cast_reversi___match_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_reversi___match_request(user_id, no_irregular_rules, multiple)
 	return cast_reversi___match_request({
-		["userId"] = user_id;
-		["noIrregularRules"] = no_irregular_rules;
-		["multiple"] = multiple;
+		["userId"] = user_id,
+		["noIrregularRules"] = no_irregular_rules,
+		["multiple"] = multiple,
 	})
 end
 
 return {
-	cast = cast_reversi___match_request;
-	new = new_reversi___match_request;
+	cast = cast_reversi___match_request,
+	new = new_reversi___match_request,
 }

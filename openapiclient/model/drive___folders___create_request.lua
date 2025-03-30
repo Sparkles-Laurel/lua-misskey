@@ -11,8 +11,8 @@
 -- drive___folders___create_request class
 local drive___folders___create_request = {}
 local drive___folders___create_request_mt = {
-	__name = "drive___folders___create_request";
-	__index = drive___folders___create_request;
+	__name = "drive___folders___create_request",
+	__index = drive___folders___create_request,
 }
 
 local function cast_drive___folders___create_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_drive___folders___create_request(name, parent_id)
 	return cast_drive___folders___create_request({
-		["name"] = name;
-		["parentId"] = parent_id;
+		["name"] = name,
+		["parentId"] = parent_id,
 	})
 end
 
 return {
-	cast = cast_drive___folders___create_request;
-	new = new_drive___folders___create_request;
+	cast = cast_drive___folders___create_request,
+	new = new_drive___folders___create_request,
 }

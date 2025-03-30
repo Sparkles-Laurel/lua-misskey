@@ -11,8 +11,8 @@
 -- role_cond_formula_value_user_setting_boolean_schema class
 local role_cond_formula_value_user_setting_boolean_schema = {}
 local role_cond_formula_value_user_setting_boolean_schema_mt = {
-	__name = "role_cond_formula_value_user_setting_boolean_schema";
-	__index = role_cond_formula_value_user_setting_boolean_schema;
+	__name = "role_cond_formula_value_user_setting_boolean_schema",
+	__index = role_cond_formula_value_user_setting_boolean_schema,
 }
 
 local function cast_role_cond_formula_value_user_setting_boolean_schema(t)
@@ -21,12 +21,12 @@ end
 
 local function new_role_cond_formula_value_user_setting_boolean_schema(id, type)
 	return cast_role_cond_formula_value_user_setting_boolean_schema({
-		["id"] = id;
-		["type"] = type;
+		["id"] = id,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_role_cond_formula_value_user_setting_boolean_schema;
-	new = new_role_cond_formula_value_user_setting_boolean_schema;
+	cast = cast_role_cond_formula_value_user_setting_boolean_schema,
+	new = new_role_cond_formula_value_user_setting_boolean_schema,
 }

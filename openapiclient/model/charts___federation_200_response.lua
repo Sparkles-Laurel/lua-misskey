@@ -11,8 +11,8 @@
 -- charts___federation_200_response class
 local charts___federation_200_response = {}
 local charts___federation_200_response_mt = {
-	__name = "charts___federation_200_response";
-	__index = charts___federation_200_response;
+	__name = "charts___federation_200_response",
+	__index = charts___federation_200_response,
 }
 
 local function cast_charts___federation_200_response(t)
@@ -21,18 +21,18 @@ end
 
 local function new_charts___federation_200_response(delivered_instances, inbox_instances, stalled, sub, pub, pubsub, sub_active, pub_active)
 	return cast_charts___federation_200_response({
-		["deliveredInstances"] = delivered_instances;
-		["inboxInstances"] = inbox_instances;
-		["stalled"] = stalled;
-		["sub"] = sub;
-		["pub"] = pub;
-		["pubsub"] = pubsub;
-		["subActive"] = sub_active;
-		["pubActive"] = pub_active;
+		["deliveredInstances"] = delivered_instances,
+		["inboxInstances"] = inbox_instances,
+		["stalled"] = stalled,
+		["sub"] = sub,
+		["pub"] = pub,
+		["pubsub"] = pubsub,
+		["subActive"] = sub_active,
+		["pubActive"] = pub_active,
 	})
 end
 
 return {
-	cast = cast_charts___federation_200_response;
-	new = new_charts___federation_200_response;
+	cast = cast_charts___federation_200_response,
+	new = new_charts___federation_200_response,
 }

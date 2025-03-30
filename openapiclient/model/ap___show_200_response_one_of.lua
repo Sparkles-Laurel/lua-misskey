@@ -11,8 +11,8 @@
 -- ap___show_200_response_one_of class
 local ap___show_200_response_one_of = {}
 local ap___show_200_response_one_of_mt = {
-	__name = "ap___show_200_response_one_of";
-	__index = ap___show_200_response_one_of;
+	__name = "ap___show_200_response_one_of",
+	__index = ap___show_200_response_one_of,
 }
 
 local function cast_ap___show_200_response_one_of(t)
@@ -21,12 +21,12 @@ end
 
 local function new_ap___show_200_response_one_of(type, object)
 	return cast_ap___show_200_response_one_of({
-		["type"] = type;
-		["object"] = object;
+		["type"] = type,
+		["object"] = object,
 	})
 end
 
 return {
-	cast = cast_ap___show_200_response_one_of;
-	new = new_ap___show_200_response_one_of;
+	cast = cast_ap___show_200_response_one_of,
+	new = new_ap___show_200_response_one_of,
 }

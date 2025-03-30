@@ -11,8 +11,8 @@
 -- admin___announcements___list_200_response_inner class
 local admin___announcements___list_200_response_inner = {}
 local admin___announcements___list_200_response_inner_mt = {
-	__name = "admin___announcements___list_200_response_inner";
-	__index = admin___announcements___list_200_response_inner;
+	__name = "admin___announcements___list_200_response_inner",
+	__index = admin___announcements___list_200_response_inner,
 }
 
 local function cast_admin___announcements___list_200_response_inner(t)
@@ -21,17 +21,17 @@ end
 
 local function new_admin___announcements___list_200_response_inner(id, created_at, updated_at, text, title, image_url, reads)
 	return cast_admin___announcements___list_200_response_inner({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["updatedAt"] = updated_at;
-		["text"] = text;
-		["title"] = title;
-		["imageUrl"] = image_url;
-		["reads"] = reads;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["updatedAt"] = updated_at,
+		["text"] = text,
+		["title"] = title,
+		["imageUrl"] = image_url,
+		["reads"] = reads,
 	})
 end
 
 return {
-	cast = cast_admin___announcements___list_200_response_inner;
-	new = new_admin___announcements___list_200_response_inner;
+	cast = cast_admin___announcements___list_200_response_inner,
+	new = new_admin___announcements___list_200_response_inner,
 }

@@ -11,8 +11,8 @@
 -- notes___hybrid_timeline_request class
 local notes___hybrid_timeline_request = {}
 local notes___hybrid_timeline_request_mt = {
-	__name = "notes___hybrid_timeline_request";
-	__index = notes___hybrid_timeline_request;
+	__name = "notes___hybrid_timeline_request",
+	__index = notes___hybrid_timeline_request,
 }
 
 local function cast_notes___hybrid_timeline_request(t)
@@ -21,23 +21,23 @@ end
 
 local function new_notes___hybrid_timeline_request(limit, since_id, until_id, since_date, until_date, allow_partial, include_my_renotes, include_renoted_my_notes, include_local_renotes, with_files, with_renotes, with_replies, with_bots)
 	return cast_notes___hybrid_timeline_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
-		["allowPartial"] = allow_partial;
-		["includeMyRenotes"] = include_my_renotes;
-		["includeRenotedMyNotes"] = include_renoted_my_notes;
-		["includeLocalRenotes"] = include_local_renotes;
-		["withFiles"] = with_files;
-		["withRenotes"] = with_renotes;
-		["withReplies"] = with_replies;
-		["withBots"] = with_bots;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
+		["allowPartial"] = allow_partial,
+		["includeMyRenotes"] = include_my_renotes,
+		["includeRenotedMyNotes"] = include_renoted_my_notes,
+		["includeLocalRenotes"] = include_local_renotes,
+		["withFiles"] = with_files,
+		["withRenotes"] = with_renotes,
+		["withReplies"] = with_replies,
+		["withBots"] = with_bots,
 	})
 end
 
 return {
-	cast = cast_notes___hybrid_timeline_request;
-	new = new_notes___hybrid_timeline_request;
+	cast = cast_notes___hybrid_timeline_request,
+	new = new_notes___hybrid_timeline_request,
 }

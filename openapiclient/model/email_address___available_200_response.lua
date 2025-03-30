@@ -11,8 +11,8 @@
 -- email_address___available_200_response class
 local email_address___available_200_response = {}
 local email_address___available_200_response_mt = {
-	__name = "email_address___available_200_response";
-	__index = email_address___available_200_response;
+	__name = "email_address___available_200_response",
+	__index = email_address___available_200_response,
 }
 
 local function cast_email_address___available_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_email_address___available_200_response(available, reason)
 	return cast_email_address___available_200_response({
-		["available"] = available;
-		["reason"] = reason;
+		["available"] = available,
+		["reason"] = reason,
 	})
 end
 
 return {
-	cast = cast_email_address___available_200_response;
-	new = new_email_address___available_200_response;
+	cast = cast_email_address___available_200_response,
+	new = new_email_address___available_200_response,
 }

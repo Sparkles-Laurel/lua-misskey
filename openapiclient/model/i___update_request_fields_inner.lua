@@ -11,8 +11,8 @@
 -- i___update_request_fields_inner class
 local i___update_request_fields_inner = {}
 local i___update_request_fields_inner_mt = {
-	__name = "i___update_request_fields_inner";
-	__index = i___update_request_fields_inner;
+	__name = "i___update_request_fields_inner",
+	__index = i___update_request_fields_inner,
 }
 
 local function cast_i___update_request_fields_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___update_request_fields_inner(name, value)
 	return cast_i___update_request_fields_inner({
-		["name"] = name;
-		["value"] = value;
+		["name"] = name,
+		["value"] = value,
 	})
 end
 
 return {
-	cast = cast_i___update_request_fields_inner;
-	new = new_i___update_request_fields_inner;
+	cast = cast_i___update_request_fields_inner,
+	new = new_i___update_request_fields_inner,
 }

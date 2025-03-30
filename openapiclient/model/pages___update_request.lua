@@ -11,8 +11,8 @@
 -- pages___update_request class
 local pages___update_request = {}
 local pages___update_request_mt = {
-	__name = "pages___update_request";
-	__index = pages___update_request;
+	__name = "pages___update_request",
+	__index = pages___update_request,
 }
 
 local function cast_pages___update_request(t)
@@ -21,21 +21,21 @@ end
 
 local function new_pages___update_request(page_id, title, name, summary, content, variables, script, eye_catching_image_id, font, align_center, hide_title_when_pinned)
 	return cast_pages___update_request({
-		["pageId"] = page_id;
-		["title"] = title;
-		["name"] = name;
-		["summary"] = summary;
-		["content"] = content;
-		["variables"] = variables;
-		["script"] = script;
-		["eyeCatchingImageId"] = eye_catching_image_id;
-		["font"] = font;
-		["alignCenter"] = align_center;
-		["hideTitleWhenPinned"] = hide_title_when_pinned;
+		["pageId"] = page_id,
+		["title"] = title,
+		["name"] = name,
+		["summary"] = summary,
+		["content"] = content,
+		["variables"] = variables,
+		["script"] = script,
+		["eyeCatchingImageId"] = eye_catching_image_id,
+		["font"] = font,
+		["alignCenter"] = align_center,
+		["hideTitleWhenPinned"] = hide_title_when_pinned,
 	})
 end
 
 return {
-	cast = cast_pages___update_request;
-	new = new_pages___update_request;
+	cast = cast_pages___update_request,
+	new = new_pages___update_request,
 }

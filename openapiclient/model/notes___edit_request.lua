@@ -11,8 +11,8 @@
 -- notes___edit_request class
 local notes___edit_request = {}
 local notes___edit_request_mt = {
-	__name = "notes___edit_request";
-	__index = notes___edit_request;
+	__name = "notes___edit_request",
+	__index = notes___edit_request,
 }
 
 local function cast_notes___edit_request(t)
@@ -21,26 +21,26 @@ end
 
 local function new_notes___edit_request(edit_id, visibility, visible_user_ids, cw, local_only, reaction_acceptance, no_extract_mentions, no_extract_hashtags, no_extract_emojis, reply_id, renote_id, channel_id, text, file_ids, media_ids, poll)
 	return cast_notes___edit_request({
-		["editId"] = edit_id;
-		["visibility"] = visibility;
-		["visibleUserIds"] = visible_user_ids;
-		["cw"] = cw;
-		["localOnly"] = local_only;
-		["reactionAcceptance"] = reaction_acceptance;
-		["noExtractMentions"] = no_extract_mentions;
-		["noExtractHashtags"] = no_extract_hashtags;
-		["noExtractEmojis"] = no_extract_emojis;
-		["replyId"] = reply_id;
-		["renoteId"] = renote_id;
-		["channelId"] = channel_id;
-		["text"] = text;
-		["fileIds"] = file_ids;
-		["mediaIds"] = media_ids;
-		["poll"] = poll;
+		["editId"] = edit_id,
+		["visibility"] = visibility,
+		["visibleUserIds"] = visible_user_ids,
+		["cw"] = cw,
+		["localOnly"] = local_only,
+		["reactionAcceptance"] = reaction_acceptance,
+		["noExtractMentions"] = no_extract_mentions,
+		["noExtractHashtags"] = no_extract_hashtags,
+		["noExtractEmojis"] = no_extract_emojis,
+		["replyId"] = reply_id,
+		["renoteId"] = renote_id,
+		["channelId"] = channel_id,
+		["text"] = text,
+		["fileIds"] = file_ids,
+		["mediaIds"] = media_ids,
+		["poll"] = poll,
 	})
 end
 
 return {
-	cast = cast_notes___edit_request;
-	new = new_notes___edit_request;
+	cast = cast_notes___edit_request,
+	new = new_notes___edit_request,
 }

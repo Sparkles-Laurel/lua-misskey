@@ -11,8 +11,8 @@
 -- admin___show_user_200_response_role_assigns_inner class
 local admin___show_user_200_response_role_assigns_inner = {}
 local admin___show_user_200_response_role_assigns_inner_mt = {
-	__name = "admin___show_user_200_response_role_assigns_inner";
-	__index = admin___show_user_200_response_role_assigns_inner;
+	__name = "admin___show_user_200_response_role_assigns_inner",
+	__index = admin___show_user_200_response_role_assigns_inner,
 }
 
 local function cast_admin___show_user_200_response_role_assigns_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___show_user_200_response_role_assigns_inner(created_at, expires_at, role_id)
 	return cast_admin___show_user_200_response_role_assigns_inner({
-		["createdAt"] = created_at;
-		["expiresAt"] = expires_at;
-		["roleId"] = role_id;
+		["createdAt"] = created_at,
+		["expiresAt"] = expires_at,
+		["roleId"] = role_id,
 	})
 end
 
 return {
-	cast = cast_admin___show_user_200_response_role_assigns_inner;
-	new = new_admin___show_user_200_response_role_assigns_inner;
+	cast = cast_admin___show_user_200_response_role_assigns_inner,
+	new = new_admin___show_user_200_response_role_assigns_inner,
 }

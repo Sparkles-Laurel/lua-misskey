@@ -11,8 +11,8 @@
 -- note_channel class
 local note_channel = {}
 local note_channel_mt = {
-	__name = "note_channel";
-	__index = note_channel;
+	__name = "note_channel",
+	__index = note_channel,
 }
 
 local function cast_note_channel(t)
@@ -21,16 +21,16 @@ end
 
 local function new_note_channel(id, name, color, is_sensitive, allow_renote_to_external, user_id)
 	return cast_note_channel({
-		["id"] = id;
-		["name"] = name;
-		["color"] = color;
-		["isSensitive"] = is_sensitive;
-		["allowRenoteToExternal"] = allow_renote_to_external;
-		["userId"] = user_id;
+		["id"] = id,
+		["name"] = name,
+		["color"] = color,
+		["isSensitive"] = is_sensitive,
+		["allowRenoteToExternal"] = allow_renote_to_external,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_note_channel;
-	new = new_note_channel;
+	cast = cast_note_channel,
+	new = new_note_channel,
 }

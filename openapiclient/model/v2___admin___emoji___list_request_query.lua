@@ -11,8 +11,8 @@
 -- v2___admin___emoji___list_request_query class
 local v2___admin___emoji___list_request_query = {}
 local v2___admin___emoji___list_request_query_mt = {
-	__name = "v2___admin___emoji___list_request_query";
-	__index = v2___admin___emoji___list_request_query;
+	__name = "v2___admin___emoji___list_request_query",
+	__index = v2___admin___emoji___list_request_query,
 }
 
 local function cast_v2___admin___emoji___list_request_query(t)
@@ -21,25 +21,25 @@ end
 
 local function new_v2___admin___emoji___list_request_query(updated_at_from, updated_at_to, name, host, uri, public_url, original_url, type, aliases, category, license, is_sensitive, local_only, host_type, role_ids)
 	return cast_v2___admin___emoji___list_request_query({
-		["updatedAtFrom"] = updated_at_from;
-		["updatedAtTo"] = updated_at_to;
-		["name"] = name;
-		["host"] = host;
-		["uri"] = uri;
-		["publicUrl"] = public_url;
-		["originalUrl"] = original_url;
-		["type"] = type;
-		["aliases"] = aliases;
-		["category"] = category;
-		["license"] = license;
-		["isSensitive"] = is_sensitive;
-		["localOnly"] = local_only;
-		["hostType"] = host_type;
-		["roleIds"] = role_ids;
+		["updatedAtFrom"] = updated_at_from,
+		["updatedAtTo"] = updated_at_to,
+		["name"] = name,
+		["host"] = host,
+		["uri"] = uri,
+		["publicUrl"] = public_url,
+		["originalUrl"] = original_url,
+		["type"] = type,
+		["aliases"] = aliases,
+		["category"] = category,
+		["license"] = license,
+		["isSensitive"] = is_sensitive,
+		["localOnly"] = local_only,
+		["hostType"] = host_type,
+		["roleIds"] = role_ids,
 	})
 end
 
 return {
-	cast = cast_v2___admin___emoji___list_request_query;
-	new = new_v2___admin___emoji___list_request_query;
+	cast = cast_v2___admin___emoji___list_request_query,
+	new = new_v2___admin___emoji___list_request_query,
 }

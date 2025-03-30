@@ -22,8 +22,8 @@ local openapiclient_test_request = require "openapiclient.model.test_request"
 
 local non_productive_api = {}
 local non_productive_api_mt = {
-	__name = "non_productive_api";
-	__index = non_productive_api;
+	__name = "non_productive_api",
+	__index = non_productive_api,
 }
 
 local function new_non_productive_api(authority, basePath, schemes)
@@ -34,25 +34,25 @@ local function new_non_productive_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, non_productive_api_mt)
 end
 
 function non_productive_api:reset_db()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reset-db",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -83,11 +83,11 @@ end
 
 function non_productive_api:test(test_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/test",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -134,5 +134,5 @@ function non_productive_api:test(test_request)
 end
 
 return {
-	new = new_non_productive_api;
+	new = new_non_productive_api,
 }

@@ -11,8 +11,8 @@
 -- i___update_request_avatar_decorations_inner class
 local i___update_request_avatar_decorations_inner = {}
 local i___update_request_avatar_decorations_inner_mt = {
-	__name = "i___update_request_avatar_decorations_inner";
-	__index = i___update_request_avatar_decorations_inner;
+	__name = "i___update_request_avatar_decorations_inner",
+	__index = i___update_request_avatar_decorations_inner,
 }
 
 local function cast_i___update_request_avatar_decorations_inner(t)
@@ -21,16 +21,16 @@ end
 
 local function new_i___update_request_avatar_decorations_inner(id, angle, flip_h, offset_x, offset_y, show_below)
 	return cast_i___update_request_avatar_decorations_inner({
-		["id"] = id;
-		["angle"] = angle;
-		["flipH"] = flip_h;
-		["offsetX"] = offset_x;
-		["offsetY"] = offset_y;
-		["showBelow"] = show_below;
+		["id"] = id,
+		["angle"] = angle,
+		["flipH"] = flip_h,
+		["offsetX"] = offset_x,
+		["offsetY"] = offset_y,
+		["showBelow"] = show_below,
 	})
 end
 
 return {
-	cast = cast_i___update_request_avatar_decorations_inner;
-	new = new_i___update_request_avatar_decorations_inner;
+	cast = cast_i___update_request_avatar_decorations_inner,
+	new = new_i___update_request_avatar_decorations_inner,
 }

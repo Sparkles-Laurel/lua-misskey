@@ -11,8 +11,8 @@
 -- channels___timeline_request class
 local channels___timeline_request = {}
 local channels___timeline_request_mt = {
-	__name = "channels___timeline_request";
-	__index = channels___timeline_request;
+	__name = "channels___timeline_request",
+	__index = channels___timeline_request,
 }
 
 local function cast_channels___timeline_request(t)
@@ -21,19 +21,19 @@ end
 
 local function new_channels___timeline_request(channel_id, limit, since_id, until_id, since_date, until_date, allow_partial, with_renotes, with_files)
 	return cast_channels___timeline_request({
-		["channelId"] = channel_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
-		["allowPartial"] = allow_partial;
-		["withRenotes"] = with_renotes;
-		["withFiles"] = with_files;
+		["channelId"] = channel_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
+		["allowPartial"] = allow_partial,
+		["withRenotes"] = with_renotes,
+		["withFiles"] = with_files,
 	})
 end
 
 return {
-	cast = cast_channels___timeline_request;
-	new = new_channels___timeline_request;
+	cast = cast_channels___timeline_request,
+	new = new_channels___timeline_request,
 }

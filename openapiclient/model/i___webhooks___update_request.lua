@@ -11,8 +11,8 @@
 -- i___webhooks___update_request class
 local i___webhooks___update_request = {}
 local i___webhooks___update_request_mt = {
-	__name = "i___webhooks___update_request";
-	__index = i___webhooks___update_request;
+	__name = "i___webhooks___update_request",
+	__index = i___webhooks___update_request,
 }
 
 local function cast_i___webhooks___update_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_i___webhooks___update_request(webhook_id, name, url, secret, on, active)
 	return cast_i___webhooks___update_request({
-		["webhookId"] = webhook_id;
-		["name"] = name;
-		["url"] = url;
-		["secret"] = secret;
-		["on"] = on;
-		["active"] = active;
+		["webhookId"] = webhook_id,
+		["name"] = name,
+		["url"] = url,
+		["secret"] = secret,
+		["on"] = on,
+		["active"] = active,
 	})
 end
 
 return {
-	cast = cast_i___webhooks___update_request;
-	new = new_i___webhooks___update_request;
+	cast = cast_i___webhooks___update_request,
+	new = new_i___webhooks___update_request,
 }

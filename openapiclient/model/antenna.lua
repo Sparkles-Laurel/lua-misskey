@@ -11,8 +11,8 @@
 -- antenna class
 local antenna = {}
 local antenna_mt = {
-	__name = "antenna";
-	__index = antenna;
+	__name = "antenna",
+	__index = antenna,
 }
 
 local function cast_antenna(t)
@@ -21,26 +21,26 @@ end
 
 local function new_antenna(id, created_at, name, keywords, exclude_keywords, src, user_list_id, users, case_sensitive, local_only, exclude_bots, with_replies, with_file, is_active, has_unread_note, notify)
 	return cast_antenna({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["name"] = name;
-		["keywords"] = keywords;
-		["excludeKeywords"] = exclude_keywords;
-		["src"] = src;
-		["userListId"] = user_list_id;
-		["users"] = users;
-		["caseSensitive"] = case_sensitive;
-		["localOnly"] = local_only;
-		["excludeBots"] = exclude_bots;
-		["withReplies"] = with_replies;
-		["withFile"] = with_file;
-		["isActive"] = is_active;
-		["hasUnreadNote"] = has_unread_note;
-		["notify"] = notify;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["name"] = name,
+		["keywords"] = keywords,
+		["excludeKeywords"] = exclude_keywords,
+		["src"] = src,
+		["userListId"] = user_list_id,
+		["users"] = users,
+		["caseSensitive"] = case_sensitive,
+		["localOnly"] = local_only,
+		["excludeBots"] = exclude_bots,
+		["withReplies"] = with_replies,
+		["withFile"] = with_file,
+		["isActive"] = is_active,
+		["hasUnreadNote"] = has_unread_note,
+		["notify"] = notify,
 	})
 end
 
 return {
-	cast = cast_antenna;
-	new = new_antenna;
+	cast = cast_antenna,
+	new = new_antenna,
 }

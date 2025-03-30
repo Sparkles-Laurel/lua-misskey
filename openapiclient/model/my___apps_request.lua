@@ -11,8 +11,8 @@
 -- my___apps_request class
 local my___apps_request = {}
 local my___apps_request_mt = {
-	__name = "my___apps_request";
-	__index = my___apps_request;
+	__name = "my___apps_request",
+	__index = my___apps_request,
 }
 
 local function cast_my___apps_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_my___apps_request(limit, offset)
 	return cast_my___apps_request({
-		["limit"] = limit;
-		["offset"] = offset;
+		["limit"] = limit,
+		["offset"] = offset,
 	})
 end
 
 return {
-	cast = cast_my___apps_request;
-	new = new_my___apps_request;
+	cast = cast_my___apps_request,
+	new = new_my___apps_request,
 }

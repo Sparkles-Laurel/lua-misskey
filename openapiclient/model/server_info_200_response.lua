@@ -11,8 +11,8 @@
 -- server_info_200_response class
 local server_info_200_response = {}
 local server_info_200_response_mt = {
-	__name = "server_info_200_response";
-	__index = server_info_200_response;
+	__name = "server_info_200_response",
+	__index = server_info_200_response,
 }
 
 local function cast_server_info_200_response(t)
@@ -21,14 +21,14 @@ end
 
 local function new_server_info_200_response(machine, cpu, mem, fs)
 	return cast_server_info_200_response({
-		["machine"] = machine;
-		["cpu"] = cpu;
-		["mem"] = mem;
-		["fs"] = fs;
+		["machine"] = machine,
+		["cpu"] = cpu,
+		["mem"] = mem,
+		["fs"] = fs,
 	})
 end
 
 return {
-	cast = cast_server_info_200_response;
-	new = new_server_info_200_response;
+	cast = cast_server_info_200_response,
+	new = new_server_info_200_response,
 }

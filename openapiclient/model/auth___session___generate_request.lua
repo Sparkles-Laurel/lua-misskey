@@ -11,8 +11,8 @@
 -- auth___session___generate_request class
 local auth___session___generate_request = {}
 local auth___session___generate_request_mt = {
-	__name = "auth___session___generate_request";
-	__index = auth___session___generate_request;
+	__name = "auth___session___generate_request",
+	__index = auth___session___generate_request,
 }
 
 local function cast_auth___session___generate_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_auth___session___generate_request(app_secret)
 	return cast_auth___session___generate_request({
-		["appSecret"] = app_secret;
+		["appSecret"] = app_secret,
 	})
 end
 
 return {
-	cast = cast_auth___session___generate_request;
-	new = new_auth___session___generate_request;
+	cast = cast_auth___session___generate_request,
+	new = new_auth___session___generate_request,
 }

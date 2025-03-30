@@ -26,8 +26,8 @@ local openapiclient_gallery___posts___update_request = require "openapiclient.mo
 
 local gallery_api = {}
 local gallery_api_mt = {
-	__name = "gallery_api";
-	__index = gallery_api;
+	__name = "gallery_api",
+	__index = gallery_api,
 }
 
 local function new_gallery_api(authority, basePath, schemes)
@@ -38,25 +38,25 @@ local function new_gallery_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, gallery_api_mt)
 end
 
 function gallery_api:gallery_featured(gallery___featured_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -107,11 +107,11 @@ end
 
 function gallery_api:gallery_popular()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/popular",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -156,11 +156,11 @@ end
 
 function gallery_api:gallery_posts(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -211,11 +211,11 @@ end
 
 function gallery_api:gallery_posts_create(gallery___posts___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -263,11 +263,11 @@ end
 
 function gallery_api:gallery_posts_delete(gallery___posts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -304,11 +304,11 @@ end
 
 function gallery_api:gallery_posts_like(gallery___posts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/like",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -345,11 +345,11 @@ end
 
 function gallery_api:gallery_posts_show(gallery___posts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -397,11 +397,11 @@ end
 
 function gallery_api:gallery_posts_unlike(gallery___posts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/unlike",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -438,11 +438,11 @@ end
 
 function gallery_api:gallery_posts_update(gallery___posts___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/gallery/posts/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -489,5 +489,5 @@ function gallery_api:gallery_posts_update(gallery___posts___update_request)
 end
 
 return {
-	new = new_gallery_api;
+	new = new_gallery_api,
 }

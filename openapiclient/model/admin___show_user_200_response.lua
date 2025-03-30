@@ -11,8 +11,8 @@
 -- admin___show_user_200_response class
 local admin___show_user_200_response = {}
 local admin___show_user_200_response_mt = {
-	__name = "admin___show_user_200_response";
-	__index = admin___show_user_200_response;
+	__name = "admin___show_user_200_response",
+	__index = admin___show_user_200_response,
 }
 
 local function cast_admin___show_user_200_response(t)
@@ -21,36 +21,36 @@ end
 
 local function new_admin___show_user_200_response(email, email_verified, approved, followed_message, auto_accept_followed, no_crawle, prevent_ai_learning, always_mark_nsfw, auto_sensitive, careful_bot, inject_featured_note, receive_announcement_email, muted_words, muted_instances, notification_recieve_config, is_moderator, is_system, is_silenced, is_suspended, is_hibernated, last_active_date, moderation_note, signins, policies, roles, role_assigns)
 	return cast_admin___show_user_200_response({
-		["email"] = email;
-		["emailVerified"] = email_verified;
-		["approved"] = approved;
-		["followedMessage"] = followed_message;
-		["autoAcceptFollowed"] = auto_accept_followed;
-		["noCrawle"] = no_crawle;
-		["preventAiLearning"] = prevent_ai_learning;
-		["alwaysMarkNsfw"] = always_mark_nsfw;
-		["autoSensitive"] = auto_sensitive;
-		["carefulBot"] = careful_bot;
-		["injectFeaturedNote"] = inject_featured_note;
-		["receiveAnnouncementEmail"] = receive_announcement_email;
-		["mutedWords"] = muted_words;
-		["mutedInstances"] = muted_instances;
-		["notificationRecieveConfig"] = notification_recieve_config;
-		["isModerator"] = is_moderator;
-		["isSystem"] = is_system;
-		["isSilenced"] = is_silenced;
-		["isSuspended"] = is_suspended;
-		["isHibernated"] = is_hibernated;
-		["lastActiveDate"] = last_active_date;
-		["moderationNote"] = moderation_note;
-		["signins"] = signins;
-		["policies"] = policies;
-		["roles"] = roles;
-		["roleAssigns"] = role_assigns;
+		["email"] = email,
+		["emailVerified"] = email_verified,
+		["approved"] = approved,
+		["followedMessage"] = followed_message,
+		["autoAcceptFollowed"] = auto_accept_followed,
+		["noCrawle"] = no_crawle,
+		["preventAiLearning"] = prevent_ai_learning,
+		["alwaysMarkNsfw"] = always_mark_nsfw,
+		["autoSensitive"] = auto_sensitive,
+		["carefulBot"] = careful_bot,
+		["injectFeaturedNote"] = inject_featured_note,
+		["receiveAnnouncementEmail"] = receive_announcement_email,
+		["mutedWords"] = muted_words,
+		["mutedInstances"] = muted_instances,
+		["notificationRecieveConfig"] = notification_recieve_config,
+		["isModerator"] = is_moderator,
+		["isSystem"] = is_system,
+		["isSilenced"] = is_silenced,
+		["isSuspended"] = is_suspended,
+		["isHibernated"] = is_hibernated,
+		["lastActiveDate"] = last_active_date,
+		["moderationNote"] = moderation_note,
+		["signins"] = signins,
+		["policies"] = policies,
+		["roles"] = roles,
+		["roleAssigns"] = role_assigns,
 	})
 end
 
 return {
-	cast = cast_admin___show_user_200_response;
-	new = new_admin___show_user_200_response;
+	cast = cast_admin___show_user_200_response,
+	new = new_admin___show_user_200_response,
 }

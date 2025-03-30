@@ -11,8 +11,8 @@
 -- stats_200_response class
 local stats_200_response = {}
 local stats_200_response_mt = {
-	__name = "stats_200_response";
-	__index = stats_200_response;
+	__name = "stats_200_response",
+	__index = stats_200_response,
 }
 
 local function cast_stats_200_response(t)
@@ -21,17 +21,17 @@ end
 
 local function new_stats_200_response(notes_count, original_notes_count, users_count, original_users_count, instances, drive_usage_local, drive_usage_remote)
 	return cast_stats_200_response({
-		["notesCount"] = notes_count;
-		["originalNotesCount"] = original_notes_count;
-		["usersCount"] = users_count;
-		["originalUsersCount"] = original_users_count;
-		["instances"] = instances;
-		["driveUsageLocal"] = drive_usage_local;
-		["driveUsageRemote"] = drive_usage_remote;
+		["notesCount"] = notes_count,
+		["originalNotesCount"] = original_notes_count,
+		["usersCount"] = users_count,
+		["originalUsersCount"] = original_users_count,
+		["instances"] = instances,
+		["driveUsageLocal"] = drive_usage_local,
+		["driveUsageRemote"] = drive_usage_remote,
 	})
 end
 
 return {
-	cast = cast_stats_200_response;
-	new = new_stats_200_response;
+	cast = cast_stats_200_response,
+	new = new_stats_200_response,
 }

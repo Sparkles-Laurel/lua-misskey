@@ -11,8 +11,8 @@
 -- i___registry___get_detail_200_response class
 local i___registry___get_detail_200_response = {}
 local i___registry___get_detail_200_response_mt = {
-	__name = "i___registry___get_detail_200_response";
-	__index = i___registry___get_detail_200_response;
+	__name = "i___registry___get_detail_200_response",
+	__index = i___registry___get_detail_200_response,
 }
 
 local function cast_i___registry___get_detail_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___registry___get_detail_200_response(updated_at, value)
 	return cast_i___registry___get_detail_200_response({
-		["updatedAt"] = updated_at;
-		["value"] = value;
+		["updatedAt"] = updated_at,
+		["value"] = value,
 	})
 end
 
 return {
-	cast = cast_i___registry___get_detail_200_response;
-	new = new_i___registry___get_detail_200_response;
+	cast = cast_i___registry___get_detail_200_response,
+	new = new_i___registry___get_detail_200_response,
 }

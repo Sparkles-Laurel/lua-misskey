@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response_exclude_credentials_inner class
 local i___2fa___register_key_200_response_exclude_credentials_inner = {}
 local i___2fa___register_key_200_response_exclude_credentials_inner_mt = {
-	__name = "i___2fa___register_key_200_response_exclude_credentials_inner";
-	__index = i___2fa___register_key_200_response_exclude_credentials_inner;
+	__name = "i___2fa___register_key_200_response_exclude_credentials_inner",
+	__index = i___2fa___register_key_200_response_exclude_credentials_inner,
 }
 
 local function cast_i___2fa___register_key_200_response_exclude_credentials_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___2fa___register_key_200_response_exclude_credentials_inner(id, type, transports)
 	return cast_i___2fa___register_key_200_response_exclude_credentials_inner({
-		["id"] = id;
-		["type"] = type;
-		["transports"] = transports;
+		["id"] = id,
+		["type"] = type,
+		["transports"] = transports,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response_exclude_credentials_inner;
-	new = new_i___2fa___register_key_200_response_exclude_credentials_inner;
+	cast = cast_i___2fa___register_key_200_response_exclude_credentials_inner,
+	new = new_i___2fa___register_key_200_response_exclude_credentials_inner,
 }

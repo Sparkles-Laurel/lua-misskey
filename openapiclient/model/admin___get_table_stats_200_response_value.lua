@@ -11,8 +11,8 @@
 -- admin___get_table_stats_200_response_value class
 local admin___get_table_stats_200_response_value = {}
 local admin___get_table_stats_200_response_value_mt = {
-	__name = "admin___get_table_stats_200_response_value";
-	__index = admin___get_table_stats_200_response_value;
+	__name = "admin___get_table_stats_200_response_value",
+	__index = admin___get_table_stats_200_response_value,
 }
 
 local function cast_admin___get_table_stats_200_response_value(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___get_table_stats_200_response_value(count, size)
 	return cast_admin___get_table_stats_200_response_value({
-		["count"] = count;
-		["size"] = size;
+		["count"] = count,
+		["size"] = size,
 	})
 end
 
 return {
-	cast = cast_admin___get_table_stats_200_response_value;
-	new = new_admin___get_table_stats_200_response_value;
+	cast = cast_admin___get_table_stats_200_response_value,
+	new = new_admin___get_table_stats_200_response_value,
 }

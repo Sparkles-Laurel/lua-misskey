@@ -11,8 +11,8 @@
 -- endpoint_request class
 local endpoint_request = {}
 local endpoint_request_mt = {
-	__name = "endpoint_request";
-	__index = endpoint_request;
+	__name = "endpoint_request",
+	__index = endpoint_request,
 }
 
 local function cast_endpoint_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_endpoint_request(endpoint)
 	return cast_endpoint_request({
-		["endpoint"] = endpoint;
+		["endpoint"] = endpoint,
 	})
 end
 
 return {
-	cast = cast_endpoint_request;
-	new = new_endpoint_request;
+	cast = cast_endpoint_request,
+	new = new_endpoint_request,
 }

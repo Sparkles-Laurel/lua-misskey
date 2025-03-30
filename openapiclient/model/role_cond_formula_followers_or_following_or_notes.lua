@@ -11,8 +11,8 @@
 -- role_cond_formula_followers_or_following_or_notes class
 local role_cond_formula_followers_or_following_or_notes = {}
 local role_cond_formula_followers_or_following_or_notes_mt = {
-	__name = "role_cond_formula_followers_or_following_or_notes";
-	__index = role_cond_formula_followers_or_following_or_notes;
+	__name = "role_cond_formula_followers_or_following_or_notes",
+	__index = role_cond_formula_followers_or_following_or_notes,
 }
 
 local function cast_role_cond_formula_followers_or_following_or_notes(t)
@@ -21,13 +21,13 @@ end
 
 local function new_role_cond_formula_followers_or_following_or_notes(id, type, value)
 	return cast_role_cond_formula_followers_or_following_or_notes({
-		["id"] = id;
-		["type"] = type;
-		["value"] = value;
+		["id"] = id,
+		["type"] = type,
+		["value"] = value,
 	})
 end
 
 return {
-	cast = cast_role_cond_formula_followers_or_following_or_notes;
-	new = new_role_cond_formula_followers_or_following_or_notes;
+	cast = cast_role_cond_formula_followers_or_following_or_notes,
+	new = new_role_cond_formula_followers_or_following_or_notes,
 }

@@ -11,8 +11,8 @@
 -- admin___queue___promote_request class
 local admin___queue___promote_request = {}
 local admin___queue___promote_request_mt = {
-	__name = "admin___queue___promote_request";
-	__index = admin___queue___promote_request;
+	__name = "admin___queue___promote_request",
+	__index = admin___queue___promote_request,
 }
 
 local function cast_admin___queue___promote_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___queue___promote_request(type)
 	return cast_admin___queue___promote_request({
-		["type"] = type;
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_admin___queue___promote_request;
-	new = new_admin___queue___promote_request;
+	cast = cast_admin___queue___promote_request,
+	new = new_admin___queue___promote_request,
 }

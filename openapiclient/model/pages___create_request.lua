@@ -11,8 +11,8 @@
 -- pages___create_request class
 local pages___create_request = {}
 local pages___create_request_mt = {
-	__name = "pages___create_request";
-	__index = pages___create_request;
+	__name = "pages___create_request",
+	__index = pages___create_request,
 }
 
 local function cast_pages___create_request(t)
@@ -21,20 +21,20 @@ end
 
 local function new_pages___create_request(title, name, summary, content, variables, script, eye_catching_image_id, font, align_center, hide_title_when_pinned)
 	return cast_pages___create_request({
-		["title"] = title;
-		["name"] = name;
-		["summary"] = summary;
-		["content"] = content;
-		["variables"] = variables;
-		["script"] = script;
-		["eyeCatchingImageId"] = eye_catching_image_id;
-		["font"] = font;
-		["alignCenter"] = align_center;
-		["hideTitleWhenPinned"] = hide_title_when_pinned;
+		["title"] = title,
+		["name"] = name,
+		["summary"] = summary,
+		["content"] = content,
+		["variables"] = variables,
+		["script"] = script,
+		["eyeCatchingImageId"] = eye_catching_image_id,
+		["font"] = font,
+		["alignCenter"] = align_center,
+		["hideTitleWhenPinned"] = hide_title_when_pinned,
 	})
 end
 
 return {
-	cast = cast_pages___create_request;
-	new = new_pages___create_request;
+	cast = cast_pages___create_request,
+	new = new_pages___create_request,
 }

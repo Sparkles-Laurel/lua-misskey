@@ -11,8 +11,8 @@
 -- notes___schedule___create_request_poll class
 local notes___schedule___create_request_poll = {}
 local notes___schedule___create_request_poll_mt = {
-	__name = "notes___schedule___create_request_poll";
-	__index = notes___schedule___create_request_poll;
+	__name = "notes___schedule___create_request_poll",
+	__index = notes___schedule___create_request_poll,
 }
 
 local function cast_notes___schedule___create_request_poll(t)
@@ -21,14 +21,14 @@ end
 
 local function new_notes___schedule___create_request_poll(choices, multiple, expires_at, expired_after)
 	return cast_notes___schedule___create_request_poll({
-		["choices"] = choices;
-		["multiple"] = multiple;
-		["expiresAt"] = expires_at;
-		["expiredAfter"] = expired_after;
+		["choices"] = choices,
+		["multiple"] = multiple,
+		["expiresAt"] = expires_at,
+		["expiredAfter"] = expired_after,
 	})
 end
 
 return {
-	cast = cast_notes___schedule___create_request_poll;
-	new = new_notes___schedule___create_request_poll;
+	cast = cast_notes___schedule___create_request_poll,
+	new = new_notes___schedule___create_request_poll,
 }

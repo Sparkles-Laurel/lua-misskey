@@ -11,8 +11,8 @@
 -- admin___promo___create_request class
 local admin___promo___create_request = {}
 local admin___promo___create_request_mt = {
-	__name = "admin___promo___create_request";
-	__index = admin___promo___create_request;
+	__name = "admin___promo___create_request",
+	__index = admin___promo___create_request,
 }
 
 local function cast_admin___promo___create_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___promo___create_request(note_id, expires_at)
 	return cast_admin___promo___create_request({
-		["noteId"] = note_id;
-		["expiresAt"] = expires_at;
+		["noteId"] = note_id,
+		["expiresAt"] = expires_at,
 	})
 end
 
 return {
-	cast = cast_admin___promo___create_request;
-	new = new_admin___promo___create_request;
+	cast = cast_admin___promo___create_request,
+	new = new_admin___promo___create_request,
 }

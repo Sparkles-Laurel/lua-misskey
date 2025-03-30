@@ -11,8 +11,8 @@
 -- users___get_frequently_replied_users_request class
 local users___get_frequently_replied_users_request = {}
 local users___get_frequently_replied_users_request_mt = {
-	__name = "users___get_frequently_replied_users_request";
-	__index = users___get_frequently_replied_users_request;
+	__name = "users___get_frequently_replied_users_request",
+	__index = users___get_frequently_replied_users_request,
 }
 
 local function cast_users___get_frequently_replied_users_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___get_frequently_replied_users_request(user_id, limit)
 	return cast_users___get_frequently_replied_users_request({
-		["userId"] = user_id;
-		["limit"] = limit;
+		["userId"] = user_id,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_users___get_frequently_replied_users_request;
-	new = new_users___get_frequently_replied_users_request;
+	cast = cast_users___get_frequently_replied_users_request,
+	new = new_users___get_frequently_replied_users_request,
 }

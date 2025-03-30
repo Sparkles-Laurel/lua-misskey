@@ -11,8 +11,8 @@
 -- roles___notes_request class
 local roles___notes_request = {}
 local roles___notes_request_mt = {
-	__name = "roles___notes_request";
-	__index = roles___notes_request;
+	__name = "roles___notes_request",
+	__index = roles___notes_request,
 }
 
 local function cast_roles___notes_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_roles___notes_request(role_id, limit, since_id, until_id, since_date, until_date)
 	return cast_roles___notes_request({
-		["roleId"] = role_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["roleId"] = role_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_roles___notes_request;
-	new = new_roles___notes_request;
+	cast = cast_roles___notes_request,
+	new = new_roles___notes_request,
 }

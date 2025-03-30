@@ -11,8 +11,8 @@
 -- role_cond_formula_value_is_local_or_remote class
 local role_cond_formula_value_is_local_or_remote = {}
 local role_cond_formula_value_is_local_or_remote_mt = {
-	__name = "role_cond_formula_value_is_local_or_remote";
-	__index = role_cond_formula_value_is_local_or_remote;
+	__name = "role_cond_formula_value_is_local_or_remote",
+	__index = role_cond_formula_value_is_local_or_remote,
 }
 
 local function cast_role_cond_formula_value_is_local_or_remote(t)
@@ -21,12 +21,12 @@ end
 
 local function new_role_cond_formula_value_is_local_or_remote(id, type)
 	return cast_role_cond_formula_value_is_local_or_remote({
-		["id"] = id;
-		["type"] = type;
+		["id"] = id,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_role_cond_formula_value_is_local_or_remote;
-	new = new_role_cond_formula_value_is_local_or_remote;
+	cast = cast_role_cond_formula_value_is_local_or_remote,
+	new = new_role_cond_formula_value_is_local_or_remote,
 }

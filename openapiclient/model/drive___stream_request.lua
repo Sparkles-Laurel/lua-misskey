@@ -11,8 +11,8 @@
 -- drive___stream_request class
 local drive___stream_request = {}
 local drive___stream_request_mt = {
-	__name = "drive___stream_request";
-	__index = drive___stream_request;
+	__name = "drive___stream_request",
+	__index = drive___stream_request,
 }
 
 local function cast_drive___stream_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_drive___stream_request(limit, since_id, until_id, type)
 	return cast_drive___stream_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["type"] = type;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_drive___stream_request;
-	new = new_drive___stream_request;
+	cast = cast_drive___stream_request,
+	new = new_drive___stream_request,
 }

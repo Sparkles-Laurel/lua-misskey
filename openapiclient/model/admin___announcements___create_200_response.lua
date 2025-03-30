@@ -11,8 +11,8 @@
 -- admin___announcements___create_200_response class
 local admin___announcements___create_200_response = {}
 local admin___announcements___create_200_response_mt = {
-	__name = "admin___announcements___create_200_response";
-	__index = admin___announcements___create_200_response;
+	__name = "admin___announcements___create_200_response",
+	__index = admin___announcements___create_200_response,
 }
 
 local function cast_admin___announcements___create_200_response(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___announcements___create_200_response(id, created_at, updated_at, title, text, image_url)
 	return cast_admin___announcements___create_200_response({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["updatedAt"] = updated_at;
-		["title"] = title;
-		["text"] = text;
-		["imageUrl"] = image_url;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["updatedAt"] = updated_at,
+		["title"] = title,
+		["text"] = text,
+		["imageUrl"] = image_url,
 	})
 end
 
 return {
-	cast = cast_admin___announcements___create_200_response;
-	new = new_admin___announcements___create_200_response;
+	cast = cast_admin___announcements___create_200_response,
+	new = new_admin___announcements___create_200_response,
 }

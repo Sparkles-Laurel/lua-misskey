@@ -11,8 +11,8 @@
 -- notes___state_200_response class
 local notes___state_200_response = {}
 local notes___state_200_response_mt = {
-	__name = "notes___state_200_response";
-	__index = notes___state_200_response;
+	__name = "notes___state_200_response",
+	__index = notes___state_200_response,
 }
 
 local function cast_notes___state_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___state_200_response(is_favorited, is_muted_thread)
 	return cast_notes___state_200_response({
-		["isFavorited"] = is_favorited;
-		["isMutedThread"] = is_muted_thread;
+		["isFavorited"] = is_favorited,
+		["isMutedThread"] = is_muted_thread,
 	})
 end
 
 return {
-	cast = cast_notes___state_200_response;
-	new = new_notes___state_200_response;
+	cast = cast_notes___state_200_response,
+	new = new_notes___state_200_response,
 }

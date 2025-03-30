@@ -11,8 +11,8 @@
 -- channel class
 local channel = {}
 local channel_mt = {
-	__name = "channel";
-	__index = channel;
+	__name = "channel",
+	__index = channel,
 }
 
 local function cast_channel(t)
@@ -21,27 +21,27 @@ end
 
 local function new_channel(id, created_at, last_noted_at, name, description, user_id, banner_url, pinned_note_ids, color, is_archived, users_count, notes_count, is_sensitive, allow_renote_to_external, is_following, is_favorited, pinned_notes)
 	return cast_channel({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["lastNotedAt"] = last_noted_at;
-		["name"] = name;
-		["description"] = description;
-		["userId"] = user_id;
-		["bannerUrl"] = banner_url;
-		["pinnedNoteIds"] = pinned_note_ids;
-		["color"] = color;
-		["isArchived"] = is_archived;
-		["usersCount"] = users_count;
-		["notesCount"] = notes_count;
-		["isSensitive"] = is_sensitive;
-		["allowRenoteToExternal"] = allow_renote_to_external;
-		["isFollowing"] = is_following;
-		["isFavorited"] = is_favorited;
-		["pinnedNotes"] = pinned_notes;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["lastNotedAt"] = last_noted_at,
+		["name"] = name,
+		["description"] = description,
+		["userId"] = user_id,
+		["bannerUrl"] = banner_url,
+		["pinnedNoteIds"] = pinned_note_ids,
+		["color"] = color,
+		["isArchived"] = is_archived,
+		["usersCount"] = users_count,
+		["notesCount"] = notes_count,
+		["isSensitive"] = is_sensitive,
+		["allowRenoteToExternal"] = allow_renote_to_external,
+		["isFollowing"] = is_following,
+		["isFavorited"] = is_favorited,
+		["pinnedNotes"] = pinned_notes,
 	})
 end
 
 return {
-	cast = cast_channel;
-	new = new_channel;
+	cast = cast_channel,
+	new = new_channel,
 }

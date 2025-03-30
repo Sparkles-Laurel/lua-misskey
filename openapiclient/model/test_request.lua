@@ -11,8 +11,8 @@
 -- test_request class
 local test_request = {}
 local test_request_mt = {
-	__name = "test_request";
-	__index = test_request;
+	__name = "test_request",
+	__index = test_request,
 }
 
 local function cast_test_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_test_request(required, String_, default, nullable_default, id)
 	return cast_test_request({
-		["required"] = required;
-		["string"] = String_;
-		["default"] = default;
-		["nullableDefault"] = nullable_default;
-		["id"] = id;
+		["required"] = required,
+		["string"] = String_,
+		["default"] = default,
+		["nullableDefault"] = nullable_default,
+		["id"] = id,
 	})
 end
 
 return {
-	cast = cast_test_request;
-	new = new_test_request;
+	cast = cast_test_request,
+	new = new_test_request,
 }

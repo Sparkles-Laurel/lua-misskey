@@ -11,8 +11,8 @@
 -- admin___captcha___current_200_response_mcaptcha class
 local admin___captcha___current_200_response_mcaptcha = {}
 local admin___captcha___current_200_response_mcaptcha_mt = {
-	__name = "admin___captcha___current_200_response_mcaptcha";
-	__index = admin___captcha___current_200_response_mcaptcha;
+	__name = "admin___captcha___current_200_response_mcaptcha",
+	__index = admin___captcha___current_200_response_mcaptcha,
 }
 
 local function cast_admin___captcha___current_200_response_mcaptcha(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___captcha___current_200_response_mcaptcha(site_key, secret_key, instance_url)
 	return cast_admin___captcha___current_200_response_mcaptcha({
-		["siteKey"] = site_key;
-		["secretKey"] = secret_key;
-		["instanceUrl"] = instance_url;
+		["siteKey"] = site_key,
+		["secretKey"] = secret_key,
+		["instanceUrl"] = instance_url,
 	})
 end
 
 return {
-	cast = cast_admin___captcha___current_200_response_mcaptcha;
-	new = new_admin___captcha___current_200_response_mcaptcha;
+	cast = cast_admin___captcha___current_200_response_mcaptcha,
+	new = new_admin___captcha___current_200_response_mcaptcha,
 }

@@ -11,8 +11,8 @@
 -- federation___stats_request class
 local federation___stats_request = {}
 local federation___stats_request_mt = {
-	__name = "federation___stats_request";
-	__index = federation___stats_request;
+	__name = "federation___stats_request",
+	__index = federation___stats_request,
 }
 
 local function cast_federation___stats_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_federation___stats_request(limit)
 	return cast_federation___stats_request({
-		["limit"] = limit;
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_federation___stats_request;
-	new = new_federation___stats_request;
+	cast = cast_federation___stats_request,
+	new = new_federation___stats_request,
 }

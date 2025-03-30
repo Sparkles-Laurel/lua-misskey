@@ -11,8 +11,8 @@
 -- blocking class
 local blocking = {}
 local blocking_mt = {
-	__name = "blocking";
-	__index = blocking;
+	__name = "blocking",
+	__index = blocking,
 }
 
 local function cast_blocking(t)
@@ -21,14 +21,14 @@ end
 
 local function new_blocking(id, created_at, blockee_id, blockee)
 	return cast_blocking({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["blockeeId"] = blockee_id;
-		["blockee"] = blockee;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["blockeeId"] = blockee_id,
+		["blockee"] = blockee,
 	})
 end
 
 return {
-	cast = cast_blocking;
-	new = new_blocking;
+	cast = cast_blocking,
+	new = new_blocking,
 }

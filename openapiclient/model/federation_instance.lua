@@ -11,8 +11,8 @@
 -- federation_instance class
 local federation_instance = {}
 local federation_instance_mt = {
-	__name = "federation_instance";
-	__index = federation_instance;
+	__name = "federation_instance",
+	__index = federation_instance,
 }
 
 local function cast_federation_instance(t)
@@ -21,39 +21,39 @@ end
 
 local function new_federation_instance(id, first_retrieved_at, host, users_count, notes_count, following_count, followers_count, is_not_responding, is_suspended, suspension_state, is_blocked, software_name, software_version, open_registrations, name, description, maintainer_name, maintainer_email, is_silenced, is_media_silenced, icon_url, favicon_url, theme_color, info_updated_at, latest_request_received_at, is_nsfw, reject_reports, reject_quotes, moderation_note)
 	return cast_federation_instance({
-		["id"] = id;
-		["firstRetrievedAt"] = first_retrieved_at;
-		["host"] = host;
-		["usersCount"] = users_count;
-		["notesCount"] = notes_count;
-		["followingCount"] = following_count;
-		["followersCount"] = followers_count;
-		["isNotResponding"] = is_not_responding;
-		["isSuspended"] = is_suspended;
-		["suspensionState"] = suspension_state;
-		["isBlocked"] = is_blocked;
-		["softwareName"] = software_name;
-		["softwareVersion"] = software_version;
-		["openRegistrations"] = open_registrations;
-		["name"] = name;
-		["description"] = description;
-		["maintainerName"] = maintainer_name;
-		["maintainerEmail"] = maintainer_email;
-		["isSilenced"] = is_silenced;
-		["isMediaSilenced"] = is_media_silenced;
-		["iconUrl"] = icon_url;
-		["faviconUrl"] = favicon_url;
-		["themeColor"] = theme_color;
-		["infoUpdatedAt"] = info_updated_at;
-		["latestRequestReceivedAt"] = latest_request_received_at;
-		["isNSFW"] = is_nsfw;
-		["rejectReports"] = reject_reports;
-		["rejectQuotes"] = reject_quotes;
-		["moderationNote"] = moderation_note;
+		["id"] = id,
+		["firstRetrievedAt"] = first_retrieved_at,
+		["host"] = host,
+		["usersCount"] = users_count,
+		["notesCount"] = notes_count,
+		["followingCount"] = following_count,
+		["followersCount"] = followers_count,
+		["isNotResponding"] = is_not_responding,
+		["isSuspended"] = is_suspended,
+		["suspensionState"] = suspension_state,
+		["isBlocked"] = is_blocked,
+		["softwareName"] = software_name,
+		["softwareVersion"] = software_version,
+		["openRegistrations"] = open_registrations,
+		["name"] = name,
+		["description"] = description,
+		["maintainerName"] = maintainer_name,
+		["maintainerEmail"] = maintainer_email,
+		["isSilenced"] = is_silenced,
+		["isMediaSilenced"] = is_media_silenced,
+		["iconUrl"] = icon_url,
+		["faviconUrl"] = favicon_url,
+		["themeColor"] = theme_color,
+		["infoUpdatedAt"] = info_updated_at,
+		["latestRequestReceivedAt"] = latest_request_received_at,
+		["isNSFW"] = is_nsfw,
+		["rejectReports"] = reject_reports,
+		["rejectQuotes"] = reject_quotes,
+		["moderationNote"] = moderation_note,
 	})
 end
 
 return {
-	cast = cast_federation_instance;
-	new = new_federation_instance;
+	cast = cast_federation_instance,
+	new = new_federation_instance,
 }

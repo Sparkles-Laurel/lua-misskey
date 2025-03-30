@@ -11,8 +11,8 @@
 -- get_online_users_count_200_response class
 local get_online_users_count_200_response = {}
 local get_online_users_count_200_response_mt = {
-	__name = "get_online_users_count_200_response";
-	__index = get_online_users_count_200_response;
+	__name = "get_online_users_count_200_response",
+	__index = get_online_users_count_200_response,
 }
 
 local function cast_get_online_users_count_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_get_online_users_count_200_response(count)
 	return cast_get_online_users_count_200_response({
-		["count"] = count;
+		["count"] = count,
 	})
 end
 
 return {
-	cast = cast_get_online_users_count_200_response;
-	new = new_get_online_users_count_200_response;
+	cast = cast_get_online_users_count_200_response,
+	new = new_get_online_users_count_200_response,
 }

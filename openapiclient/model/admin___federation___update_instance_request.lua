@@ -11,8 +11,8 @@
 -- admin___federation___update_instance_request class
 local admin___federation___update_instance_request = {}
 local admin___federation___update_instance_request_mt = {
-	__name = "admin___federation___update_instance_request";
-	__index = admin___federation___update_instance_request;
+	__name = "admin___federation___update_instance_request",
+	__index = admin___federation___update_instance_request,
 }
 
 local function cast_admin___federation___update_instance_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___federation___update_instance_request(host, is_suspended, is_nsfw, reject_reports, moderation_note, reject_quotes)
 	return cast_admin___federation___update_instance_request({
-		["host"] = host;
-		["isSuspended"] = is_suspended;
-		["isNSFW"] = is_nsfw;
-		["rejectReports"] = reject_reports;
-		["moderationNote"] = moderation_note;
-		["rejectQuotes"] = reject_quotes;
+		["host"] = host,
+		["isSuspended"] = is_suspended,
+		["isNSFW"] = is_nsfw,
+		["rejectReports"] = reject_reports,
+		["moderationNote"] = moderation_note,
+		["rejectQuotes"] = reject_quotes,
 	})
 end
 
 return {
-	cast = cast_admin___federation___update_instance_request;
-	new = new_admin___federation___update_instance_request;
+	cast = cast_admin___federation___update_instance_request,
+	new = new_admin___federation___update_instance_request,
 }

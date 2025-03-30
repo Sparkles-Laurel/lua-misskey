@@ -11,8 +11,8 @@
 -- endpoint_200_response class
 local endpoint_200_response = {}
 local endpoint_200_response_mt = {
-	__name = "endpoint_200_response";
-	__index = endpoint_200_response;
+	__name = "endpoint_200_response",
+	__index = endpoint_200_response,
 }
 
 local function cast_endpoint_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_endpoint_200_response(params)
 	return cast_endpoint_200_response({
-		["params"] = params;
+		["params"] = params,
 	})
 end
 
 return {
-	cast = cast_endpoint_200_response;
-	new = new_endpoint_200_response;
+	cast = cast_endpoint_200_response,
+	new = new_endpoint_200_response,
 }

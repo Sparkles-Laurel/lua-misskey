@@ -11,8 +11,8 @@
 -- admin___emoji___import_zip_request class
 local admin___emoji___import_zip_request = {}
 local admin___emoji___import_zip_request_mt = {
-	__name = "admin___emoji___import_zip_request";
-	__index = admin___emoji___import_zip_request;
+	__name = "admin___emoji___import_zip_request",
+	__index = admin___emoji___import_zip_request,
 }
 
 local function cast_admin___emoji___import_zip_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___emoji___import_zip_request(file_id)
 	return cast_admin___emoji___import_zip_request({
-		["fileId"] = file_id;
+		["fileId"] = file_id,
 	})
 end
 
 return {
-	cast = cast_admin___emoji___import_zip_request;
-	new = new_admin___emoji___import_zip_request;
+	cast = cast_admin___emoji___import_zip_request,
+	new = new_admin___emoji___import_zip_request,
 }

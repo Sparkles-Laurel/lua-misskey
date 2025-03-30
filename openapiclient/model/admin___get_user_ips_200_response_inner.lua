@@ -11,8 +11,8 @@
 -- admin___get_user_ips_200_response_inner class
 local admin___get_user_ips_200_response_inner = {}
 local admin___get_user_ips_200_response_inner_mt = {
-	__name = "admin___get_user_ips_200_response_inner";
-	__index = admin___get_user_ips_200_response_inner;
+	__name = "admin___get_user_ips_200_response_inner",
+	__index = admin___get_user_ips_200_response_inner,
 }
 
 local function cast_admin___get_user_ips_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___get_user_ips_200_response_inner(ip, created_at)
 	return cast_admin___get_user_ips_200_response_inner({
-		["ip"] = ip;
-		["createdAt"] = created_at;
+		["ip"] = ip,
+		["createdAt"] = created_at,
 	})
 end
 
 return {
-	cast = cast_admin___get_user_ips_200_response_inner;
-	new = new_admin___get_user_ips_200_response_inner;
+	cast = cast_admin___get_user_ips_200_response_inner,
+	new = new_admin___get_user_ips_200_response_inner,
 }

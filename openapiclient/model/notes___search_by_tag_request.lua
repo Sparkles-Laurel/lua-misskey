@@ -11,8 +11,8 @@
 -- notes___search_by_tag_request class
 local notes___search_by_tag_request = {}
 local notes___search_by_tag_request_mt = {
-	__name = "notes___search_by_tag_request";
-	__index = notes___search_by_tag_request;
+	__name = "notes___search_by_tag_request",
+	__index = notes___search_by_tag_request,
 }
 
 local function cast_notes___search_by_tag_request(t)
@@ -21,19 +21,19 @@ end
 
 local function new_notes___search_by_tag_request(reply, renote, with_files, poll, since_id, until_id, limit, tag, query)
 	return cast_notes___search_by_tag_request({
-		["reply"] = reply;
-		["renote"] = renote;
-		["withFiles"] = with_files;
-		["poll"] = poll;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
-		["tag"] = tag;
-		["query"] = query;
+		["reply"] = reply,
+		["renote"] = renote,
+		["withFiles"] = with_files,
+		["poll"] = poll,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
+		["tag"] = tag,
+		["query"] = query,
 	})
 end
 
 return {
-	cast = cast_notes___search_by_tag_request;
-	new = new_notes___search_by_tag_request;
+	cast = cast_notes___search_by_tag_request,
+	new = new_notes___search_by_tag_request,
 }

@@ -30,8 +30,8 @@ local openapiclient_users___lists___update_request = require "openapiclient.mode
 
 local lists_api = {}
 local lists_api_mt = {
-	__name = "lists_api";
-	__index = lists_api;
+	__name = "lists_api",
+	__index = lists_api,
 }
 
 local function new_lists_api(authority, basePath, schemes)
@@ -42,25 +42,25 @@ local function new_lists_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, lists_api_mt)
 end
 
 function lists_api:users_lists_create(users___lists___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -108,11 +108,11 @@ end
 
 function lists_api:users_lists_delete(users___lists___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -149,11 +149,11 @@ end
 
 function lists_api:users_lists_get_memberships(users___lists___get_memberships_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/get-memberships",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -204,11 +204,11 @@ end
 
 function lists_api:users_lists_list(users___lists___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -259,11 +259,11 @@ end
 
 function lists_api:users_lists_pull(users___lists___pull_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/pull",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -300,11 +300,11 @@ end
 
 function lists_api:users_lists_push(users___lists___pull_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/push",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -341,11 +341,11 @@ end
 
 function lists_api:users_lists_show(users___lists___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -393,11 +393,11 @@ end
 
 function lists_api:users_lists_update(users___lists___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -445,11 +445,11 @@ end
 
 function lists_api:users_lists_update_membership(users___lists___update_membership_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/update-membership",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -485,5 +485,5 @@ function lists_api:users_lists_update_membership(users___lists___update_membersh
 end
 
 return {
-	new = new_lists_api;
+	new = new_lists_api,
 }

@@ -27,8 +27,8 @@ local openapiclient_hashtags___users_request = require "openapiclient.model.hash
 
 local hashtags_api = {}
 local hashtags_api_mt = {
-	__name = "hashtags_api";
-	__index = hashtags_api;
+	__name = "hashtags_api",
+	__index = hashtags_api,
 }
 
 local function new_hashtags_api(authority, basePath, schemes)
@@ -39,25 +39,25 @@ local function new_hashtags_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, hashtags_api_mt)
 end
 
 function hashtags_api:hashtags_list(hashtags___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -108,11 +108,11 @@ end
 
 function hashtags_api:hashtags_search(hashtags___search_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/search",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -160,11 +160,11 @@ end
 
 function hashtags_api:hashtags_show(hashtags___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -212,11 +212,11 @@ end
 
 function hashtags_api:hashtags_trend()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/trend",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -261,11 +261,11 @@ end
 
 function hashtags_api:hashtags_trend_0()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/trend",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -310,11 +310,11 @@ end
 
 function hashtags_api:hashtags_users(hashtags___users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/hashtags/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -364,5 +364,5 @@ function hashtags_api:hashtags_users(hashtags___users_request)
 end
 
 return {
-	new = new_hashtags_api;
+	new = new_hashtags_api,
 }

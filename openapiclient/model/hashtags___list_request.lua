@@ -11,8 +11,8 @@
 -- hashtags___list_request class
 local hashtags___list_request = {}
 local hashtags___list_request_mt = {
-	__name = "hashtags___list_request";
-	__index = hashtags___list_request;
+	__name = "hashtags___list_request",
+	__index = hashtags___list_request,
 }
 
 local function cast_hashtags___list_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_hashtags___list_request(limit, attached_to_user_only, attached_to_local_user_only, attached_to_remote_user_only, sort)
 	return cast_hashtags___list_request({
-		["limit"] = limit;
-		["attachedToUserOnly"] = attached_to_user_only;
-		["attachedToLocalUserOnly"] = attached_to_local_user_only;
-		["attachedToRemoteUserOnly"] = attached_to_remote_user_only;
-		["sort"] = sort;
+		["limit"] = limit,
+		["attachedToUserOnly"] = attached_to_user_only,
+		["attachedToLocalUserOnly"] = attached_to_local_user_only,
+		["attachedToRemoteUserOnly"] = attached_to_remote_user_only,
+		["sort"] = sort,
 	})
 end
 
 return {
-	cast = cast_hashtags___list_request;
-	new = new_hashtags___list_request;
+	cast = cast_hashtags___list_request,
+	new = new_hashtags___list_request,
 }

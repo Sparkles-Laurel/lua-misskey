@@ -11,8 +11,8 @@
 -- admin___abuse_user_reports_request class
 local admin___abuse_user_reports_request = {}
 local admin___abuse_user_reports_request_mt = {
-	__name = "admin___abuse_user_reports_request";
-	__index = admin___abuse_user_reports_request;
+	__name = "admin___abuse_user_reports_request",
+	__index = admin___abuse_user_reports_request,
 }
 
 local function cast_admin___abuse_user_reports_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___abuse_user_reports_request(limit, since_id, until_id, state, reporter_origin, target_user_origin)
 	return cast_admin___abuse_user_reports_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["state"] = state;
-		["reporterOrigin"] = reporter_origin;
-		["targetUserOrigin"] = target_user_origin;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["state"] = state,
+		["reporterOrigin"] = reporter_origin,
+		["targetUserOrigin"] = target_user_origin,
 	})
 end
 
 return {
-	cast = cast_admin___abuse_user_reports_request;
-	new = new_admin___abuse_user_reports_request;
+	cast = cast_admin___abuse_user_reports_request,
+	new = new_admin___abuse_user_reports_request,
 }

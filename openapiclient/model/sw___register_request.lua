@@ -11,8 +11,8 @@
 -- sw___register_request class
 local sw___register_request = {}
 local sw___register_request_mt = {
-	__name = "sw___register_request";
-	__index = sw___register_request;
+	__name = "sw___register_request",
+	__index = sw___register_request,
 }
 
 local function cast_sw___register_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_sw___register_request(endpoint, auth, publickey, send_read_message)
 	return cast_sw___register_request({
-		["endpoint"] = endpoint;
-		["auth"] = auth;
-		["publickey"] = publickey;
-		["sendReadMessage"] = send_read_message;
+		["endpoint"] = endpoint,
+		["auth"] = auth,
+		["publickey"] = publickey,
+		["sendReadMessage"] = send_read_message,
 	})
 end
 
 return {
-	cast = cast_sw___register_request;
-	new = new_sw___register_request;
+	cast = cast_sw___register_request,
+	new = new_sw___register_request,
 }

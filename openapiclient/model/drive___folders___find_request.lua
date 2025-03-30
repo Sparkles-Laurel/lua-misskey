@@ -11,8 +11,8 @@
 -- drive___folders___find_request class
 local drive___folders___find_request = {}
 local drive___folders___find_request_mt = {
-	__name = "drive___folders___find_request";
-	__index = drive___folders___find_request;
+	__name = "drive___folders___find_request",
+	__index = drive___folders___find_request,
 }
 
 local function cast_drive___folders___find_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_drive___folders___find_request(name, parent_id)
 	return cast_drive___folders___find_request({
-		["name"] = name;
-		["parentId"] = parent_id;
+		["name"] = name,
+		["parentId"] = parent_id,
 	})
 end
 
 return {
-	cast = cast_drive___folders___find_request;
-	new = new_drive___folders___find_request;
+	cast = cast_drive___folders___find_request,
+	new = new_drive___folders___find_request,
 }

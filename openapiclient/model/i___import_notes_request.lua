@@ -11,8 +11,8 @@
 -- i___import_notes_request class
 local i___import_notes_request = {}
 local i___import_notes_request_mt = {
-	__name = "i___import_notes_request";
-	__index = i___import_notes_request;
+	__name = "i___import_notes_request",
+	__index = i___import_notes_request,
 }
 
 local function cast_i___import_notes_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___import_notes_request(file_id, type)
 	return cast_i___import_notes_request({
-		["fileId"] = file_id;
-		["type"] = type;
+		["fileId"] = file_id,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_i___import_notes_request;
-	new = new_i___import_notes_request;
+	cast = cast_i___import_notes_request,
+	new = new_i___import_notes_request,
 }

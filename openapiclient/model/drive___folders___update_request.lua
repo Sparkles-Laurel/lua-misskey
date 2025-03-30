@@ -11,8 +11,8 @@
 -- drive___folders___update_request class
 local drive___folders___update_request = {}
 local drive___folders___update_request_mt = {
-	__name = "drive___folders___update_request";
-	__index = drive___folders___update_request;
+	__name = "drive___folders___update_request",
+	__index = drive___folders___update_request,
 }
 
 local function cast_drive___folders___update_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_drive___folders___update_request(folder_id, name, parent_id)
 	return cast_drive___folders___update_request({
-		["folderId"] = folder_id;
-		["name"] = name;
-		["parentId"] = parent_id;
+		["folderId"] = folder_id,
+		["name"] = name,
+		["parentId"] = parent_id,
 	})
 end
 
 return {
-	cast = cast_drive___folders___update_request;
-	new = new_drive___folders___update_request;
+	cast = cast_drive___folders___update_request,
+	new = new_drive___folders___update_request,
 }

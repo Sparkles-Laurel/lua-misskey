@@ -11,8 +11,8 @@
 -- admin___system_webhook___create_request class
 local admin___system_webhook___create_request = {}
 local admin___system_webhook___create_request_mt = {
-	__name = "admin___system_webhook___create_request";
-	__index = admin___system_webhook___create_request;
+	__name = "admin___system_webhook___create_request",
+	__index = admin___system_webhook___create_request,
 }
 
 local function cast_admin___system_webhook___create_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_admin___system_webhook___create_request(is_active, name, on, url, secret)
 	return cast_admin___system_webhook___create_request({
-		["isActive"] = is_active;
-		["name"] = name;
-		["on"] = on;
-		["url"] = url;
-		["secret"] = secret;
+		["isActive"] = is_active,
+		["name"] = name,
+		["on"] = on,
+		["url"] = url,
+		["secret"] = secret,
 	})
 end
 
 return {
-	cast = cast_admin___system_webhook___create_request;
-	new = new_admin___system_webhook___create_request;
+	cast = cast_admin___system_webhook___create_request,
+	new = new_admin___system_webhook___create_request,
 }

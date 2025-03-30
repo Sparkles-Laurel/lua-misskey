@@ -11,8 +11,8 @@
 -- clips___delete_request class
 local clips___delete_request = {}
 local clips___delete_request_mt = {
-	__name = "clips___delete_request";
-	__index = clips___delete_request;
+	__name = "clips___delete_request",
+	__index = clips___delete_request,
 }
 
 local function cast_clips___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_clips___delete_request(clip_id)
 	return cast_clips___delete_request({
-		["clipId"] = clip_id;
+		["clipId"] = clip_id,
 	})
 end
 
 return {
-	cast = cast_clips___delete_request;
-	new = new_clips___delete_request;
+	cast = cast_clips___delete_request,
+	new = new_clips___delete_request,
 }

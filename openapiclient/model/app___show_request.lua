@@ -11,8 +11,8 @@
 -- app___show_request class
 local app___show_request = {}
 local app___show_request_mt = {
-	__name = "app___show_request";
-	__index = app___show_request;
+	__name = "app___show_request",
+	__index = app___show_request,
 }
 
 local function cast_app___show_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_app___show_request(app_id)
 	return cast_app___show_request({
-		["appId"] = app_id;
+		["appId"] = app_id,
 	})
 end
 
 return {
-	cast = cast_app___show_request;
-	new = new_app___show_request;
+	cast = cast_app___show_request,
+	new = new_app___show_request,
 }

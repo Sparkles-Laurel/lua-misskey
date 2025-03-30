@@ -11,8 +11,8 @@
 -- charts___instance_request class
 local charts___instance_request = {}
 local charts___instance_request_mt = {
-	__name = "charts___instance_request";
-	__index = charts___instance_request;
+	__name = "charts___instance_request",
+	__index = charts___instance_request,
 }
 
 local function cast_charts___instance_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_charts___instance_request(span, limit, offset, host)
 	return cast_charts___instance_request({
-		["span"] = span;
-		["limit"] = limit;
-		["offset"] = offset;
-		["host"] = host;
+		["span"] = span,
+		["limit"] = limit,
+		["offset"] = offset,
+		["host"] = host,
 	})
 end
 
 return {
-	cast = cast_charts___instance_request;
-	new = new_charts___instance_request;
+	cast = cast_charts___instance_request,
+	new = new_charts___instance_request,
 }

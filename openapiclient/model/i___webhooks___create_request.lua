@@ -11,8 +11,8 @@
 -- i___webhooks___create_request class
 local i___webhooks___create_request = {}
 local i___webhooks___create_request_mt = {
-	__name = "i___webhooks___create_request";
-	__index = i___webhooks___create_request;
+	__name = "i___webhooks___create_request",
+	__index = i___webhooks___create_request,
 }
 
 local function cast_i___webhooks___create_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_i___webhooks___create_request(name, url, secret, on)
 	return cast_i___webhooks___create_request({
-		["name"] = name;
-		["url"] = url;
-		["secret"] = secret;
-		["on"] = on;
+		["name"] = name,
+		["url"] = url,
+		["secret"] = secret,
+		["on"] = on,
 	})
 end
 
 return {
-	cast = cast_i___webhooks___create_request;
-	new = new_i___webhooks___create_request;
+	cast = cast_i___webhooks___create_request,
+	new = new_i___webhooks___create_request,
 }

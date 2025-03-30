@@ -11,8 +11,8 @@
 -- users___reactions_request class
 local users___reactions_request = {}
 local users___reactions_request_mt = {
-	__name = "users___reactions_request";
-	__index = users___reactions_request;
+	__name = "users___reactions_request",
+	__index = users___reactions_request,
 }
 
 local function cast_users___reactions_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_users___reactions_request(user_id, limit, since_id, until_id, since_date, until_date)
 	return cast_users___reactions_request({
-		["userId"] = user_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["userId"] = user_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_users___reactions_request;
-	new = new_users___reactions_request;
+	cast = cast_users___reactions_request,
+	new = new_users___reactions_request,
 }

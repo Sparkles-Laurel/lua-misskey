@@ -11,8 +11,8 @@
 -- admin___avatar_decorations___update_request class
 local admin___avatar_decorations___update_request = {}
 local admin___avatar_decorations___update_request_mt = {
-	__name = "admin___avatar_decorations___update_request";
-	__index = admin___avatar_decorations___update_request;
+	__name = "admin___avatar_decorations___update_request",
+	__index = admin___avatar_decorations___update_request,
 }
 
 local function cast_admin___avatar_decorations___update_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_admin___avatar_decorations___update_request(id, name, description, url, role_ids_that_can_be_used_this_decoration)
 	return cast_admin___avatar_decorations___update_request({
-		["id"] = id;
-		["name"] = name;
-		["description"] = description;
-		["url"] = url;
-		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration;
+		["id"] = id,
+		["name"] = name,
+		["description"] = description,
+		["url"] = url,
+		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration,
 	})
 end
 
 return {
-	cast = cast_admin___avatar_decorations___update_request;
-	new = new_admin___avatar_decorations___update_request;
+	cast = cast_admin___avatar_decorations___update_request,
+	new = new_admin___avatar_decorations___update_request,
 }

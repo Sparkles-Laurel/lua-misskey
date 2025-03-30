@@ -11,8 +11,8 @@
 -- admin___accounts___create_request class
 local admin___accounts___create_request = {}
 local admin___accounts___create_request_mt = {
-	__name = "admin___accounts___create_request";
-	__index = admin___accounts___create_request;
+	__name = "admin___accounts___create_request",
+	__index = admin___accounts___create_request,
 }
 
 local function cast_admin___accounts___create_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___accounts___create_request(username, password, setup_password)
 	return cast_admin___accounts___create_request({
-		["username"] = username;
-		["password"] = password;
-		["setupPassword"] = setup_password;
+		["username"] = username,
+		["password"] = password,
+		["setupPassword"] = setup_password,
 	})
 end
 
 return {
-	cast = cast_admin___accounts___create_request;
-	new = new_admin___accounts___create_request;
+	cast = cast_admin___accounts___create_request,
+	new = new_admin___accounts___create_request,
 }

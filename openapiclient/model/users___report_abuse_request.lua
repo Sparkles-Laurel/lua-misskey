@@ -11,8 +11,8 @@
 -- users___report_abuse_request class
 local users___report_abuse_request = {}
 local users___report_abuse_request_mt = {
-	__name = "users___report_abuse_request";
-	__index = users___report_abuse_request;
+	__name = "users___report_abuse_request",
+	__index = users___report_abuse_request,
 }
 
 local function cast_users___report_abuse_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___report_abuse_request(user_id, comment)
 	return cast_users___report_abuse_request({
-		["userId"] = user_id;
-		["comment"] = comment;
+		["userId"] = user_id,
+		["comment"] = comment,
 	})
 end
 
 return {
-	cast = cast_users___report_abuse_request;
-	new = new_users___report_abuse_request;
+	cast = cast_users___report_abuse_request,
+	new = new_users___report_abuse_request,
 }

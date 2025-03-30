@@ -11,8 +11,8 @@
 -- admin___show_moderation_logs_200_response_inner class
 local admin___show_moderation_logs_200_response_inner = {}
 local admin___show_moderation_logs_200_response_inner_mt = {
-	__name = "admin___show_moderation_logs_200_response_inner";
-	__index = admin___show_moderation_logs_200_response_inner;
+	__name = "admin___show_moderation_logs_200_response_inner",
+	__index = admin___show_moderation_logs_200_response_inner,
 }
 
 local function cast_admin___show_moderation_logs_200_response_inner(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___show_moderation_logs_200_response_inner(id, created_at, type, info, user_id, user)
 	return cast_admin___show_moderation_logs_200_response_inner({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["type"] = type;
-		["info"] = info;
-		["userId"] = user_id;
-		["user"] = user;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["type"] = type,
+		["info"] = info,
+		["userId"] = user_id,
+		["user"] = user,
 	})
 end
 
 return {
-	cast = cast_admin___show_moderation_logs_200_response_inner;
-	new = new_admin___show_moderation_logs_200_response_inner;
+	cast = cast_admin___show_moderation_logs_200_response_inner,
+	new = new_admin___show_moderation_logs_200_response_inner,
 }

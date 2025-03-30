@@ -11,8 +11,8 @@
 -- reversi___verify_200_response class
 local reversi___verify_200_response = {}
 local reversi___verify_200_response_mt = {
-	__name = "reversi___verify_200_response";
-	__index = reversi___verify_200_response;
+	__name = "reversi___verify_200_response",
+	__index = reversi___verify_200_response,
 }
 
 local function cast_reversi___verify_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_reversi___verify_200_response(desynced, game)
 	return cast_reversi___verify_200_response({
-		["desynced"] = desynced;
-		["game"] = game;
+		["desynced"] = desynced,
+		["game"] = game,
 	})
 end
 
 return {
-	cast = cast_reversi___verify_200_response;
-	new = new_reversi___verify_200_response;
+	cast = cast_reversi___verify_200_response,
+	new = new_reversi___verify_200_response,
 }

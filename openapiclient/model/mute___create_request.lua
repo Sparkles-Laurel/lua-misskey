@@ -11,8 +11,8 @@
 -- mute___create_request class
 local mute___create_request = {}
 local mute___create_request_mt = {
-	__name = "mute___create_request";
-	__index = mute___create_request;
+	__name = "mute___create_request",
+	__index = mute___create_request,
 }
 
 local function cast_mute___create_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_mute___create_request(user_id, expires_at)
 	return cast_mute___create_request({
-		["userId"] = user_id;
-		["expiresAt"] = expires_at;
+		["userId"] = user_id,
+		["expiresAt"] = expires_at,
 	})
 end
 
 return {
-	cast = cast_mute___create_request;
-	new = new_mute___create_request;
+	cast = cast_mute___create_request,
+	new = new_mute___create_request,
 }

@@ -11,8 +11,8 @@
 -- drive_folder class
 local drive_folder = {}
 local drive_folder_mt = {
-	__name = "drive_folder";
-	__index = drive_folder;
+	__name = "drive_folder",
+	__index = drive_folder,
 }
 
 local function cast_drive_folder(t)
@@ -21,17 +21,17 @@ end
 
 local function new_drive_folder(id, created_at, name, parent_id, folders_count, files_count, parent)
 	return cast_drive_folder({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["name"] = name;
-		["parentId"] = parent_id;
-		["foldersCount"] = folders_count;
-		["filesCount"] = files_count;
-		["parent"] = parent;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["name"] = name,
+		["parentId"] = parent_id,
+		["foldersCount"] = folders_count,
+		["filesCount"] = files_count,
+		["parent"] = parent,
 	})
 end
 
 return {
-	cast = cast_drive_folder;
-	new = new_drive_folder;
+	cast = cast_drive_folder,
+	new = new_drive_folder,
 }

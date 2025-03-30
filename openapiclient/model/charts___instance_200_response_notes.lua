@@ -11,8 +11,8 @@
 -- charts___instance_200_response_notes class
 local charts___instance_200_response_notes = {}
 local charts___instance_200_response_notes_mt = {
-	__name = "charts___instance_200_response_notes";
-	__index = charts___instance_200_response_notes;
+	__name = "charts___instance_200_response_notes",
+	__index = charts___instance_200_response_notes,
 }
 
 local function cast_charts___instance_200_response_notes(t)
@@ -21,14 +21,14 @@ end
 
 local function new_charts___instance_200_response_notes(total, inc, dec, diffs)
 	return cast_charts___instance_200_response_notes({
-		["total"] = total;
-		["inc"] = inc;
-		["dec"] = dec;
-		["diffs"] = diffs;
+		["total"] = total,
+		["inc"] = inc,
+		["dec"] = dec,
+		["diffs"] = diffs,
 	})
 end
 
 return {
-	cast = cast_charts___instance_200_response_notes;
-	new = new_charts___instance_200_response_notes;
+	cast = cast_charts___instance_200_response_notes,
+	new = new_charts___instance_200_response_notes,
 }

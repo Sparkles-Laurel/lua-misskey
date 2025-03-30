@@ -11,8 +11,8 @@
 -- admin___federation___delete_all_files_request class
 local admin___federation___delete_all_files_request = {}
 local admin___federation___delete_all_files_request_mt = {
-	__name = "admin___federation___delete_all_files_request";
-	__index = admin___federation___delete_all_files_request;
+	__name = "admin___federation___delete_all_files_request",
+	__index = admin___federation___delete_all_files_request,
 }
 
 local function cast_admin___federation___delete_all_files_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___federation___delete_all_files_request(host)
 	return cast_admin___federation___delete_all_files_request({
-		["host"] = host;
+		["host"] = host,
 	})
 end
 
 return {
-	cast = cast_admin___federation___delete_all_files_request;
-	new = new_admin___federation___delete_all_files_request;
+	cast = cast_admin___federation___delete_all_files_request,
+	new = new_admin___federation___delete_all_files_request,
 }

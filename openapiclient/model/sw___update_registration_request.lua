@@ -11,8 +11,8 @@
 -- sw___update_registration_request class
 local sw___update_registration_request = {}
 local sw___update_registration_request_mt = {
-	__name = "sw___update_registration_request";
-	__index = sw___update_registration_request;
+	__name = "sw___update_registration_request",
+	__index = sw___update_registration_request,
 }
 
 local function cast_sw___update_registration_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_sw___update_registration_request(endpoint, send_read_message)
 	return cast_sw___update_registration_request({
-		["endpoint"] = endpoint;
-		["sendReadMessage"] = send_read_message;
+		["endpoint"] = endpoint,
+		["sendReadMessage"] = send_read_message,
 	})
 end
 
 return {
-	cast = cast_sw___update_registration_request;
-	new = new_sw___update_registration_request;
+	cast = cast_sw___update_registration_request,
+	new = new_sw___update_registration_request,
 }

@@ -11,8 +11,8 @@
 -- error class
 local error = {}
 local error_mt = {
-	__name = "error";
-	__index = error;
+	__name = "error",
+	__index = error,
 }
 
 local function cast_error(t)
@@ -21,11 +21,11 @@ end
 
 local function new_error(error)
 	return cast_error({
-		["error"] = error;
+		["error"] = error,
 	})
 end
 
 return {
-	cast = cast_error;
-	new = new_error;
+	cast = cast_error,
+	new = new_error,
 }

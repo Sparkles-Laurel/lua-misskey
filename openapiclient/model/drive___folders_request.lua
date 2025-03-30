@@ -11,8 +11,8 @@
 -- drive___folders_request class
 local drive___folders_request = {}
 local drive___folders_request_mt = {
-	__name = "drive___folders_request";
-	__index = drive___folders_request;
+	__name = "drive___folders_request",
+	__index = drive___folders_request,
 }
 
 local function cast_drive___folders_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_drive___folders_request(limit, since_id, until_id, folder_id, search_query)
 	return cast_drive___folders_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["folderId"] = folder_id;
-		["searchQuery"] = search_query;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["folderId"] = folder_id,
+		["searchQuery"] = search_query,
 	})
 end
 
 return {
-	cast = cast_drive___folders_request;
-	new = new_drive___folders_request;
+	cast = cast_drive___folders_request,
+	new = new_drive___folders_request,
 }

@@ -11,8 +11,8 @@
 -- users___lists___create_from_public_request class
 local users___lists___create_from_public_request = {}
 local users___lists___create_from_public_request_mt = {
-	__name = "users___lists___create_from_public_request";
-	__index = users___lists___create_from_public_request;
+	__name = "users___lists___create_from_public_request",
+	__index = users___lists___create_from_public_request,
 }
 
 local function cast_users___lists___create_from_public_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___lists___create_from_public_request(name, list_id)
 	return cast_users___lists___create_from_public_request({
-		["name"] = name;
-		["listId"] = list_id;
+		["name"] = name,
+		["listId"] = list_id,
 	})
 end
 
 return {
-	cast = cast_users___lists___create_from_public_request;
-	new = new_users___lists___create_from_public_request;
+	cast = cast_users___lists___create_from_public_request,
+	new = new_users___lists___create_from_public_request,
 }

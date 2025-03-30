@@ -11,8 +11,8 @@
 -- admin___show_users_request class
 local admin___show_users_request = {}
 local admin___show_users_request_mt = {
-	__name = "admin___show_users_request";
-	__index = admin___show_users_request;
+	__name = "admin___show_users_request",
+	__index = admin___show_users_request,
 }
 
 local function cast_admin___show_users_request(t)
@@ -21,17 +21,17 @@ end
 
 local function new_admin___show_users_request(limit, offset, sort, state, origin, username, hostname)
 	return cast_admin___show_users_request({
-		["limit"] = limit;
-		["offset"] = offset;
-		["sort"] = sort;
-		["state"] = state;
-		["origin"] = origin;
-		["username"] = username;
-		["hostname"] = hostname;
+		["limit"] = limit,
+		["offset"] = offset,
+		["sort"] = sort,
+		["state"] = state,
+		["origin"] = origin,
+		["username"] = username,
+		["hostname"] = hostname,
 	})
 end
 
 return {
-	cast = cast_admin___show_users_request;
-	new = new_admin___show_users_request;
+	cast = cast_admin___show_users_request,
+	new = new_admin___show_users_request,
 }

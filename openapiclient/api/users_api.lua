@@ -53,8 +53,8 @@ local openapiclient_users_request = require "openapiclient.model.users_request"
 
 local users_api = {}
 local users_api_mt = {
-	__name = "users_api";
-	__index = users_api;
+	__name = "users_api",
+	__index = users_api,
 }
 
 local function new_users_api(authority, basePath, schemes)
@@ -65,25 +65,25 @@ local function new_users_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, users_api_mt)
 end
 
 function users_api:email_address_available(email_address___available_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/email-address/available",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -131,11 +131,11 @@ end
 
 function users_api:get_avatar_decorations()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/get-avatar-decorations",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -180,11 +180,11 @@ end
 
 function users_api:i_move(i___move_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/move",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -232,11 +232,11 @@ end
 
 function users_api:pinned_users()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pinned-users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -281,11 +281,11 @@ end
 
 function users_api:retention()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/retention",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -330,11 +330,11 @@ end
 
 function users_api:retention_0()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/retention",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -379,11 +379,11 @@ end
 
 function users_api:username_available(username___available_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/username/available",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -431,11 +431,11 @@ end
 
 function users_api:users(users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -486,11 +486,11 @@ end
 
 function users_api:users_clips(users___clips_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/clips",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -541,11 +541,11 @@ end
 
 function users_api:users_flashs(users___clips_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/flashs",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -596,11 +596,11 @@ end
 
 function users_api:users_followers(users___followers_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/followers",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -651,11 +651,11 @@ end
 
 function users_api:users_following(users___following_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -706,11 +706,11 @@ end
 
 function users_api:users_gallery_posts(users___clips_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/gallery/posts",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -761,11 +761,11 @@ end
 
 function users_api:users_get_frequently_replied_users(users___get_frequently_replied_users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/get-frequently-replied-users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -816,11 +816,11 @@ end
 
 function users_api:users_notes(users___notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -871,11 +871,11 @@ end
 
 function users_api:users_pages(users___clips_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/pages",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -926,11 +926,11 @@ end
 
 function users_api:users_reactions(users___reactions_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/reactions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -981,11 +981,11 @@ end
 
 function users_api:users_recommendation(my___apps_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/recommendation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1036,11 +1036,11 @@ end
 
 function users_api:users_relation(users___relation_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/relation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1088,11 +1088,11 @@ end
 
 function users_api:users_report_abuse(users___report_abuse_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/report-abuse",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1129,11 +1129,11 @@ end
 
 function users_api:users_search(users___search_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/search",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1184,11 +1184,11 @@ end
 
 function users_api:users_search_by_username_and_host(users___search_by_username_and_host_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/search-by-username-and-host",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1239,11 +1239,11 @@ end
 
 function users_api:users_show(users___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1290,5 +1290,5 @@ function users_api:users_show(users___show_request)
 end
 
 return {
-	new = new_users_api;
+	new = new_users_api,
 }

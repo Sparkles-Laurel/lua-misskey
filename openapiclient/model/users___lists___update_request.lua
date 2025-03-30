@@ -11,8 +11,8 @@
 -- users___lists___update_request class
 local users___lists___update_request = {}
 local users___lists___update_request_mt = {
-	__name = "users___lists___update_request";
-	__index = users___lists___update_request;
+	__name = "users___lists___update_request",
+	__index = users___lists___update_request,
 }
 
 local function cast_users___lists___update_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_users___lists___update_request(list_id, name, is_public)
 	return cast_users___lists___update_request({
-		["listId"] = list_id;
-		["name"] = name;
-		["isPublic"] = is_public;
+		["listId"] = list_id,
+		["name"] = name,
+		["isPublic"] = is_public,
 	})
 end
 
 return {
-	cast = cast_users___lists___update_request;
-	new = new_users___lists___update_request;
+	cast = cast_users___lists___update_request,
+	new = new_users___lists___update_request,
 }

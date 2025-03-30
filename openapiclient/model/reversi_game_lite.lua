@@ -11,8 +11,8 @@
 -- reversi_game_lite class
 local reversi_game_lite = {}
 local reversi_game_lite_mt = {
-	__name = "reversi_game_lite";
-	__index = reversi_game_lite;
+	__name = "reversi_game_lite",
+	__index = reversi_game_lite,
 }
 
 local function cast_reversi_game_lite(t)
@@ -21,31 +21,31 @@ end
 
 local function new_reversi_game_lite(id, created_at, started_at, ended_at, is_started, is_ended, user1_id, user2_id, user1, user2, winner_id, winner, surrendered_user_id, timeout_user_id, black, bw, no_irregular_rules, is_llotheo, can_put_everywhere, looped_board, time_limit_for_each_turn)
 	return cast_reversi_game_lite({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["startedAt"] = started_at;
-		["endedAt"] = ended_at;
-		["isStarted"] = is_started;
-		["isEnded"] = is_ended;
-		["user1Id"] = user1_id;
-		["user2Id"] = user2_id;
-		["user1"] = user1;
-		["user2"] = user2;
-		["winnerId"] = winner_id;
-		["winner"] = winner;
-		["surrenderedUserId"] = surrendered_user_id;
-		["timeoutUserId"] = timeout_user_id;
-		["black"] = black;
-		["bw"] = bw;
-		["noIrregularRules"] = no_irregular_rules;
-		["isLlotheo"] = is_llotheo;
-		["canPutEverywhere"] = can_put_everywhere;
-		["loopedBoard"] = looped_board;
-		["timeLimitForEachTurn"] = time_limit_for_each_turn;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["startedAt"] = started_at,
+		["endedAt"] = ended_at,
+		["isStarted"] = is_started,
+		["isEnded"] = is_ended,
+		["user1Id"] = user1_id,
+		["user2Id"] = user2_id,
+		["user1"] = user1,
+		["user2"] = user2,
+		["winnerId"] = winner_id,
+		["winner"] = winner,
+		["surrenderedUserId"] = surrendered_user_id,
+		["timeoutUserId"] = timeout_user_id,
+		["black"] = black,
+		["bw"] = bw,
+		["noIrregularRules"] = no_irregular_rules,
+		["isLlotheo"] = is_llotheo,
+		["canPutEverywhere"] = can_put_everywhere,
+		["loopedBoard"] = looped_board,
+		["timeLimitForEachTurn"] = time_limit_for_each_turn,
 	})
 end
 
 return {
-	cast = cast_reversi_game_lite;
-	new = new_reversi_game_lite;
+	cast = cast_reversi_game_lite,
+	new = new_reversi_game_lite,
 }

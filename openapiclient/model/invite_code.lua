@@ -11,8 +11,8 @@
 -- invite_code class
 local invite_code = {}
 local invite_code_mt = {
-	__name = "invite_code";
-	__index = invite_code;
+	__name = "invite_code",
+	__index = invite_code,
 }
 
 local function cast_invite_code(t)
@@ -21,18 +21,18 @@ end
 
 local function new_invite_code(id, code, expires_at, created_at, created_by, used_by, used_at, used)
 	return cast_invite_code({
-		["id"] = id;
-		["code"] = code;
-		["expiresAt"] = expires_at;
-		["createdAt"] = created_at;
-		["createdBy"] = created_by;
-		["usedBy"] = used_by;
-		["usedAt"] = used_at;
-		["used"] = used;
+		["id"] = id,
+		["code"] = code,
+		["expiresAt"] = expires_at,
+		["createdAt"] = created_at,
+		["createdBy"] = created_by,
+		["usedBy"] = used_by,
+		["usedAt"] = used_at,
+		["used"] = used,
 	})
 end
 
 return {
-	cast = cast_invite_code;
-	new = new_invite_code;
+	cast = cast_invite_code,
+	new = new_invite_code,
 }

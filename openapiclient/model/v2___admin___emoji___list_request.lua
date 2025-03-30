@@ -11,8 +11,8 @@
 -- v2___admin___emoji___list_request class
 local v2___admin___emoji___list_request = {}
 local v2___admin___emoji___list_request_mt = {
-	__name = "v2___admin___emoji___list_request";
-	__index = v2___admin___emoji___list_request;
+	__name = "v2___admin___emoji___list_request",
+	__index = v2___admin___emoji___list_request,
 }
 
 local function cast_v2___admin___emoji___list_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_v2___admin___emoji___list_request(query, since_id, until_id, limit, page, sort_keys)
 	return cast_v2___admin___emoji___list_request({
-		["query"] = query;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
-		["page"] = page;
-		["sortKeys"] = sort_keys;
+		["query"] = query,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
+		["page"] = page,
+		["sortKeys"] = sort_keys,
 	})
 end
 
 return {
-	cast = cast_v2___admin___emoji___list_request;
-	new = new_v2___admin___emoji___list_request;
+	cast = cast_v2___admin___emoji___list_request,
+	new = new_v2___admin___emoji___list_request,
 }

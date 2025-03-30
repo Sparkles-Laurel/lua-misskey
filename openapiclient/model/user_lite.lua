@@ -11,8 +11,8 @@
 -- user_lite class
 local user_lite = {}
 local user_lite_mt = {
-	__name = "user_lite";
-	__index = user_lite;
+	__name = "user_lite",
+	__index = user_lite,
 }
 
 local function cast_user_lite(t)
@@ -21,35 +21,35 @@ end
 
 local function new_user_lite(id, name, username, host, avatar_url, avatar_blurhash, avatar_decorations, is_admin, is_moderator, is_system, noindex, enable_rss, mandatory_cw, reject_quotes, is_bot, is_cat, speak_as_cat, is_silenced, require_signin_to_view_contents, make_notes_followers_only_before, make_notes_hidden_before, instance, emojis, online_status, badge_roles)
 	return cast_user_lite({
-		["id"] = id;
-		["name"] = name;
-		["username"] = username;
-		["host"] = host;
-		["avatarUrl"] = avatar_url;
-		["avatarBlurhash"] = avatar_blurhash;
-		["avatarDecorations"] = avatar_decorations;
-		["isAdmin"] = is_admin;
-		["isModerator"] = is_moderator;
-		["isSystem"] = is_system;
-		["noindex"] = noindex;
-		["enableRss"] = enable_rss;
-		["mandatoryCW"] = mandatory_cw;
-		["rejectQuotes"] = reject_quotes;
-		["isBot"] = is_bot;
-		["isCat"] = is_cat;
-		["speakAsCat"] = speak_as_cat;
-		["isSilenced"] = is_silenced;
-		["requireSigninToViewContents"] = require_signin_to_view_contents;
-		["makeNotesFollowersOnlyBefore"] = make_notes_followers_only_before;
-		["makeNotesHiddenBefore"] = make_notes_hidden_before;
-		["instance"] = instance;
-		["emojis"] = emojis;
-		["onlineStatus"] = online_status;
-		["badgeRoles"] = badge_roles;
+		["id"] = id,
+		["name"] = name,
+		["username"] = username,
+		["host"] = host,
+		["avatarUrl"] = avatar_url,
+		["avatarBlurhash"] = avatar_blurhash,
+		["avatarDecorations"] = avatar_decorations,
+		["isAdmin"] = is_admin,
+		["isModerator"] = is_moderator,
+		["isSystem"] = is_system,
+		["noindex"] = noindex,
+		["enableRss"] = enable_rss,
+		["mandatoryCW"] = mandatory_cw,
+		["rejectQuotes"] = reject_quotes,
+		["isBot"] = is_bot,
+		["isCat"] = is_cat,
+		["speakAsCat"] = speak_as_cat,
+		["isSilenced"] = is_silenced,
+		["requireSigninToViewContents"] = require_signin_to_view_contents,
+		["makeNotesFollowersOnlyBefore"] = make_notes_followers_only_before,
+		["makeNotesHiddenBefore"] = make_notes_hidden_before,
+		["instance"] = instance,
+		["emojis"] = emojis,
+		["onlineStatus"] = online_status,
+		["badgeRoles"] = badge_roles,
 	})
 end
 
 return {
-	cast = cast_user_lite;
-	new = new_user_lite;
+	cast = cast_user_lite,
+	new = new_user_lite,
 }

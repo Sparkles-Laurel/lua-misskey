@@ -11,8 +11,8 @@
 -- federation___instances_request class
 local federation___instances_request = {}
 local federation___instances_request_mt = {
-	__name = "federation___instances_request";
-	__index = federation___instances_request;
+	__name = "federation___instances_request",
+	__index = federation___instances_request,
 }
 
 local function cast_federation___instances_request(t)
@@ -21,23 +21,23 @@ end
 
 local function new_federation___instances_request(host, blocked, not_responding, suspended, silenced, federating, subscribing, publishing, nsfw, bubble, limit, offset, sort)
 	return cast_federation___instances_request({
-		["host"] = host;
-		["blocked"] = blocked;
-		["notResponding"] = not_responding;
-		["suspended"] = suspended;
-		["silenced"] = silenced;
-		["federating"] = federating;
-		["subscribing"] = subscribing;
-		["publishing"] = publishing;
-		["nsfw"] = nsfw;
-		["bubble"] = bubble;
-		["limit"] = limit;
-		["offset"] = offset;
-		["sort"] = sort;
+		["host"] = host,
+		["blocked"] = blocked,
+		["notResponding"] = not_responding,
+		["suspended"] = suspended,
+		["silenced"] = silenced,
+		["federating"] = federating,
+		["subscribing"] = subscribing,
+		["publishing"] = publishing,
+		["nsfw"] = nsfw,
+		["bubble"] = bubble,
+		["limit"] = limit,
+		["offset"] = offset,
+		["sort"] = sort,
 	})
 end
 
 return {
-	cast = cast_federation___instances_request;
-	new = new_federation___instances_request;
+	cast = cast_federation___instances_request,
+	new = new_federation___instances_request,
 }

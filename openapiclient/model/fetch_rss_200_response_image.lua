@@ -11,8 +11,8 @@
 -- fetch_rss_200_response_image class
 local fetch_rss_200_response_image = {}
 local fetch_rss_200_response_image_mt = {
-	__name = "fetch_rss_200_response_image";
-	__index = fetch_rss_200_response_image;
+	__name = "fetch_rss_200_response_image",
+	__index = fetch_rss_200_response_image,
 }
 
 local function cast_fetch_rss_200_response_image(t)
@@ -21,13 +21,13 @@ end
 
 local function new_fetch_rss_200_response_image(link, url, title)
 	return cast_fetch_rss_200_response_image({
-		["link"] = link;
-		["url"] = url;
-		["title"] = title;
+		["link"] = link,
+		["url"] = url,
+		["title"] = title,
 	})
 end
 
 return {
-	cast = cast_fetch_rss_200_response_image;
-	new = new_fetch_rss_200_response_image;
+	cast = cast_fetch_rss_200_response_image,
+	new = new_fetch_rss_200_response_image,
 }

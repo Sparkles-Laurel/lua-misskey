@@ -11,8 +11,8 @@
 -- notes___replies_request class
 local notes___replies_request = {}
 local notes___replies_request_mt = {
-	__name = "notes___replies_request";
-	__index = notes___replies_request;
+	__name = "notes___replies_request",
+	__index = notes___replies_request,
 }
 
 local function cast_notes___replies_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_notes___replies_request(note_id, since_id, until_id, limit)
 	return cast_notes___replies_request({
-		["noteId"] = note_id;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
+		["noteId"] = note_id,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_notes___replies_request;
-	new = new_notes___replies_request;
+	cast = cast_notes___replies_request,
+	new = new_notes___replies_request,
 }

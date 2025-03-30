@@ -45,8 +45,8 @@ local openapiclient_stats_200_response = require "openapiclient.model.stats_200_
 
 local meta_api = {}
 local meta_api_mt = {
-	__name = "meta_api";
-	__index = meta_api;
+	__name = "meta_api",
+	__index = meta_api,
 }
 
 local function new_meta_api(authority, basePath, schemes)
@@ -57,25 +57,25 @@ local function new_meta_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, meta_api_mt)
 end
 
 function meta_api:admin_meta()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/meta",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -117,11 +117,11 @@ end
 
 function meta_api:announcements(announcements_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/announcements",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -172,11 +172,11 @@ end
 
 function meta_api:announcements_show(announcements___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/announcements/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -224,11 +224,11 @@ end
 
 function meta_api:emoji(emoji_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/emoji",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -276,11 +276,11 @@ end
 
 function meta_api:emoji_0(emoji_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/emoji",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -328,11 +328,11 @@ end
 
 function meta_api:emojis()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/emojis",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -374,11 +374,11 @@ end
 
 function meta_api:emojis_0()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/emojis",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -420,11 +420,11 @@ end
 
 function meta_api:endpoint(endpoint_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/endpoint",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -472,11 +472,11 @@ end
 
 function meta_api:endpoints()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/endpoints",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -518,11 +518,11 @@ end
 
 function meta_api:fetch_external_resources(fetch_external_resources_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/fetch-external-resources",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -570,11 +570,11 @@ end
 
 function meta_api:fetch_rss(fetch_rss_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/fetch-rss",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -622,11 +622,11 @@ end
 
 function meta_api:fetch_rss_0(fetch_rss_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/fetch-rss",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -674,11 +674,11 @@ end
 
 function meta_api:get_online_users_count()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/get-online-users-count",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -720,11 +720,11 @@ end
 
 function meta_api:get_online_users_count_0()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/get-online-users-count",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -766,11 +766,11 @@ end
 
 function meta_api:invite_create()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/invite/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -812,11 +812,11 @@ end
 
 function meta_api:invite_delete(invite___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/invite/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -853,11 +853,11 @@ end
 
 function meta_api:invite_limit()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/invite/limit",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -899,11 +899,11 @@ end
 
 function meta_api:invite_list(blocking___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/invite/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -954,11 +954,11 @@ end
 
 function meta_api:meta(meta_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/meta",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1006,11 +1006,11 @@ end
 
 function meta_api:ping()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/ping",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1052,11 +1052,11 @@ end
 
 function meta_api:server_info()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/server-info",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1098,11 +1098,11 @@ end
 
 function meta_api:server_info_0()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/server-info",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1144,11 +1144,11 @@ end
 
 function meta_api:sponsors(sponsors_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/sponsors",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1185,11 +1185,11 @@ end
 
 function meta_api:stats()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1230,5 +1230,5 @@ function meta_api:stats()
 end
 
 return {
-	new = new_meta_api;
+	new = new_meta_api,
 }

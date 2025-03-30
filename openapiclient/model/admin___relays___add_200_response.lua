@@ -11,8 +11,8 @@
 -- admin___relays___add_200_response class
 local admin___relays___add_200_response = {}
 local admin___relays___add_200_response_mt = {
-	__name = "admin___relays___add_200_response";
-	__index = admin___relays___add_200_response;
+	__name = "admin___relays___add_200_response",
+	__index = admin___relays___add_200_response,
 }
 
 local function cast_admin___relays___add_200_response(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___relays___add_200_response(id, inbox, status)
 	return cast_admin___relays___add_200_response({
-		["id"] = id;
-		["inbox"] = inbox;
-		["status"] = status;
+		["id"] = id,
+		["inbox"] = inbox,
+		["status"] = status,
 	})
 end
 
 return {
-	cast = cast_admin___relays___add_200_response;
-	new = new_admin___relays___add_200_response;
+	cast = cast_admin___relays___add_200_response,
+	new = new_admin___relays___add_200_response,
 }

@@ -11,8 +11,8 @@
 -- drive___folders___delete_request class
 local drive___folders___delete_request = {}
 local drive___folders___delete_request_mt = {
-	__name = "drive___folders___delete_request";
-	__index = drive___folders___delete_request;
+	__name = "drive___folders___delete_request",
+	__index = drive___folders___delete_request,
 }
 
 local function cast_drive___folders___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_drive___folders___delete_request(folder_id)
 	return cast_drive___folders___delete_request({
-		["folderId"] = folder_id;
+		["folderId"] = folder_id,
 	})
 end
 
 return {
-	cast = cast_drive___folders___delete_request;
-	new = new_drive___folders___delete_request;
+	cast = cast_drive___folders___delete_request,
+	new = new_drive___folders___delete_request,
 }

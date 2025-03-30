@@ -11,8 +11,8 @@
 -- hashtags___trend_200_response_inner class
 local hashtags___trend_200_response_inner = {}
 local hashtags___trend_200_response_inner_mt = {
-	__name = "hashtags___trend_200_response_inner";
-	__index = hashtags___trend_200_response_inner;
+	__name = "hashtags___trend_200_response_inner",
+	__index = hashtags___trend_200_response_inner,
 }
 
 local function cast_hashtags___trend_200_response_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_hashtags___trend_200_response_inner(tag, chart, users_count)
 	return cast_hashtags___trend_200_response_inner({
-		["tag"] = tag;
-		["chart"] = chart;
-		["usersCount"] = users_count;
+		["tag"] = tag,
+		["chart"] = chart,
+		["usersCount"] = users_count,
 	})
 end
 
 return {
-	cast = cast_hashtags___trend_200_response_inner;
-	new = new_hashtags___trend_200_response_inner;
+	cast = cast_hashtags___trend_200_response_inner,
+	new = new_hashtags___trend_200_response_inner,
 }

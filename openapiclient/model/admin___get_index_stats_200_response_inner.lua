@@ -11,8 +11,8 @@
 -- admin___get_index_stats_200_response_inner class
 local admin___get_index_stats_200_response_inner = {}
 local admin___get_index_stats_200_response_inner_mt = {
-	__name = "admin___get_index_stats_200_response_inner";
-	__index = admin___get_index_stats_200_response_inner;
+	__name = "admin___get_index_stats_200_response_inner",
+	__index = admin___get_index_stats_200_response_inner,
 }
 
 local function cast_admin___get_index_stats_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___get_index_stats_200_response_inner(tablename, indexname)
 	return cast_admin___get_index_stats_200_response_inner({
-		["tablename"] = tablename;
-		["indexname"] = indexname;
+		["tablename"] = tablename,
+		["indexname"] = indexname,
 	})
 end
 
 return {
-	cast = cast_admin___get_index_stats_200_response_inner;
-	new = new_admin___get_index_stats_200_response_inner;
+	cast = cast_admin___get_index_stats_200_response_inner,
+	new = new_admin___get_index_stats_200_response_inner,
 }

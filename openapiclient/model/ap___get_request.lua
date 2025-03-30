@@ -11,8 +11,8 @@
 -- ap___get_request class
 local ap___get_request = {}
 local ap___get_request_mt = {
-	__name = "ap___get_request";
-	__index = ap___get_request;
+	__name = "ap___get_request",
+	__index = ap___get_request,
 }
 
 local function cast_ap___get_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_ap___get_request(uri)
 	return cast_ap___get_request({
-		["uri"] = uri;
+		["uri"] = uri,
 	})
 end
 
 return {
-	cast = cast_ap___get_request;
-	new = new_ap___get_request;
+	cast = cast_ap___get_request,
+	new = new_ap___get_request,
 }

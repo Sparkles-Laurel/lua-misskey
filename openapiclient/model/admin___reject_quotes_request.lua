@@ -11,8 +11,8 @@
 -- admin___reject_quotes_request class
 local admin___reject_quotes_request = {}
 local admin___reject_quotes_request_mt = {
-	__name = "admin___reject_quotes_request";
-	__index = admin___reject_quotes_request;
+	__name = "admin___reject_quotes_request",
+	__index = admin___reject_quotes_request,
 }
 
 local function cast_admin___reject_quotes_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___reject_quotes_request(user_id, reject_quotes)
 	return cast_admin___reject_quotes_request({
-		["userId"] = user_id;
-		["rejectQuotes"] = reject_quotes;
+		["userId"] = user_id,
+		["rejectQuotes"] = reject_quotes,
 	})
 end
 
 return {
-	cast = cast_admin___reject_quotes_request;
-	new = new_admin___reject_quotes_request;
+	cast = cast_admin___reject_quotes_request,
+	new = new_admin___reject_quotes_request,
 }

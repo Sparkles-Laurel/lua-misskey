@@ -11,8 +11,8 @@
 -- fetch_external_resources_request class
 local fetch_external_resources_request = {}
 local fetch_external_resources_request_mt = {
-	__name = "fetch_external_resources_request";
-	__index = fetch_external_resources_request;
+	__name = "fetch_external_resources_request",
+	__index = fetch_external_resources_request,
 }
 
 local function cast_fetch_external_resources_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_fetch_external_resources_request(url, hash)
 	return cast_fetch_external_resources_request({
-		["url"] = url;
-		["hash"] = hash;
+		["url"] = url,
+		["hash"] = hash,
 	})
 end
 
 return {
-	cast = cast_fetch_external_resources_request;
-	new = new_fetch_external_resources_request;
+	cast = cast_fetch_external_resources_request,
+	new = new_fetch_external_resources_request,
 }

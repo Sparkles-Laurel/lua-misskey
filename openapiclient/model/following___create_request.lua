@@ -11,8 +11,8 @@
 -- following___create_request class
 local following___create_request = {}
 local following___create_request_mt = {
-	__name = "following___create_request";
-	__index = following___create_request;
+	__name = "following___create_request",
+	__index = following___create_request,
 }
 
 local function cast_following___create_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_following___create_request(user_id, with_replies)
 	return cast_following___create_request({
-		["userId"] = user_id;
-		["withReplies"] = with_replies;
+		["userId"] = user_id,
+		["withReplies"] = with_replies,
 	})
 end
 
 return {
-	cast = cast_following___create_request;
-	new = new_following___create_request;
+	cast = cast_following___create_request,
+	new = new_following___create_request,
 }

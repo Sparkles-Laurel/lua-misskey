@@ -21,8 +21,8 @@ local openapiclient_notifications___create_request = require "openapiclient.mode
 
 local notifications_api = {}
 local notifications_api_mt = {
-	__name = "notifications_api";
-	__index = notifications_api;
+	__name = "notifications_api",
+	__index = notifications_api,
 }
 
 local function new_notifications_api(authority, basePath, schemes)
@@ -33,25 +33,25 @@ local function new_notifications_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, notifications_api_mt)
 end
 
 function notifications_api:notifications_create(notifications___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notifications/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -88,11 +88,11 @@ end
 
 function notifications_api:notifications_flush()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notifications/flush",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -123,11 +123,11 @@ end
 
 function notifications_api:notifications_mark_all_as_read()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notifications/mark-all-as-read",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -158,11 +158,11 @@ end
 
 function notifications_api:notifications_test_notification()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notifications/test-notification",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -192,5 +192,5 @@ function notifications_api:notifications_test_notification()
 end
 
 return {
-	new = new_notifications_api;
+	new = new_notifications_api,
 }

@@ -11,8 +11,8 @@
 -- clips___update_request class
 local clips___update_request = {}
 local clips___update_request_mt = {
-	__name = "clips___update_request";
-	__index = clips___update_request;
+	__name = "clips___update_request",
+	__index = clips___update_request,
 }
 
 local function cast_clips___update_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_clips___update_request(clip_id, name, is_public, description)
 	return cast_clips___update_request({
-		["clipId"] = clip_id;
-		["name"] = name;
-		["isPublic"] = is_public;
-		["description"] = description;
+		["clipId"] = clip_id,
+		["name"] = name,
+		["isPublic"] = is_public,
+		["description"] = description,
 	})
 end
 
 return {
-	cast = cast_clips___update_request;
-	new = new_clips___update_request;
+	cast = cast_clips___update_request,
+	new = new_clips___update_request,
 }

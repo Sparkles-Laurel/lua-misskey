@@ -11,8 +11,8 @@
 -- ping_200_response class
 local ping_200_response = {}
 local ping_200_response_mt = {
-	__name = "ping_200_response";
-	__index = ping_200_response;
+	__name = "ping_200_response",
+	__index = ping_200_response,
 }
 
 local function cast_ping_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_ping_200_response(pong)
 	return cast_ping_200_response({
-		["pong"] = pong;
+		["pong"] = pong,
 	})
 end
 
 return {
-	cast = cast_ping_200_response;
-	new = new_ping_200_response;
+	cast = cast_ping_200_response,
+	new = new_ping_200_response,
 }

@@ -11,8 +11,8 @@
 -- page_block_one_of_1 class
 local page_block_one_of_1 = {}
 local page_block_one_of_1_mt = {
-	__name = "page_block_one_of_1";
-	__index = page_block_one_of_1;
+	__name = "page_block_one_of_1",
+	__index = page_block_one_of_1,
 }
 
 local function cast_page_block_one_of_1(t)
@@ -21,14 +21,14 @@ end
 
 local function new_page_block_one_of_1(id, type, title, children)
 	return cast_page_block_one_of_1({
-		["id"] = id;
-		["type"] = type;
-		["title"] = title;
-		["children"] = children;
+		["id"] = id,
+		["type"] = type,
+		["title"] = title,
+		["children"] = children,
 	})
 end
 
 return {
-	cast = cast_page_block_one_of_1;
-	new = new_page_block_one_of_1;
+	cast = cast_page_block_one_of_1,
+	new = new_page_block_one_of_1,
 }

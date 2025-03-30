@@ -11,8 +11,8 @@
 -- admin___show_user_200_response_notification_recieve_config class
 local admin___show_user_200_response_notification_recieve_config = {}
 local admin___show_user_200_response_notification_recieve_config_mt = {
-	__name = "admin___show_user_200_response_notification_recieve_config";
-	__index = admin___show_user_200_response_notification_recieve_config;
+	__name = "admin___show_user_200_response_notification_recieve_config",
+	__index = admin___show_user_200_response_notification_recieve_config,
 }
 
 local function cast_admin___show_user_200_response_notification_recieve_config(t)
@@ -21,24 +21,24 @@ end
 
 local function new_admin___show_user_200_response_notification_recieve_config(note, follow, mention, reply, renote, quote, reaction, poll_ended, receive_follow_request, follow_request_accepted, role_assigned, achievement_earned, app, test)
 	return cast_admin___show_user_200_response_notification_recieve_config({
-		["note"] = note;
-		["follow"] = follow;
-		["mention"] = mention;
-		["reply"] = reply;
-		["renote"] = renote;
-		["quote"] = quote;
-		["reaction"] = reaction;
-		["pollEnded"] = poll_ended;
-		["receiveFollowRequest"] = receive_follow_request;
-		["followRequestAccepted"] = follow_request_accepted;
-		["roleAssigned"] = role_assigned;
-		["achievementEarned"] = achievement_earned;
-		["app"] = app;
-		["test"] = test;
+		["note"] = note,
+		["follow"] = follow,
+		["mention"] = mention,
+		["reply"] = reply,
+		["renote"] = renote,
+		["quote"] = quote,
+		["reaction"] = reaction,
+		["pollEnded"] = poll_ended,
+		["receiveFollowRequest"] = receive_follow_request,
+		["followRequestAccepted"] = follow_request_accepted,
+		["roleAssigned"] = role_assigned,
+		["achievementEarned"] = achievement_earned,
+		["app"] = app,
+		["test"] = test,
 	})
 end
 
 return {
-	cast = cast_admin___show_user_200_response_notification_recieve_config;
-	new = new_admin___show_user_200_response_notification_recieve_config;
+	cast = cast_admin___show_user_200_response_notification_recieve_config,
+	new = new_admin___show_user_200_response_notification_recieve_config,
 }

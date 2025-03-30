@@ -11,8 +11,8 @@
 -- username___available_200_response class
 local username___available_200_response = {}
 local username___available_200_response_mt = {
-	__name = "username___available_200_response";
-	__index = username___available_200_response;
+	__name = "username___available_200_response",
+	__index = username___available_200_response,
 }
 
 local function cast_username___available_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_username___available_200_response(available)
 	return cast_username___available_200_response({
-		["available"] = available;
+		["available"] = available,
 	})
 end
 
 return {
-	cast = cast_username___available_200_response;
-	new = new_username___available_200_response;
+	cast = cast_username___available_200_response,
+	new = new_username___available_200_response,
 }

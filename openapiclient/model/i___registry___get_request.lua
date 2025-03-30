@@ -11,8 +11,8 @@
 -- i___registry___get_request class
 local i___registry___get_request = {}
 local i___registry___get_request_mt = {
-	__name = "i___registry___get_request";
-	__index = i___registry___get_request;
+	__name = "i___registry___get_request",
+	__index = i___registry___get_request,
 }
 
 local function cast_i___registry___get_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___registry___get_request(key, scope, domain)
 	return cast_i___registry___get_request({
-		["key"] = key;
-		["scope"] = scope;
-		["domain"] = domain;
+		["key"] = key,
+		["scope"] = scope,
+		["domain"] = domain,
 	})
 end
 
 return {
-	cast = cast_i___registry___get_request;
-	new = new_i___registry___get_request;
+	cast = cast_i___registry___get_request,
+	new = new_i___registry___get_request,
 }

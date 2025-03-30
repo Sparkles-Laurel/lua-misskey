@@ -11,8 +11,8 @@
 -- clips___add_note_request class
 local clips___add_note_request = {}
 local clips___add_note_request_mt = {
-	__name = "clips___add_note_request";
-	__index = clips___add_note_request;
+	__name = "clips___add_note_request",
+	__index = clips___add_note_request,
 }
 
 local function cast_clips___add_note_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_clips___add_note_request(clip_id, note_id)
 	return cast_clips___add_note_request({
-		["clipId"] = clip_id;
-		["noteId"] = note_id;
+		["clipId"] = clip_id,
+		["noteId"] = note_id,
 	})
 end
 
 return {
-	cast = cast_clips___add_note_request;
-	new = new_clips___add_note_request;
+	cast = cast_clips___add_note_request,
+	new = new_clips___add_note_request,
 }

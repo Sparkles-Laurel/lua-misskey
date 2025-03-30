@@ -11,8 +11,8 @@
 -- user_lite_badge_roles_inner class
 local user_lite_badge_roles_inner = {}
 local user_lite_badge_roles_inner_mt = {
-	__name = "user_lite_badge_roles_inner";
-	__index = user_lite_badge_roles_inner;
+	__name = "user_lite_badge_roles_inner",
+	__index = user_lite_badge_roles_inner,
 }
 
 local function cast_user_lite_badge_roles_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_user_lite_badge_roles_inner(name, icon_url, display_order)
 	return cast_user_lite_badge_roles_inner({
-		["name"] = name;
-		["iconUrl"] = icon_url;
-		["displayOrder"] = display_order;
+		["name"] = name,
+		["iconUrl"] = icon_url,
+		["displayOrder"] = display_order,
 	})
 end
 
 return {
-	cast = cast_user_lite_badge_roles_inner;
-	new = new_user_lite_badge_roles_inner;
+	cast = cast_user_lite_badge_roles_inner,
+	new = new_user_lite_badge_roles_inner,
 }

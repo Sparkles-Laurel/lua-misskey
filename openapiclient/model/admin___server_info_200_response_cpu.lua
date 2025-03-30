@@ -11,8 +11,8 @@
 -- admin___server_info_200_response_cpu class
 local admin___server_info_200_response_cpu = {}
 local admin___server_info_200_response_cpu_mt = {
-	__name = "admin___server_info_200_response_cpu";
-	__index = admin___server_info_200_response_cpu;
+	__name = "admin___server_info_200_response_cpu",
+	__index = admin___server_info_200_response_cpu,
 }
 
 local function cast_admin___server_info_200_response_cpu(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___server_info_200_response_cpu(model, cores)
 	return cast_admin___server_info_200_response_cpu({
-		["model"] = model;
-		["cores"] = cores;
+		["model"] = model,
+		["cores"] = cores,
 	})
 end
 
 return {
-	cast = cast_admin___server_info_200_response_cpu;
-	new = new_admin___server_info_200_response_cpu;
+	cast = cast_admin___server_info_200_response_cpu,
+	new = new_admin___server_info_200_response_cpu,
 }

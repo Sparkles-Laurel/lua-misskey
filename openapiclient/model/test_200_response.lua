@@ -11,8 +11,8 @@
 -- test_200_response class
 local test_200_response = {}
 local test_200_response_mt = {
-	__name = "test_200_response";
-	__index = test_200_response;
+	__name = "test_200_response",
+	__index = test_200_response,
 }
 
 local function cast_test_200_response(t)
@@ -21,15 +21,15 @@ end
 
 local function new_test_200_response(id, required, String_, default, nullable_default)
 	return cast_test_200_response({
-		["id"] = id;
-		["required"] = required;
-		["string"] = String_;
-		["default"] = default;
-		["nullableDefault"] = nullable_default;
+		["id"] = id,
+		["required"] = required,
+		["string"] = String_,
+		["default"] = default,
+		["nullableDefault"] = nullable_default,
 	})
 end
 
 return {
-	cast = cast_test_200_response;
-	new = new_test_200_response;
+	cast = cast_test_200_response,
+	new = new_test_200_response,
 }

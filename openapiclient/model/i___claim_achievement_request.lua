@@ -11,8 +11,8 @@
 -- i___claim_achievement_request class
 local i___claim_achievement_request = {}
 local i___claim_achievement_request_mt = {
-	__name = "i___claim_achievement_request";
-	__index = i___claim_achievement_request;
+	__name = "i___claim_achievement_request",
+	__index = i___claim_achievement_request,
 }
 
 local function cast_i___claim_achievement_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___claim_achievement_request(name)
 	return cast_i___claim_achievement_request({
-		["name"] = name;
+		["name"] = name,
 	})
 end
 
 return {
-	cast = cast_i___claim_achievement_request;
-	new = new_i___claim_achievement_request;
+	cast = cast_i___claim_achievement_request,
+	new = new_i___claim_achievement_request,
 }

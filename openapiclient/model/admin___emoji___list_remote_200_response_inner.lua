@@ -11,8 +11,8 @@
 -- admin___emoji___list_remote_200_response_inner class
 local admin___emoji___list_remote_200_response_inner = {}
 local admin___emoji___list_remote_200_response_inner_mt = {
-	__name = "admin___emoji___list_remote_200_response_inner";
-	__index = admin___emoji___list_remote_200_response_inner;
+	__name = "admin___emoji___list_remote_200_response_inner",
+	__index = admin___emoji___list_remote_200_response_inner,
 }
 
 local function cast_admin___emoji___list_remote_200_response_inner(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___emoji___list_remote_200_response_inner(id, aliases, name, category, host, url)
 	return cast_admin___emoji___list_remote_200_response_inner({
-		["id"] = id;
-		["aliases"] = aliases;
-		["name"] = name;
-		["category"] = category;
-		["host"] = host;
-		["url"] = url;
+		["id"] = id,
+		["aliases"] = aliases,
+		["name"] = name,
+		["category"] = category,
+		["host"] = host,
+		["url"] = url,
 	})
 end
 
 return {
-	cast = cast_admin___emoji___list_remote_200_response_inner;
-	new = new_admin___emoji___list_remote_200_response_inner;
+	cast = cast_admin___emoji___list_remote_200_response_inner,
+	new = new_admin___emoji___list_remote_200_response_inner,
 }

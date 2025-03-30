@@ -11,8 +11,8 @@
 -- clips___create_request class
 local clips___create_request = {}
 local clips___create_request_mt = {
-	__name = "clips___create_request";
-	__index = clips___create_request;
+	__name = "clips___create_request",
+	__index = clips___create_request,
 }
 
 local function cast_clips___create_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_clips___create_request(name, is_public, description)
 	return cast_clips___create_request({
-		["name"] = name;
-		["isPublic"] = is_public;
-		["description"] = description;
+		["name"] = name,
+		["isPublic"] = is_public,
+		["description"] = description,
 	})
 end
 
 return {
-	cast = cast_clips___create_request;
-	new = new_clips___create_request;
+	cast = cast_clips___create_request,
+	new = new_clips___create_request,
 }

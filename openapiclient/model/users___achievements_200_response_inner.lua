@@ -11,8 +11,8 @@
 -- users___achievements_200_response_inner class
 local users___achievements_200_response_inner = {}
 local users___achievements_200_response_inner_mt = {
-	__name = "users___achievements_200_response_inner";
-	__index = users___achievements_200_response_inner;
+	__name = "users___achievements_200_response_inner",
+	__index = users___achievements_200_response_inner,
 }
 
 local function cast_users___achievements_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___achievements_200_response_inner(name, unlocked_at)
 	return cast_users___achievements_200_response_inner({
-		["name"] = name;
-		["unlockedAt"] = unlocked_at;
+		["name"] = name,
+		["unlockedAt"] = unlocked_at,
 	})
 end
 
 return {
-	cast = cast_users___achievements_200_response_inner;
-	new = new_users___achievements_200_response_inner;
+	cast = cast_users___achievements_200_response_inner,
+	new = new_users___achievements_200_response_inner,
 }

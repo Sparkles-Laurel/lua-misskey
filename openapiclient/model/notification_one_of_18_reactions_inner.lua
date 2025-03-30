@@ -11,8 +11,8 @@
 -- notification_one_of_18_reactions_inner class
 local notification_one_of_18_reactions_inner = {}
 local notification_one_of_18_reactions_inner_mt = {
-	__name = "notification_one_of_18_reactions_inner";
-	__index = notification_one_of_18_reactions_inner;
+	__name = "notification_one_of_18_reactions_inner",
+	__index = notification_one_of_18_reactions_inner,
 }
 
 local function cast_notification_one_of_18_reactions_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notification_one_of_18_reactions_inner(user, reaction)
 	return cast_notification_one_of_18_reactions_inner({
-		["user"] = user;
-		["reaction"] = reaction;
+		["user"] = user,
+		["reaction"] = reaction,
 	})
 end
 
 return {
-	cast = cast_notification_one_of_18_reactions_inner;
-	new = new_notification_one_of_18_reactions_inner;
+	cast = cast_notification_one_of_18_reactions_inner,
+	new = new_notification_one_of_18_reactions_inner,
 }

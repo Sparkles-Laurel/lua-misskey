@@ -11,8 +11,8 @@
 -- users___update_memo_request class
 local users___update_memo_request = {}
 local users___update_memo_request_mt = {
-	__name = "users___update_memo_request";
-	__index = users___update_memo_request;
+	__name = "users___update_memo_request",
+	__index = users___update_memo_request,
 }
 
 local function cast_users___update_memo_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___update_memo_request(user_id, memo)
 	return cast_users___update_memo_request({
-		["userId"] = user_id;
-		["memo"] = memo;
+		["userId"] = user_id,
+		["memo"] = memo,
 	})
 end
 
 return {
-	cast = cast_users___update_memo_request;
-	new = new_users___update_memo_request;
+	cast = cast_users___update_memo_request,
+	new = new_users___update_memo_request,
 }

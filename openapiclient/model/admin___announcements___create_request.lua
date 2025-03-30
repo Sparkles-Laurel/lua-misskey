@@ -11,8 +11,8 @@
 -- admin___announcements___create_request class
 local admin___announcements___create_request = {}
 local admin___announcements___create_request_mt = {
-	__name = "admin___announcements___create_request";
-	__index = admin___announcements___create_request;
+	__name = "admin___announcements___create_request",
+	__index = admin___announcements___create_request,
 }
 
 local function cast_admin___announcements___create_request(t)
@@ -21,19 +21,19 @@ end
 
 local function new_admin___announcements___create_request(title, text, image_url, icon, display, for_existing_users, silence, need_confirmation_to_read, user_id)
 	return cast_admin___announcements___create_request({
-		["title"] = title;
-		["text"] = text;
-		["imageUrl"] = image_url;
-		["icon"] = icon;
-		["display"] = display;
-		["forExistingUsers"] = for_existing_users;
-		["silence"] = silence;
-		["needConfirmationToRead"] = need_confirmation_to_read;
-		["userId"] = user_id;
+		["title"] = title,
+		["text"] = text,
+		["imageUrl"] = image_url,
+		["icon"] = icon,
+		["display"] = display,
+		["forExistingUsers"] = for_existing_users,
+		["silence"] = silence,
+		["needConfirmationToRead"] = need_confirmation_to_read,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_admin___announcements___create_request;
-	new = new_admin___announcements___create_request;
+	cast = cast_admin___announcements___create_request,
+	new = new_admin___announcements___create_request,
 }

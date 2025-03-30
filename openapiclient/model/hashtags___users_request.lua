@@ -11,8 +11,8 @@
 -- hashtags___users_request class
 local hashtags___users_request = {}
 local hashtags___users_request_mt = {
-	__name = "hashtags___users_request";
-	__index = hashtags___users_request;
+	__name = "hashtags___users_request",
+	__index = hashtags___users_request,
 }
 
 local function cast_hashtags___users_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_hashtags___users_request(tag, limit, sort, state, origin)
 	return cast_hashtags___users_request({
-		["tag"] = tag;
-		["limit"] = limit;
-		["sort"] = sort;
-		["state"] = state;
-		["origin"] = origin;
+		["tag"] = tag,
+		["limit"] = limit,
+		["sort"] = sort,
+		["state"] = state,
+		["origin"] = origin,
 	})
 end
 
 return {
-	cast = cast_hashtags___users_request;
-	new = new_hashtags___users_request;
+	cast = cast_hashtags___users_request,
+	new = new_hashtags___users_request,
 }

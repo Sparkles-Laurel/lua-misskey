@@ -11,8 +11,8 @@
 -- admin___server_info_200_response_net class
 local admin___server_info_200_response_net = {}
 local admin___server_info_200_response_net_mt = {
-	__name = "admin___server_info_200_response_net";
-	__index = admin___server_info_200_response_net;
+	__name = "admin___server_info_200_response_net",
+	__index = admin___server_info_200_response_net,
 }
 
 local function cast_admin___server_info_200_response_net(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___server_info_200_response_net(interface)
 	return cast_admin___server_info_200_response_net({
-		["interface"] = interface;
+		["interface"] = interface,
 	})
 end
 
 return {
-	cast = cast_admin___server_info_200_response_net;
-	new = new_admin___server_info_200_response_net;
+	cast = cast_admin___server_info_200_response_net,
+	new = new_admin___server_info_200_response_net,
 }

@@ -11,8 +11,8 @@
 -- admin___server_info_200_response_mem class
 local admin___server_info_200_response_mem = {}
 local admin___server_info_200_response_mem_mt = {
-	__name = "admin___server_info_200_response_mem";
-	__index = admin___server_info_200_response_mem;
+	__name = "admin___server_info_200_response_mem",
+	__index = admin___server_info_200_response_mem,
 }
 
 local function cast_admin___server_info_200_response_mem(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___server_info_200_response_mem(total)
 	return cast_admin___server_info_200_response_mem({
-		["total"] = total;
+		["total"] = total,
 	})
 end
 
 return {
-	cast = cast_admin___server_info_200_response_mem;
-	new = new_admin___server_info_200_response_mem;
+	cast = cast_admin___server_info_200_response_mem,
+	new = new_admin___server_info_200_response_mem,
 }

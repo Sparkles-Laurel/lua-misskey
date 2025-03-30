@@ -11,8 +11,8 @@
 -- users___search_request class
 local users___search_request = {}
 local users___search_request_mt = {
-	__name = "users___search_request";
-	__index = users___search_request;
+	__name = "users___search_request",
+	__index = users___search_request,
 }
 
 local function cast_users___search_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_users___search_request(query, offset, limit, origin, detail)
 	return cast_users___search_request({
-		["query"] = query;
-		["offset"] = offset;
-		["limit"] = limit;
-		["origin"] = origin;
-		["detail"] = detail;
+		["query"] = query,
+		["offset"] = offset,
+		["limit"] = limit,
+		["origin"] = origin,
+		["detail"] = detail,
 	})
 end
 
 return {
-	cast = cast_users___search_request;
-	new = new_users___search_request;
+	cast = cast_users___search_request,
+	new = new_users___search_request,
 }

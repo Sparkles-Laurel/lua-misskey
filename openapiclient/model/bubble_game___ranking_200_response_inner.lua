@@ -11,8 +11,8 @@
 -- bubble_game___ranking_200_response_inner class
 local bubble_game___ranking_200_response_inner = {}
 local bubble_game___ranking_200_response_inner_mt = {
-	__name = "bubble_game___ranking_200_response_inner";
-	__index = bubble_game___ranking_200_response_inner;
+	__name = "bubble_game___ranking_200_response_inner",
+	__index = bubble_game___ranking_200_response_inner,
 }
 
 local function cast_bubble_game___ranking_200_response_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_bubble_game___ranking_200_response_inner(id, score, user)
 	return cast_bubble_game___ranking_200_response_inner({
-		["id"] = id;
-		["score"] = score;
-		["user"] = user;
+		["id"] = id,
+		["score"] = score,
+		["user"] = user,
 	})
 end
 
 return {
-	cast = cast_bubble_game___ranking_200_response_inner;
-	new = new_bubble_game___ranking_200_response_inner;
+	cast = cast_bubble_game___ranking_200_response_inner,
+	new = new_bubble_game___ranking_200_response_inner,
 }

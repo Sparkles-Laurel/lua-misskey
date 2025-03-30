@@ -21,8 +21,8 @@ local openapiclient_clips___delete_request = require "openapiclient.model.clips_
 
 local clip_api = {}
 local clip_api_mt = {
-	__name = "clip_api";
-	__index = clip_api;
+	__name = "clip_api",
+	__index = clip_api,
 }
 
 local function new_clip_api(authority, basePath, schemes)
@@ -33,25 +33,25 @@ local function new_clip_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, clip_api_mt)
 end
 
 function clip_api:clips_favorite(clips___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/favorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -88,11 +88,11 @@ end
 
 function clip_api:clips_unfavorite(clips___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/unfavorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -128,5 +128,5 @@ function clip_api:clips_unfavorite(clips___delete_request)
 end
 
 return {
-	new = new_clip_api;
+	new = new_clip_api,
 }

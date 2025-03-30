@@ -11,8 +11,8 @@
 -- note_favorite class
 local note_favorite = {}
 local note_favorite_mt = {
-	__name = "note_favorite";
-	__index = note_favorite;
+	__name = "note_favorite",
+	__index = note_favorite,
 }
 
 local function cast_note_favorite(t)
@@ -21,14 +21,14 @@ end
 
 local function new_note_favorite(id, created_at, note, note_id)
 	return cast_note_favorite({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["note"] = note;
-		["noteId"] = note_id;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["note"] = note,
+		["noteId"] = note_id,
 	})
 end
 
 return {
-	cast = cast_note_favorite;
-	new = new_note_favorite;
+	cast = cast_note_favorite,
+	new = new_note_favorite,
 }

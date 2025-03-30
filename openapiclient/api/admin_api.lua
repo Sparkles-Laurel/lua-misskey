@@ -109,8 +109,8 @@ local openapiclient_v2___admin___emoji___list_request = require "openapiclient.m
 
 local admin_api = {}
 local admin_api_mt = {
-	__name = "admin_api";
-	__index = admin_api;
+	__name = "admin_api",
+	__index = admin_api,
 }
 
 local function new_admin_api(authority, basePath, schemes)
@@ -121,25 +121,25 @@ local function new_admin_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, admin_api_mt)
 end
 
 function admin_api:admin_abuse_report_notification_recipient_create(admin___abuse_report___notification_recipient___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-report/notification-recipient/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -187,11 +187,11 @@ end
 
 function admin_api:admin_abuse_report_notification_recipient_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-report/notification-recipient/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -228,11 +228,11 @@ end
 
 function admin_api:admin_abuse_report_notification_recipient_list(admin___abuse_report___notification_recipient___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-report/notification-recipient/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -283,11 +283,11 @@ end
 
 function admin_api:admin_abuse_report_notification_recipient_show(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-report/notification-recipient/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -335,11 +335,11 @@ end
 
 function admin_api:admin_abuse_report_notification_recipient_update(admin___abuse_report___notification_recipient___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-report/notification-recipient/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -387,11 +387,11 @@ end
 
 function admin_api:admin_abuse_user_reports(admin___abuse_user_reports_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/abuse-user-reports",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -442,11 +442,11 @@ end
 
 function admin_api:admin_accounts_create(admin___accounts___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/accounts/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -494,11 +494,11 @@ end
 
 function admin_api:admin_accounts_delete(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/accounts/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -535,11 +535,11 @@ end
 
 function admin_api:admin_accounts_find_by_email(admin___accounts___find_by_email_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/accounts/find-by-email",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -587,11 +587,11 @@ end
 
 function admin_api:admin_ad_create(admin___ad___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/ad/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -639,11 +639,11 @@ end
 
 function admin_api:admin_ad_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/ad/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -680,11 +680,11 @@ end
 
 function admin_api:admin_ad_list(admin___ad___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/ad/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -735,11 +735,11 @@ end
 
 function admin_api:admin_ad_update(admin___ad___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/ad/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -776,11 +776,11 @@ end
 
 function admin_api:admin_announcements_create(admin___announcements___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/announcements/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -828,11 +828,11 @@ end
 
 function admin_api:admin_announcements_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/announcements/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -869,11 +869,11 @@ end
 
 function admin_api:admin_announcements_list(admin___announcements___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/announcements/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -924,11 +924,11 @@ end
 
 function admin_api:admin_announcements_update(admin___announcements___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/announcements/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -965,11 +965,11 @@ end
 
 function admin_api:admin_approve_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/approve-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1006,11 +1006,11 @@ end
 
 function admin_api:admin_avatar_decorations_create(admin___avatar_decorations___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/avatar-decorations/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1058,11 +1058,11 @@ end
 
 function admin_api:admin_avatar_decorations_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/avatar-decorations/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1099,11 +1099,11 @@ end
 
 function admin_api:admin_avatar_decorations_list(admin___avatar_decorations___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/avatar-decorations/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1154,11 +1154,11 @@ end
 
 function admin_api:admin_avatar_decorations_update(admin___avatar_decorations___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/avatar-decorations/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1195,11 +1195,11 @@ end
 
 function admin_api:admin_captcha_current()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/captcha/current",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1241,11 +1241,11 @@ end
 
 function admin_api:admin_captcha_save(admin___captcha___save_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/captcha/save",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1282,11 +1282,11 @@ end
 
 function admin_api:admin_cw_user(admin___cw_user_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/cw-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1323,11 +1323,11 @@ end
 
 function admin_api:admin_decline_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/decline-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1364,11 +1364,11 @@ end
 
 function admin_api:admin_delete_account(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/delete-account",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1405,11 +1405,11 @@ end
 
 function admin_api:admin_delete_all_files_of_a_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/delete-all-files-of-a-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1446,11 +1446,11 @@ end
 
 function admin_api:admin_drive_clean_remote_files()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/drive/clean-remote-files",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1481,11 +1481,11 @@ end
 
 function admin_api:admin_drive_cleanup()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/drive/cleanup",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1516,11 +1516,11 @@ end
 
 function admin_api:admin_drive_files(admin___drive___files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/drive/files",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1571,11 +1571,11 @@ end
 
 function admin_api:admin_drive_show_file(admin___drive___show_file_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/drive/show-file",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1623,11 +1623,11 @@ end
 
 function admin_api:admin_emoji_add(admin___emoji___add_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/add",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1675,11 +1675,11 @@ end
 
 function admin_api:admin_emoji_add_aliases_bulk(admin___emoji___add_aliases_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/add-aliases-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1716,11 +1716,11 @@ end
 
 function admin_api:admin_emoji_copy(admin___emoji___copy_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/copy",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1768,11 +1768,11 @@ end
 
 function admin_api:admin_emoji_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1809,11 +1809,11 @@ end
 
 function admin_api:admin_emoji_delete_bulk(admin___emoji___delete_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/delete-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1850,11 +1850,11 @@ end
 
 function admin_api:admin_emoji_list(admin___emoji___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1905,11 +1905,11 @@ end
 
 function admin_api:admin_emoji_list_remote(admin___emoji___list_remote_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/list-remote",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1960,11 +1960,11 @@ end
 
 function admin_api:admin_emoji_remove_aliases_bulk(admin___emoji___add_aliases_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/remove-aliases-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2001,11 +2001,11 @@ end
 
 function admin_api:admin_emoji_set_aliases_bulk(admin___emoji___add_aliases_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/set-aliases-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2042,11 +2042,11 @@ end
 
 function admin_api:admin_emoji_set_category_bulk(admin___emoji___set_category_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/set-category-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2083,11 +2083,11 @@ end
 
 function admin_api:admin_emoji_set_license_bulk(admin___emoji___set_license_bulk_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/set-license-bulk",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2124,11 +2124,11 @@ end
 
 function admin_api:admin_emoji_update(admin___emoji___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2165,11 +2165,11 @@ end
 
 function admin_api:admin_federation_delete_all_files(admin___federation___delete_all_files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/federation/delete-all-files",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2206,11 +2206,11 @@ end
 
 function admin_api:admin_federation_refresh_remote_instance_metadata(admin___federation___delete_all_files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/federation/refresh-remote-instance-metadata",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2247,11 +2247,11 @@ end
 
 function admin_api:admin_federation_remove_all_following(admin___federation___delete_all_files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/federation/remove-all-following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2288,11 +2288,11 @@ end
 
 function admin_api:admin_federation_update_instance(admin___federation___update_instance_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/federation/update-instance",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2329,11 +2329,11 @@ end
 
 function admin_api:admin_forward_abuse_user_report(admin___forward_abuse_user_report_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/forward-abuse-user-report",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2370,11 +2370,11 @@ end
 
 function admin_api:admin_gen_vapid_keys()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/gen-vapid-keys",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2405,11 +2405,11 @@ end
 
 function admin_api:admin_get_index_stats()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/get-index-stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2454,11 +2454,11 @@ end
 
 function admin_api:admin_get_table_stats()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/get-table-stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2500,11 +2500,11 @@ end
 
 function admin_api:admin_get_user_ips(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/get-user-ips",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2555,11 +2555,11 @@ end
 
 function admin_api:admin_invite_create(admin___invite___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/invite/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2610,11 +2610,11 @@ end
 
 function admin_api:admin_invite_list(admin___invite___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/invite/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2665,11 +2665,11 @@ end
 
 function admin_api:admin_nsfw_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/nsfw-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2706,11 +2706,11 @@ end
 
 function admin_api:admin_promo_create(admin___promo___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/promo/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2747,11 +2747,11 @@ end
 
 function admin_api:admin_queue_clear()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/queue/clear",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2782,11 +2782,11 @@ end
 
 function admin_api:admin_queue_deliver_delayed()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/queue/deliver-delayed",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2831,11 +2831,11 @@ end
 
 function admin_api:admin_queue_inbox_delayed()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/queue/inbox-delayed",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2880,11 +2880,11 @@ end
 
 function admin_api:admin_queue_promote(admin___queue___promote_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/queue/promote",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2921,11 +2921,11 @@ end
 
 function admin_api:admin_queue_stats()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/queue/stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2967,11 +2967,11 @@ end
 
 function admin_api:admin_reject_quotes(admin___reject_quotes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/reject-quotes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3008,11 +3008,11 @@ end
 
 function admin_api:admin_relays_add(admin___relays___add_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/relays/add",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3060,11 +3060,11 @@ end
 
 function admin_api:admin_relays_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/relays/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3109,11 +3109,11 @@ end
 
 function admin_api:admin_relays_remove(admin___relays___add_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/relays/remove",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3150,11 +3150,11 @@ end
 
 function admin_api:admin_reset_password(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/reset-password",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3202,11 +3202,11 @@ end
 
 function admin_api:admin_resolve_abuse_user_report(admin___resolve_abuse_user_report_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/resolve-abuse-user-report",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3243,11 +3243,11 @@ end
 
 function admin_api:admin_roles_assign(admin___roles___assign_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/assign",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3284,11 +3284,11 @@ end
 
 function admin_api:admin_roles_create(admin___roles___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3336,11 +3336,11 @@ end
 
 function admin_api:admin_roles_delete(admin___roles___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3377,11 +3377,11 @@ end
 
 function admin_api:admin_roles_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3426,11 +3426,11 @@ end
 
 function admin_api:admin_roles_show(admin___roles___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3478,11 +3478,11 @@ end
 
 function admin_api:admin_roles_unassign(admin___roles___unassign_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/unassign",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3519,11 +3519,11 @@ end
 
 function admin_api:admin_roles_update(admin___roles___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3560,11 +3560,11 @@ end
 
 function admin_api:admin_roles_update_default_policies(admin___roles___update_default_policies_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/update-default-policies",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3601,11 +3601,11 @@ end
 
 function admin_api:admin_roles_users(admin___roles___users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/roles/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3656,11 +3656,11 @@ end
 
 function admin_api:admin_send_email(admin___send_email_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/send-email",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3697,11 +3697,11 @@ end
 
 function admin_api:admin_server_info()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/server-info",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3743,11 +3743,11 @@ end
 
 function admin_api:admin_show_moderation_logs(admin___show_moderation_logs_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/show-moderation-logs",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3798,11 +3798,11 @@ end
 
 function admin_api:admin_show_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/show-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3850,11 +3850,11 @@ end
 
 function admin_api:admin_show_users(admin___show_users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/show-users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3905,11 +3905,11 @@ end
 
 function admin_api:admin_silence_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/silence-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3946,11 +3946,11 @@ end
 
 function admin_api:admin_suspend_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/suspend-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -3987,11 +3987,11 @@ end
 
 function admin_api:admin_system_webhook_create(admin___system_webhook___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4039,11 +4039,11 @@ end
 
 function admin_api:admin_system_webhook_delete(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4080,11 +4080,11 @@ end
 
 function admin_api:admin_system_webhook_list(admin___system_webhook___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4135,11 +4135,11 @@ end
 
 function admin_api:admin_system_webhook_show(admin___abuse_report___notification_recipient___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4187,11 +4187,11 @@ end
 
 function admin_api:admin_system_webhook_update(admin___system_webhook___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4239,11 +4239,11 @@ end
 
 function admin_api:admin_unnsfw_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/unnsfw-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4280,11 +4280,11 @@ end
 
 function admin_api:admin_unset_user_avatar(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/unset-user-avatar",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4321,11 +4321,11 @@ end
 
 function admin_api:admin_unset_user_banner(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/unset-user-banner",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4362,11 +4362,11 @@ end
 
 function admin_api:admin_unsilence_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/unsilence-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4403,11 +4403,11 @@ end
 
 function admin_api:admin_unsuspend_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/unsuspend-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4444,11 +4444,11 @@ end
 
 function admin_api:admin_update_abuse_user_report(admin___update_abuse_user_report_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/update-abuse-user-report",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4485,11 +4485,11 @@ end
 
 function admin_api:admin_update_meta(admin___update_meta_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/update-meta",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4526,11 +4526,11 @@ end
 
 function admin_api:admin_update_user_note(admin___update_user_note_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/update-user-note",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4567,11 +4567,11 @@ end
 
 function admin_api:v2_admin_emoji_list(v2___admin___emoji___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/v2/admin/emoji/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -4618,5 +4618,5 @@ function admin_api:v2_admin_emoji_list(v2___admin___emoji___list_request)
 end
 
 return {
-	new = new_admin_api;
+	new = new_admin_api,
 }

@@ -11,8 +11,8 @@
 -- i___update_request class
 local i___update_request = {}
 local i___update_request_mt = {
-	__name = "i___update_request";
-	__index = i___update_request;
+	__name = "i___update_request",
+	__index = i___update_request,
 }
 
 local function cast_i___update_request(t)
@@ -21,54 +21,54 @@ end
 
 local function new_i___update_request(name, description, followed_message, location, birthday, listenbrainz, lang, avatar_id, avatar_decorations, banner_id, background_id, fields, is_locked, is_explorable, hide_online_status, public_reactions, careful_bot, auto_accept_followed, no_crawle, prevent_ai_learning, noindex, require_signin_to_view_contents, make_notes_followers_only_before, make_notes_hidden_before, enable_rss, is_bot, is_cat, speak_as_cat, inject_featured_note, receive_announcement_email, always_mark_nsfw, default_sensitive, auto_sensitive, following_visibility, followers_visibility, pinned_page_id, muted_words, hard_muted_words, muted_instances, notification_recieve_config, email_notification_types, also_known_as, default_cw, default_cw_priority)
 	return cast_i___update_request({
-		["name"] = name;
-		["description"] = description;
-		["followedMessage"] = followed_message;
-		["location"] = location;
-		["birthday"] = birthday;
-		["listenbrainz"] = listenbrainz;
-		["lang"] = lang;
-		["avatarId"] = avatar_id;
-		["avatarDecorations"] = avatar_decorations;
-		["bannerId"] = banner_id;
-		["backgroundId"] = background_id;
-		["fields"] = fields;
-		["isLocked"] = is_locked;
-		["isExplorable"] = is_explorable;
-		["hideOnlineStatus"] = hide_online_status;
-		["publicReactions"] = public_reactions;
-		["carefulBot"] = careful_bot;
-		["autoAcceptFollowed"] = auto_accept_followed;
-		["noCrawle"] = no_crawle;
-		["preventAiLearning"] = prevent_ai_learning;
-		["noindex"] = noindex;
-		["requireSigninToViewContents"] = require_signin_to_view_contents;
-		["makeNotesFollowersOnlyBefore"] = make_notes_followers_only_before;
-		["makeNotesHiddenBefore"] = make_notes_hidden_before;
-		["enableRss"] = enable_rss;
-		["isBot"] = is_bot;
-		["isCat"] = is_cat;
-		["speakAsCat"] = speak_as_cat;
-		["injectFeaturedNote"] = inject_featured_note;
-		["receiveAnnouncementEmail"] = receive_announcement_email;
-		["alwaysMarkNsfw"] = always_mark_nsfw;
-		["defaultSensitive"] = default_sensitive;
-		["autoSensitive"] = auto_sensitive;
-		["followingVisibility"] = following_visibility;
-		["followersVisibility"] = followers_visibility;
-		["pinnedPageId"] = pinned_page_id;
-		["mutedWords"] = muted_words;
-		["hardMutedWords"] = hard_muted_words;
-		["mutedInstances"] = muted_instances;
-		["notificationRecieveConfig"] = notification_recieve_config;
-		["emailNotificationTypes"] = email_notification_types;
-		["alsoKnownAs"] = also_known_as;
-		["defaultCW"] = default_cw;
-		["defaultCWPriority"] = default_cw_priority;
+		["name"] = name,
+		["description"] = description,
+		["followedMessage"] = followed_message,
+		["location"] = location,
+		["birthday"] = birthday,
+		["listenbrainz"] = listenbrainz,
+		["lang"] = lang,
+		["avatarId"] = avatar_id,
+		["avatarDecorations"] = avatar_decorations,
+		["bannerId"] = banner_id,
+		["backgroundId"] = background_id,
+		["fields"] = fields,
+		["isLocked"] = is_locked,
+		["isExplorable"] = is_explorable,
+		["hideOnlineStatus"] = hide_online_status,
+		["publicReactions"] = public_reactions,
+		["carefulBot"] = careful_bot,
+		["autoAcceptFollowed"] = auto_accept_followed,
+		["noCrawle"] = no_crawle,
+		["preventAiLearning"] = prevent_ai_learning,
+		["noindex"] = noindex,
+		["requireSigninToViewContents"] = require_signin_to_view_contents,
+		["makeNotesFollowersOnlyBefore"] = make_notes_followers_only_before,
+		["makeNotesHiddenBefore"] = make_notes_hidden_before,
+		["enableRss"] = enable_rss,
+		["isBot"] = is_bot,
+		["isCat"] = is_cat,
+		["speakAsCat"] = speak_as_cat,
+		["injectFeaturedNote"] = inject_featured_note,
+		["receiveAnnouncementEmail"] = receive_announcement_email,
+		["alwaysMarkNsfw"] = always_mark_nsfw,
+		["defaultSensitive"] = default_sensitive,
+		["autoSensitive"] = auto_sensitive,
+		["followingVisibility"] = following_visibility,
+		["followersVisibility"] = followers_visibility,
+		["pinnedPageId"] = pinned_page_id,
+		["mutedWords"] = muted_words,
+		["hardMutedWords"] = hard_muted_words,
+		["mutedInstances"] = muted_instances,
+		["notificationRecieveConfig"] = notification_recieve_config,
+		["emailNotificationTypes"] = email_notification_types,
+		["alsoKnownAs"] = also_known_as,
+		["defaultCW"] = default_cw,
+		["defaultCWPriority"] = default_cw_priority,
 	})
 end
 
 return {
-	cast = cast_i___update_request;
-	new = new_i___update_request;
+	cast = cast_i___update_request,
+	new = new_i___update_request,
 }

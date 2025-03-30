@@ -11,8 +11,8 @@
 -- pages___show_request class
 local pages___show_request = {}
 local pages___show_request_mt = {
-	__name = "pages___show_request";
-	__index = pages___show_request;
+	__name = "pages___show_request",
+	__index = pages___show_request,
 }
 
 local function cast_pages___show_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_pages___show_request(page_id, name, username)
 	return cast_pages___show_request({
-		["pageId"] = page_id;
-		["name"] = name;
-		["username"] = username;
+		["pageId"] = page_id,
+		["name"] = name,
+		["username"] = username,
 	})
 end
 
 return {
-	cast = cast_pages___show_request;
-	new = new_pages___show_request;
+	cast = cast_pages___show_request,
+	new = new_pages___show_request,
 }

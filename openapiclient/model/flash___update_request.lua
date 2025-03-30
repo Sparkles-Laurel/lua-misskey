@@ -11,8 +11,8 @@
 -- flash___update_request class
 local flash___update_request = {}
 local flash___update_request_mt = {
-	__name = "flash___update_request";
-	__index = flash___update_request;
+	__name = "flash___update_request",
+	__index = flash___update_request,
 }
 
 local function cast_flash___update_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_flash___update_request(flash_id, title, summary, script, permissions, visibility)
 	return cast_flash___update_request({
-		["flashId"] = flash_id;
-		["title"] = title;
-		["summary"] = summary;
-		["script"] = script;
-		["permissions"] = permissions;
-		["visibility"] = visibility;
+		["flashId"] = flash_id,
+		["title"] = title,
+		["summary"] = summary,
+		["script"] = script,
+		["permissions"] = permissions,
+		["visibility"] = visibility,
 	})
 end
 
 return {
-	cast = cast_flash___update_request;
-	new = new_flash___update_request;
+	cast = cast_flash___update_request,
+	new = new_flash___update_request,
 }

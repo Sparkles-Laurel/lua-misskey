@@ -11,8 +11,8 @@
 -- reversi___cancel_match_request class
 local reversi___cancel_match_request = {}
 local reversi___cancel_match_request_mt = {
-	__name = "reversi___cancel_match_request";
-	__index = reversi___cancel_match_request;
+	__name = "reversi___cancel_match_request",
+	__index = reversi___cancel_match_request,
 }
 
 local function cast_reversi___cancel_match_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_reversi___cancel_match_request(user_id)
 	return cast_reversi___cancel_match_request({
-		["userId"] = user_id;
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_reversi___cancel_match_request;
-	new = new_reversi___cancel_match_request;
+	cast = cast_reversi___cancel_match_request,
+	new = new_reversi___cancel_match_request,
 }

@@ -11,8 +11,8 @@
 -- page_block_one_of class
 local page_block_one_of = {}
 local page_block_one_of_mt = {
-	__name = "page_block_one_of";
-	__index = page_block_one_of;
+	__name = "page_block_one_of",
+	__index = page_block_one_of,
 }
 
 local function cast_page_block_one_of(t)
@@ -21,13 +21,13 @@ end
 
 local function new_page_block_one_of(id, type, text)
 	return cast_page_block_one_of({
-		["id"] = id;
-		["type"] = type;
-		["text"] = text;
+		["id"] = id,
+		["type"] = type,
+		["text"] = text,
 	})
 end
 
 return {
-	cast = cast_page_block_one_of;
-	new = new_page_block_one_of;
+	cast = cast_page_block_one_of,
+	new = new_page_block_one_of,
 }

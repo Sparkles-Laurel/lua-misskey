@@ -22,8 +22,8 @@ local openapiclient_reset_password_request = require "openapiclient.model.reset_
 
 local reset_password_api = {}
 local reset_password_api_mt = {
-	__name = "reset_password_api";
-	__index = reset_password_api;
+	__name = "reset_password_api",
+	__index = reset_password_api,
 }
 
 local function new_reset_password_api(authority, basePath, schemes)
@@ -34,25 +34,25 @@ local function new_reset_password_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, reset_password_api_mt)
 end
 
 function reset_password_api:request_reset_password(request_reset_password_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/request-reset-password",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -89,11 +89,11 @@ end
 
 function reset_password_api:reset_password(reset_password_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reset-password",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -129,5 +129,5 @@ function reset_password_api:reset_password(reset_password_request)
 end
 
 return {
-	new = new_reset_password_api;
+	new = new_reset_password_api,
 }

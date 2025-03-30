@@ -11,8 +11,8 @@
 -- following___requests___list_200_response_inner class
 local following___requests___list_200_response_inner = {}
 local following___requests___list_200_response_inner_mt = {
-	__name = "following___requests___list_200_response_inner";
-	__index = following___requests___list_200_response_inner;
+	__name = "following___requests___list_200_response_inner",
+	__index = following___requests___list_200_response_inner,
 }
 
 local function cast_following___requests___list_200_response_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_following___requests___list_200_response_inner(id, follower, followee)
 	return cast_following___requests___list_200_response_inner({
-		["id"] = id;
-		["follower"] = follower;
-		["followee"] = followee;
+		["id"] = id,
+		["follower"] = follower,
+		["followee"] = followee,
 	})
 end
 
 return {
-	cast = cast_following___requests___list_200_response_inner;
-	new = new_following___requests___list_200_response_inner;
+	cast = cast_following___requests___list_200_response_inner,
+	new = new_following___requests___list_200_response_inner,
 }

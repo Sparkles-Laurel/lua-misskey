@@ -11,8 +11,8 @@
 -- notes___bubble_timeline_request class
 local notes___bubble_timeline_request = {}
 local notes___bubble_timeline_request_mt = {
-	__name = "notes___bubble_timeline_request";
-	__index = notes___bubble_timeline_request;
+	__name = "notes___bubble_timeline_request",
+	__index = notes___bubble_timeline_request,
 }
 
 local function cast_notes___bubble_timeline_request(t)
@@ -21,18 +21,18 @@ end
 
 local function new_notes___bubble_timeline_request(with_files, with_bots, with_renotes, limit, since_id, until_id, since_date, until_date)
 	return cast_notes___bubble_timeline_request({
-		["withFiles"] = with_files;
-		["withBots"] = with_bots;
-		["withRenotes"] = with_renotes;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["withFiles"] = with_files,
+		["withBots"] = with_bots,
+		["withRenotes"] = with_renotes,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_notes___bubble_timeline_request;
-	new = new_notes___bubble_timeline_request;
+	cast = cast_notes___bubble_timeline_request,
+	new = new_notes___bubble_timeline_request,
 }

@@ -11,8 +11,8 @@
 -- i___regenerate_token_request class
 local i___regenerate_token_request = {}
 local i___regenerate_token_request_mt = {
-	__name = "i___regenerate_token_request";
-	__index = i___regenerate_token_request;
+	__name = "i___regenerate_token_request",
+	__index = i___regenerate_token_request,
 }
 
 local function cast_i___regenerate_token_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___regenerate_token_request(password)
 	return cast_i___regenerate_token_request({
-		["password"] = password;
+		["password"] = password,
 	})
 end
 
 return {
-	cast = cast_i___regenerate_token_request;
-	new = new_i___regenerate_token_request;
+	cast = cast_i___regenerate_token_request,
+	new = new_i___regenerate_token_request,
 }

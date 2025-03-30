@@ -11,8 +11,8 @@
 -- users___lists___get_memberships_request class
 local users___lists___get_memberships_request = {}
 local users___lists___get_memberships_request_mt = {
-	__name = "users___lists___get_memberships_request";
-	__index = users___lists___get_memberships_request;
+	__name = "users___lists___get_memberships_request",
+	__index = users___lists___get_memberships_request,
 }
 
 local function cast_users___lists___get_memberships_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_users___lists___get_memberships_request(list_id, for_public, limit, since_id, until_id)
 	return cast_users___lists___get_memberships_request({
-		["listId"] = list_id;
-		["forPublic"] = for_public;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["listId"] = list_id,
+		["forPublic"] = for_public,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_users___lists___get_memberships_request;
-	new = new_users___lists___get_memberships_request;
+	cast = cast_users___lists___get_memberships_request,
+	new = new_users___lists___get_memberships_request,
 }

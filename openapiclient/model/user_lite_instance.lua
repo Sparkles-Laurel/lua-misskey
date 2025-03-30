@@ -11,8 +11,8 @@
 -- user_lite_instance class
 local user_lite_instance = {}
 local user_lite_instance_mt = {
-	__name = "user_lite_instance";
-	__index = user_lite_instance;
+	__name = "user_lite_instance",
+	__index = user_lite_instance,
 }
 
 local function cast_user_lite_instance(t)
@@ -21,16 +21,16 @@ end
 
 local function new_user_lite_instance(name, software_name, software_version, icon_url, favicon_url, theme_color)
 	return cast_user_lite_instance({
-		["name"] = name;
-		["softwareName"] = software_name;
-		["softwareVersion"] = software_version;
-		["iconUrl"] = icon_url;
-		["faviconUrl"] = favicon_url;
-		["themeColor"] = theme_color;
+		["name"] = name,
+		["softwareName"] = software_name,
+		["softwareVersion"] = software_version,
+		["iconUrl"] = icon_url,
+		["faviconUrl"] = favicon_url,
+		["themeColor"] = theme_color,
 	})
 end
 
 return {
-	cast = cast_user_lite_instance;
-	new = new_user_lite_instance;
+	cast = cast_user_lite_instance,
+	new = new_user_lite_instance,
 }

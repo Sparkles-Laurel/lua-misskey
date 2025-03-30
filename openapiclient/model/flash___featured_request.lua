@@ -11,8 +11,8 @@
 -- flash___featured_request class
 local flash___featured_request = {}
 local flash___featured_request_mt = {
-	__name = "flash___featured_request";
-	__index = flash___featured_request;
+	__name = "flash___featured_request",
+	__index = flash___featured_request,
 }
 
 local function cast_flash___featured_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_flash___featured_request(offset, limit)
 	return cast_flash___featured_request({
-		["offset"] = offset;
-		["limit"] = limit;
+		["offset"] = offset,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_flash___featured_request;
-	new = new_flash___featured_request;
+	cast = cast_flash___featured_request,
+	new = new_flash___featured_request,
 }

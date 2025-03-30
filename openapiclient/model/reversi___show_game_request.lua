@@ -11,8 +11,8 @@
 -- reversi___show_game_request class
 local reversi___show_game_request = {}
 local reversi___show_game_request_mt = {
-	__name = "reversi___show_game_request";
-	__index = reversi___show_game_request;
+	__name = "reversi___show_game_request",
+	__index = reversi___show_game_request,
 }
 
 local function cast_reversi___show_game_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_reversi___show_game_request(game_id)
 	return cast_reversi___show_game_request({
-		["gameId"] = game_id;
+		["gameId"] = game_id,
 	})
 end
 
 return {
-	cast = cast_reversi___show_game_request;
-	new = new_reversi___show_game_request;
+	cast = cast_reversi___show_game_request,
+	new = new_reversi___show_game_request,
 }

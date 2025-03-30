@@ -11,8 +11,8 @@
 -- user_lite_avatar_decorations_inner class
 local user_lite_avatar_decorations_inner = {}
 local user_lite_avatar_decorations_inner_mt = {
-	__name = "user_lite_avatar_decorations_inner";
-	__index = user_lite_avatar_decorations_inner;
+	__name = "user_lite_avatar_decorations_inner",
+	__index = user_lite_avatar_decorations_inner,
 }
 
 local function cast_user_lite_avatar_decorations_inner(t)
@@ -21,17 +21,17 @@ end
 
 local function new_user_lite_avatar_decorations_inner(id, angle, flip_h, url, offset_x, offset_y, show_below)
 	return cast_user_lite_avatar_decorations_inner({
-		["id"] = id;
-		["angle"] = angle;
-		["flipH"] = flip_h;
-		["url"] = url;
-		["offsetX"] = offset_x;
-		["offsetY"] = offset_y;
-		["showBelow"] = show_below;
+		["id"] = id,
+		["angle"] = angle,
+		["flipH"] = flip_h,
+		["url"] = url,
+		["offsetX"] = offset_x,
+		["offsetY"] = offset_y,
+		["showBelow"] = show_below,
 	})
 end
 
 return {
-	cast = cast_user_lite_avatar_decorations_inner;
-	new = new_user_lite_avatar_decorations_inner;
+	cast = cast_user_lite_avatar_decorations_inner,
+	new = new_user_lite_avatar_decorations_inner,
 }

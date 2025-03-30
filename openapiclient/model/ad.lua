@@ -11,8 +11,8 @@
 -- ad class
 local ad = {}
 local ad_mt = {
-	__name = "ad";
-	__index = ad;
+	__name = "ad",
+	__index = ad,
 }
 
 local function cast_ad(t)
@@ -21,20 +21,20 @@ end
 
 local function new_ad(id, expires_at, starts_at, place, priority, ratio, url, image_url, memo, day_of_week)
 	return cast_ad({
-		["id"] = id;
-		["expiresAt"] = expires_at;
-		["startsAt"] = starts_at;
-		["place"] = place;
-		["priority"] = priority;
-		["ratio"] = ratio;
-		["url"] = url;
-		["imageUrl"] = image_url;
-		["memo"] = memo;
-		["dayOfWeek"] = day_of_week;
+		["id"] = id,
+		["expiresAt"] = expires_at,
+		["startsAt"] = starts_at,
+		["place"] = place,
+		["priority"] = priority,
+		["ratio"] = ratio,
+		["url"] = url,
+		["imageUrl"] = image_url,
+		["memo"] = memo,
+		["dayOfWeek"] = day_of_week,
 	})
 end
 
 return {
-	cast = cast_ad;
-	new = new_ad;
+	cast = cast_ad,
+	new = new_ad,
 }

@@ -11,8 +11,8 @@
 -- charts___users_200_response class
 local charts___users_200_response = {}
 local charts___users_200_response_mt = {
-	__name = "charts___users_200_response";
-	__index = charts___users_200_response;
+	__name = "charts___users_200_response",
+	__index = charts___users_200_response,
 }
 
 local function cast_charts___users_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_charts___users_200_response(Local_, remote)
 	return cast_charts___users_200_response({
-		["local"] = Local_;
-		["remote"] = remote;
+		["local"] = Local_,
+		["remote"] = remote,
 	})
 end
 
 return {
-	cast = cast_charts___users_200_response;
-	new = new_charts___users_200_response;
+	cast = cast_charts___users_200_response,
+	new = new_charts___users_200_response,
 }

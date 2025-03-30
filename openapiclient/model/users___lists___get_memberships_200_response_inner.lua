@@ -11,8 +11,8 @@
 -- users___lists___get_memberships_200_response_inner class
 local users___lists___get_memberships_200_response_inner = {}
 local users___lists___get_memberships_200_response_inner_mt = {
-	__name = "users___lists___get_memberships_200_response_inner";
-	__index = users___lists___get_memberships_200_response_inner;
+	__name = "users___lists___get_memberships_200_response_inner",
+	__index = users___lists___get_memberships_200_response_inner,
 }
 
 local function cast_users___lists___get_memberships_200_response_inner(t)
@@ -21,15 +21,15 @@ end
 
 local function new_users___lists___get_memberships_200_response_inner(id, created_at, user_id, user, with_replies)
 	return cast_users___lists___get_memberships_200_response_inner({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["userId"] = user_id;
-		["user"] = user;
-		["withReplies"] = with_replies;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["userId"] = user_id,
+		["user"] = user,
+		["withReplies"] = with_replies,
 	})
 end
 
 return {
-	cast = cast_users___lists___get_memberships_200_response_inner;
-	new = new_users___lists___get_memberships_200_response_inner;
+	cast = cast_users___lists___get_memberships_200_response_inner,
+	new = new_users___lists___get_memberships_200_response_inner,
 }

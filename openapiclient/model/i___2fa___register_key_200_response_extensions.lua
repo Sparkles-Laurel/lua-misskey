@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response_extensions class
 local i___2fa___register_key_200_response_extensions = {}
 local i___2fa___register_key_200_response_extensions_mt = {
-	__name = "i___2fa___register_key_200_response_extensions";
-	__index = i___2fa___register_key_200_response_extensions;
+	__name = "i___2fa___register_key_200_response_extensions",
+	__index = i___2fa___register_key_200_response_extensions,
 }
 
 local function cast_i___2fa___register_key_200_response_extensions(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___2fa___register_key_200_response_extensions(appid, cred_props, hmac_create_secret)
 	return cast_i___2fa___register_key_200_response_extensions({
-		["appid"] = appid;
-		["credProps"] = cred_props;
-		["hmacCreateSecret"] = hmac_create_secret;
+		["appid"] = appid,
+		["credProps"] = cred_props,
+		["hmacCreateSecret"] = hmac_create_secret,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response_extensions;
-	new = new_i___2fa___register_key_200_response_extensions;
+	cast = cast_i___2fa___register_key_200_response_extensions,
+	new = new_i___2fa___register_key_200_response_extensions,
 }

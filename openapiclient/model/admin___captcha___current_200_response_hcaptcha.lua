@@ -11,8 +11,8 @@
 -- admin___captcha___current_200_response_hcaptcha class
 local admin___captcha___current_200_response_hcaptcha = {}
 local admin___captcha___current_200_response_hcaptcha_mt = {
-	__name = "admin___captcha___current_200_response_hcaptcha";
-	__index = admin___captcha___current_200_response_hcaptcha;
+	__name = "admin___captcha___current_200_response_hcaptcha",
+	__index = admin___captcha___current_200_response_hcaptcha,
 }
 
 local function cast_admin___captcha___current_200_response_hcaptcha(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___captcha___current_200_response_hcaptcha(site_key, secret_key)
 	return cast_admin___captcha___current_200_response_hcaptcha({
-		["siteKey"] = site_key;
-		["secretKey"] = secret_key;
+		["siteKey"] = site_key,
+		["secretKey"] = secret_key,
 	})
 end
 
 return {
-	cast = cast_admin___captcha___current_200_response_hcaptcha;
-	new = new_admin___captcha___current_200_response_hcaptcha;
+	cast = cast_admin___captcha___current_200_response_hcaptcha,
+	new = new_admin___captcha___current_200_response_hcaptcha,
 }

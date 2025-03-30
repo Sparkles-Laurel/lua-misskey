@@ -11,8 +11,8 @@
 -- admin___drive___files_request class
 local admin___drive___files_request = {}
 local admin___drive___files_request_mt = {
-	__name = "admin___drive___files_request";
-	__index = admin___drive___files_request;
+	__name = "admin___drive___files_request",
+	__index = admin___drive___files_request,
 }
 
 local function cast_admin___drive___files_request(t)
@@ -21,17 +21,17 @@ end
 
 local function new_admin___drive___files_request(limit, since_id, until_id, user_id, type, origin, hostname)
 	return cast_admin___drive___files_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["userId"] = user_id;
-		["type"] = type;
-		["origin"] = origin;
-		["hostname"] = hostname;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["userId"] = user_id,
+		["type"] = type,
+		["origin"] = origin,
+		["hostname"] = hostname,
 	})
 end
 
 return {
-	cast = cast_admin___drive___files_request;
-	new = new_admin___drive___files_request;
+	cast = cast_admin___drive___files_request,
+	new = new_admin___drive___files_request,
 }

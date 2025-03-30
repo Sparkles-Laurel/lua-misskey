@@ -11,8 +11,8 @@
 -- admin___captcha___save_request class
 local admin___captcha___save_request = {}
 local admin___captcha___save_request_mt = {
-	__name = "admin___captcha___save_request";
-	__index = admin___captcha___save_request;
+	__name = "admin___captcha___save_request",
+	__index = admin___captcha___save_request,
 }
 
 local function cast_admin___captcha___save_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_admin___captcha___save_request(provider, captcha_result, sitekey, secret, instance_url)
 	return cast_admin___captcha___save_request({
-		["provider"] = provider;
-		["captchaResult"] = captcha_result;
-		["sitekey"] = sitekey;
-		["secret"] = secret;
-		["instanceUrl"] = instance_url;
+		["provider"] = provider,
+		["captchaResult"] = captcha_result,
+		["sitekey"] = sitekey,
+		["secret"] = secret,
+		["instanceUrl"] = instance_url,
 	})
 end
 
 return {
-	cast = cast_admin___captcha___save_request;
-	new = new_admin___captcha___save_request;
+	cast = cast_admin___captcha___save_request,
+	new = new_admin___captcha___save_request,
 }

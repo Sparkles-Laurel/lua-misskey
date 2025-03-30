@@ -11,8 +11,8 @@
 -- admin___cw_user_request class
 local admin___cw_user_request = {}
 local admin___cw_user_request_mt = {
-	__name = "admin___cw_user_request";
-	__index = admin___cw_user_request;
+	__name = "admin___cw_user_request",
+	__index = admin___cw_user_request,
 }
 
 local function cast_admin___cw_user_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___cw_user_request(user_id, cw)
 	return cast_admin___cw_user_request({
-		["userId"] = user_id;
-		["cw"] = cw;
+		["userId"] = user_id,
+		["cw"] = cw,
 	})
 end
 
 return {
-	cast = cast_admin___cw_user_request;
-	new = new_admin___cw_user_request;
+	cast = cast_admin___cw_user_request,
+	new = new_admin___cw_user_request,
 }

@@ -11,8 +11,8 @@
 -- users___lists___delete_request class
 local users___lists___delete_request = {}
 local users___lists___delete_request_mt = {
-	__name = "users___lists___delete_request";
-	__index = users___lists___delete_request;
+	__name = "users___lists___delete_request",
+	__index = users___lists___delete_request,
 }
 
 local function cast_users___lists___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_users___lists___delete_request(list_id)
 	return cast_users___lists___delete_request({
-		["listId"] = list_id;
+		["listId"] = list_id,
 	})
 end
 
 return {
-	cast = cast_users___lists___delete_request;
-	new = new_users___lists___delete_request;
+	cast = cast_users___lists___delete_request,
+	new = new_users___lists___delete_request,
 }

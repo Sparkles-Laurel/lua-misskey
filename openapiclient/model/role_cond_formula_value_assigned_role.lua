@@ -11,8 +11,8 @@
 -- role_cond_formula_value_assigned_role class
 local role_cond_formula_value_assigned_role = {}
 local role_cond_formula_value_assigned_role_mt = {
-	__name = "role_cond_formula_value_assigned_role";
-	__index = role_cond_formula_value_assigned_role;
+	__name = "role_cond_formula_value_assigned_role",
+	__index = role_cond_formula_value_assigned_role,
 }
 
 local function cast_role_cond_formula_value_assigned_role(t)
@@ -21,13 +21,13 @@ end
 
 local function new_role_cond_formula_value_assigned_role(id, type, role_id)
 	return cast_role_cond_formula_value_assigned_role({
-		["id"] = id;
-		["type"] = type;
-		["roleId"] = role_id;
+		["id"] = id,
+		["type"] = type,
+		["roleId"] = role_id,
 	})
 end
 
 return {
-	cast = cast_role_cond_formula_value_assigned_role;
-	new = new_role_cond_formula_value_assigned_role;
+	cast = cast_role_cond_formula_value_assigned_role,
+	new = new_role_cond_formula_value_assigned_role,
 }

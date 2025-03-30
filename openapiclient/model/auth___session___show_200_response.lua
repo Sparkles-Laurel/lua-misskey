@@ -11,8 +11,8 @@
 -- auth___session___show_200_response class
 local auth___session___show_200_response = {}
 local auth___session___show_200_response_mt = {
-	__name = "auth___session___show_200_response";
-	__index = auth___session___show_200_response;
+	__name = "auth___session___show_200_response",
+	__index = auth___session___show_200_response,
 }
 
 local function cast_auth___session___show_200_response(t)
@@ -21,13 +21,13 @@ end
 
 local function new_auth___session___show_200_response(id, app, token)
 	return cast_auth___session___show_200_response({
-		["id"] = id;
-		["app"] = app;
-		["token"] = token;
+		["id"] = id,
+		["app"] = app,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_auth___session___show_200_response;
-	new = new_auth___session___show_200_response;
+	cast = cast_auth___session___show_200_response,
+	new = new_auth___session___show_200_response,
 }

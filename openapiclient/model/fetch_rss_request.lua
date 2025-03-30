@@ -11,8 +11,8 @@
 -- fetch_rss_request class
 local fetch_rss_request = {}
 local fetch_rss_request_mt = {
-	__name = "fetch_rss_request";
-	__index = fetch_rss_request;
+	__name = "fetch_rss_request",
+	__index = fetch_rss_request,
 }
 
 local function cast_fetch_rss_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_fetch_rss_request(url)
 	return cast_fetch_rss_request({
-		["url"] = url;
+		["url"] = url,
 	})
 end
 
 return {
-	cast = cast_fetch_rss_request;
-	new = new_fetch_rss_request;
+	cast = cast_fetch_rss_request,
+	new = new_fetch_rss_request,
 }

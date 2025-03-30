@@ -11,8 +11,8 @@
 -- admin___invite___list_request class
 local admin___invite___list_request = {}
 local admin___invite___list_request_mt = {
-	__name = "admin___invite___list_request";
-	__index = admin___invite___list_request;
+	__name = "admin___invite___list_request",
+	__index = admin___invite___list_request,
 }
 
 local function cast_admin___invite___list_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___invite___list_request(limit, offset, type, sort)
 	return cast_admin___invite___list_request({
-		["limit"] = limit;
-		["offset"] = offset;
-		["type"] = type;
-		["sort"] = sort;
+		["limit"] = limit,
+		["offset"] = offset,
+		["type"] = type,
+		["sort"] = sort,
 	})
 end
 
 return {
-	cast = cast_admin___invite___list_request;
-	new = new_admin___invite___list_request;
+	cast = cast_admin___invite___list_request,
+	new = new_admin___invite___list_request,
 }

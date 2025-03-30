@@ -11,8 +11,8 @@
 -- admin___system_webhook___test_request class
 local admin___system_webhook___test_request = {}
 local admin___system_webhook___test_request_mt = {
-	__name = "admin___system_webhook___test_request";
-	__index = admin___system_webhook___test_request;
+	__name = "admin___system_webhook___test_request",
+	__index = admin___system_webhook___test_request,
 }
 
 local function cast_admin___system_webhook___test_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___system_webhook___test_request(webhook_id, type, override)
 	return cast_admin___system_webhook___test_request({
-		["webhookId"] = webhook_id;
-		["type"] = type;
-		["override"] = override;
+		["webhookId"] = webhook_id,
+		["type"] = type,
+		["override"] = override,
 	})
 end
 
 return {
-	cast = cast_admin___system_webhook___test_request;
-	new = new_admin___system_webhook___test_request;
+	cast = cast_admin___system_webhook___test_request,
+	new = new_admin___system_webhook___test_request,
 }

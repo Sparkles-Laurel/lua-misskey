@@ -11,8 +11,8 @@
 -- users___lists___show_request class
 local users___lists___show_request = {}
 local users___lists___show_request_mt = {
-	__name = "users___lists___show_request";
-	__index = users___lists___show_request;
+	__name = "users___lists___show_request",
+	__index = users___lists___show_request,
 }
 
 local function cast_users___lists___show_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___lists___show_request(list_id, for_public)
 	return cast_users___lists___show_request({
-		["listId"] = list_id;
-		["forPublic"] = for_public;
+		["listId"] = list_id,
+		["forPublic"] = for_public,
 	})
 end
 
 return {
-	cast = cast_users___lists___show_request;
-	new = new_users___lists___show_request;
+	cast = cast_users___lists___show_request,
+	new = new_users___lists___show_request,
 }

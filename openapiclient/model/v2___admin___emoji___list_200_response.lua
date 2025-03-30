@@ -11,8 +11,8 @@
 -- v2___admin___emoji___list_200_response class
 local v2___admin___emoji___list_200_response = {}
 local v2___admin___emoji___list_200_response_mt = {
-	__name = "v2___admin___emoji___list_200_response";
-	__index = v2___admin___emoji___list_200_response;
+	__name = "v2___admin___emoji___list_200_response",
+	__index = v2___admin___emoji___list_200_response,
 }
 
 local function cast_v2___admin___emoji___list_200_response(t)
@@ -21,14 +21,14 @@ end
 
 local function new_v2___admin___emoji___list_200_response(emojis, count, all_count, all_pages)
 	return cast_v2___admin___emoji___list_200_response({
-		["emojis"] = emojis;
-		["count"] = count;
-		["allCount"] = all_count;
-		["allPages"] = all_pages;
+		["emojis"] = emojis,
+		["count"] = count,
+		["allCount"] = all_count,
+		["allPages"] = all_pages,
 	})
 end
 
 return {
-	cast = cast_v2___admin___emoji___list_200_response;
-	new = new_v2___admin___emoji___list_200_response;
+	cast = cast_v2___admin___emoji___list_200_response,
+	new = new_v2___admin___emoji___list_200_response,
 }

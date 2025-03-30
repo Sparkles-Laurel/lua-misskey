@@ -11,8 +11,8 @@
 -- drive_file_properties class
 local drive_file_properties = {}
 local drive_file_properties_mt = {
-	__name = "drive_file_properties";
-	__index = drive_file_properties;
+	__name = "drive_file_properties",
+	__index = drive_file_properties,
 }
 
 local function cast_drive_file_properties(t)
@@ -21,14 +21,14 @@ end
 
 local function new_drive_file_properties(width, height, orientation, avg_color)
 	return cast_drive_file_properties({
-		["width"] = width;
-		["height"] = height;
-		["orientation"] = orientation;
-		["avgColor"] = avg_color;
+		["width"] = width,
+		["height"] = height,
+		["orientation"] = orientation,
+		["avgColor"] = avg_color,
 	})
 end
 
 return {
-	cast = cast_drive_file_properties;
-	new = new_drive_file_properties;
+	cast = cast_drive_file_properties,
+	new = new_drive_file_properties,
 }

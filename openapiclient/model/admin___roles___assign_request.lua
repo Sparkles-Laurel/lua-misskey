@@ -11,8 +11,8 @@
 -- admin___roles___assign_request class
 local admin___roles___assign_request = {}
 local admin___roles___assign_request_mt = {
-	__name = "admin___roles___assign_request";
-	__index = admin___roles___assign_request;
+	__name = "admin___roles___assign_request",
+	__index = admin___roles___assign_request,
 }
 
 local function cast_admin___roles___assign_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___roles___assign_request(role_id, user_id, expires_at)
 	return cast_admin___roles___assign_request({
-		["roleId"] = role_id;
-		["userId"] = user_id;
-		["expiresAt"] = expires_at;
+		["roleId"] = role_id,
+		["userId"] = user_id,
+		["expiresAt"] = expires_at,
 	})
 end
 
 return {
-	cast = cast_admin___roles___assign_request;
-	new = new_admin___roles___assign_request;
+	cast = cast_admin___roles___assign_request,
+	new = new_admin___roles___assign_request,
 }

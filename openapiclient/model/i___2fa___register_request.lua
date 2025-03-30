@@ -11,8 +11,8 @@
 -- i___2fa___register_request class
 local i___2fa___register_request = {}
 local i___2fa___register_request_mt = {
-	__name = "i___2fa___register_request";
-	__index = i___2fa___register_request;
+	__name = "i___2fa___register_request",
+	__index = i___2fa___register_request,
 }
 
 local function cast_i___2fa___register_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___2fa___register_request(password, token)
 	return cast_i___2fa___register_request({
-		["password"] = password;
-		["token"] = token;
+		["password"] = password,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_request;
-	new = new_i___2fa___register_request;
+	cast = cast_i___2fa___register_request,
+	new = new_i___2fa___register_request,
 }

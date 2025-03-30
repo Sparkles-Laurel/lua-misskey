@@ -55,8 +55,8 @@ local openapiclient_users___featured_notes_request = require "openapiclient.mode
 
 local notes_api = {}
 local notes_api_mt = {
-	__name = "notes_api";
-	__index = notes_api;
+	__name = "notes_api",
+	__index = notes_api,
 }
 
 local function new_notes_api(authority, basePath, schemes)
@@ -67,25 +67,25 @@ local function new_notes_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, notes_api_mt)
 end
 
 function notes_api:channels_timeline(channels___timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -136,11 +136,11 @@ end
 
 function notes_api:notes(notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -191,11 +191,11 @@ end
 
 function notes_api:notes_bubble_timeline(notes___bubble_timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/bubble-timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -246,11 +246,11 @@ end
 
 function notes_api:notes_children(notes___children_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/children",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -301,11 +301,11 @@ end
 
 function notes_api:notes_conversation(notes___conversation_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/conversation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -356,11 +356,11 @@ end
 
 function notes_api:notes_create(notes___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -408,11 +408,11 @@ end
 
 function notes_api:notes_delete(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -449,11 +449,11 @@ end
 
 function notes_api:notes_edit(notes___edit_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/edit",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -501,11 +501,11 @@ end
 
 function notes_api:notes_favorites_create(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/favorites/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -542,11 +542,11 @@ end
 
 function notes_api:notes_favorites_delete(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/favorites/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -583,11 +583,11 @@ end
 
 function notes_api:notes_featured(notes___featured_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -638,11 +638,11 @@ end
 
 function notes_api:notes_featured_0(notes___featured_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -693,11 +693,11 @@ end
 
 function notes_api:notes_following(notes___following_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -748,11 +748,11 @@ end
 
 function notes_api:notes_following_0(notes___following_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -803,11 +803,11 @@ end
 
 function notes_api:notes_global_timeline(notes___bubble_timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/global-timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -858,11 +858,11 @@ end
 
 function notes_api:notes_hybrid_timeline(notes___hybrid_timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/hybrid-timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -913,11 +913,11 @@ end
 
 function notes_api:notes_like(notes___like_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/like",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -954,11 +954,11 @@ end
 
 function notes_api:notes_local_timeline(notes___local_timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/local-timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1009,11 +1009,11 @@ end
 
 function notes_api:notes_mentions(notes___mentions_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/mentions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1064,11 +1064,11 @@ end
 
 function notes_api:notes_polls_recommendation(notes___polls___recommendation_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/polls/recommendation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1119,11 +1119,11 @@ end
 
 function notes_api:notes_polls_refresh(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/polls/refresh",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1160,11 +1160,11 @@ end
 
 function notes_api:notes_polls_vote(notes___polls___vote_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/polls/vote",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1201,11 +1201,11 @@ end
 
 function notes_api:notes_reactions(notes___reactions_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/reactions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1256,11 +1256,11 @@ end
 
 function notes_api:notes_reactions_0(notes___reactions_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/reactions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1311,11 +1311,11 @@ end
 
 function notes_api:notes_renotes(notes___renotes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/renotes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1366,11 +1366,11 @@ end
 
 function notes_api:notes_replies(notes___replies_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/replies",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1421,11 +1421,11 @@ end
 
 function notes_api:notes_schedule_create(notes___schedule___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/schedule/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1462,11 +1462,11 @@ end
 
 function notes_api:notes_schedule_delete(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/schedule/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1503,11 +1503,11 @@ end
 
 function notes_api:notes_schedule_list(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/schedule/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1558,11 +1558,11 @@ end
 
 function notes_api:notes_search(notes___search_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/search",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1613,11 +1613,11 @@ end
 
 function notes_api:notes_search_by_tag(notes___search_by_tag_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/search-by-tag",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1668,11 +1668,11 @@ end
 
 function notes_api:notes_show(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1720,11 +1720,11 @@ end
 
 function notes_api:notes_state(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/state",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1772,11 +1772,11 @@ end
 
 function notes_api:notes_thread_muting_create(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/thread-muting/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1813,11 +1813,11 @@ end
 
 function notes_api:notes_thread_muting_delete(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/thread-muting/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1854,11 +1854,11 @@ end
 
 function notes_api:notes_timeline(notes___timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1909,11 +1909,11 @@ end
 
 function notes_api:notes_translate(notes___translate_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/translate",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1961,11 +1961,11 @@ end
 
 function notes_api:notes_unrenote(notes___unrenote_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/unrenote",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2002,11 +2002,11 @@ end
 
 function notes_api:notes_user_list_timeline(notes___user_list_timeline_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/user-list-timeline",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2057,11 +2057,11 @@ end
 
 function notes_api:notes_versions(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/versions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2109,11 +2109,11 @@ end
 
 function notes_api:promo_read(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/promo/read",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2150,11 +2150,11 @@ end
 
 function notes_api:users_featured_notes(users___featured_notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/featured-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2205,11 +2205,11 @@ end
 
 function notes_api:users_featured_notes_0(users___featured_notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/featured-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2259,5 +2259,5 @@ function notes_api:users_featured_notes_0(users___featured_notes_request)
 end
 
 return {
-	new = new_notes_api;
+	new = new_notes_api,
 }

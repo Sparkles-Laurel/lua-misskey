@@ -11,8 +11,8 @@
 -- i___registry___get_unsecure_request class
 local i___registry___get_unsecure_request = {}
 local i___registry___get_unsecure_request_mt = {
-	__name = "i___registry___get_unsecure_request";
-	__index = i___registry___get_unsecure_request;
+	__name = "i___registry___get_unsecure_request",
+	__index = i___registry___get_unsecure_request,
 }
 
 local function cast_i___registry___get_unsecure_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___registry___get_unsecure_request(key, scope)
 	return cast_i___registry___get_unsecure_request({
-		["key"] = key;
-		["scope"] = scope;
+		["key"] = key,
+		["scope"] = scope,
 	})
 end
 
 return {
-	cast = cast_i___registry___get_unsecure_request;
-	new = new_i___registry___get_unsecure_request;
+	cast = cast_i___registry___get_unsecure_request,
+	new = new_i___registry___get_unsecure_request,
 }

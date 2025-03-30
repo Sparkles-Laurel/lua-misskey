@@ -11,8 +11,8 @@
 -- sponsors_request class
 local sponsors_request = {}
 local sponsors_request_mt = {
-	__name = "sponsors_request";
-	__index = sponsors_request;
+	__name = "sponsors_request",
+	__index = sponsors_request,
 }
 
 local function cast_sponsors_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_sponsors_request(force_update, instance)
 	return cast_sponsors_request({
-		["forceUpdate"] = force_update;
-		["instance"] = instance;
+		["forceUpdate"] = force_update,
+		["instance"] = instance,
 	})
 end
 
 return {
-	cast = cast_sponsors_request;
-	new = new_sponsors_request;
+	cast = cast_sponsors_request,
+	new = new_sponsors_request,
 }

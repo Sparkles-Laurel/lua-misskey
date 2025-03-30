@@ -11,8 +11,8 @@
 -- notes___translate_200_response class
 local notes___translate_200_response = {}
 local notes___translate_200_response_mt = {
-	__name = "notes___translate_200_response";
-	__index = notes___translate_200_response;
+	__name = "notes___translate_200_response",
+	__index = notes___translate_200_response,
 }
 
 local function cast_notes___translate_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___translate_200_response(source_lang, text)
 	return cast_notes___translate_200_response({
-		["sourceLang"] = source_lang;
-		["text"] = text;
+		["sourceLang"] = source_lang,
+		["text"] = text,
 	})
 end
 
 return {
-	cast = cast_notes___translate_200_response;
-	new = new_notes___translate_200_response;
+	cast = cast_notes___translate_200_response,
+	new = new_notes___translate_200_response,
 }

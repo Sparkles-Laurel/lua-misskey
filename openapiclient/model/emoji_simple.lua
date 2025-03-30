@@ -11,8 +11,8 @@
 -- emoji_simple class
 local emoji_simple = {}
 local emoji_simple_mt = {
-	__name = "emoji_simple";
-	__index = emoji_simple;
+	__name = "emoji_simple",
+	__index = emoji_simple,
 }
 
 local function cast_emoji_simple(t)
@@ -21,17 +21,17 @@ end
 
 local function new_emoji_simple(aliases, name, category, url, local_only, is_sensitive, role_ids_that_can_be_used_this_emoji_as_reaction)
 	return cast_emoji_simple({
-		["aliases"] = aliases;
-		["name"] = name;
-		["category"] = category;
-		["url"] = url;
-		["localOnly"] = local_only;
-		["isSensitive"] = is_sensitive;
-		["roleIdsThatCanBeUsedThisEmojiAsReaction"] = role_ids_that_can_be_used_this_emoji_as_reaction;
+		["aliases"] = aliases,
+		["name"] = name,
+		["category"] = category,
+		["url"] = url,
+		["localOnly"] = local_only,
+		["isSensitive"] = is_sensitive,
+		["roleIdsThatCanBeUsedThisEmojiAsReaction"] = role_ids_that_can_be_used_this_emoji_as_reaction,
 	})
 end
 
 return {
-	cast = cast_emoji_simple;
-	new = new_emoji_simple;
+	cast = cast_emoji_simple,
+	new = new_emoji_simple,
 }

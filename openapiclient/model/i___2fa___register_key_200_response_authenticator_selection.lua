@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response_authenticator_selection class
 local i___2fa___register_key_200_response_authenticator_selection = {}
 local i___2fa___register_key_200_response_authenticator_selection_mt = {
-	__name = "i___2fa___register_key_200_response_authenticator_selection";
-	__index = i___2fa___register_key_200_response_authenticator_selection;
+	__name = "i___2fa___register_key_200_response_authenticator_selection",
+	__index = i___2fa___register_key_200_response_authenticator_selection,
 }
 
 local function cast_i___2fa___register_key_200_response_authenticator_selection(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___2fa___register_key_200_response_authenticator_selection(authenticator_attachment, require_resident_key, user_verification)
 	return cast_i___2fa___register_key_200_response_authenticator_selection({
-		["authenticatorAttachment"] = authenticator_attachment;
-		["requireResidentKey"] = require_resident_key;
-		["userVerification"] = user_verification;
+		["authenticatorAttachment"] = authenticator_attachment,
+		["requireResidentKey"] = require_resident_key,
+		["userVerification"] = user_verification,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response_authenticator_selection;
-	new = new_i___2fa___register_key_200_response_authenticator_selection;
+	cast = cast_i___2fa___register_key_200_response_authenticator_selection,
+	new = new_i___2fa___register_key_200_response_authenticator_selection,
 }

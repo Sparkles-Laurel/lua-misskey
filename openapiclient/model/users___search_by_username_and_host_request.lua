@@ -11,8 +11,8 @@
 -- users___search_by_username_and_host_request class
 local users___search_by_username_and_host_request = {}
 local users___search_by_username_and_host_request_mt = {
-	__name = "users___search_by_username_and_host_request";
-	__index = users___search_by_username_and_host_request;
+	__name = "users___search_by_username_and_host_request",
+	__index = users___search_by_username_and_host_request,
 }
 
 local function cast_users___search_by_username_and_host_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_users___search_by_username_and_host_request(limit, detail, username, host)
 	return cast_users___search_by_username_and_host_request({
-		["limit"] = limit;
-		["detail"] = detail;
-		["username"] = username;
-		["host"] = host;
+		["limit"] = limit,
+		["detail"] = detail,
+		["username"] = username,
+		["host"] = host,
 	})
 end
 
 return {
-	cast = cast_users___search_by_username_and_host_request;
-	new = new_users___search_by_username_and_host_request;
+	cast = cast_users___search_by_username_and_host_request,
+	new = new_users___search_by_username_and_host_request,
 }

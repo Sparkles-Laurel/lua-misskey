@@ -11,8 +11,8 @@
 -- notes___schedule___create_request_schedule_note class
 local notes___schedule___create_request_schedule_note = {}
 local notes___schedule___create_request_schedule_note_mt = {
-	__name = "notes___schedule___create_request_schedule_note";
-	__index = notes___schedule___create_request_schedule_note;
+	__name = "notes___schedule___create_request_schedule_note",
+	__index = notes___schedule___create_request_schedule_note,
 }
 
 local function cast_notes___schedule___create_request_schedule_note(t)
@@ -21,11 +21,11 @@ end
 
 local function new_notes___schedule___create_request_schedule_note(scheduled_at)
 	return cast_notes___schedule___create_request_schedule_note({
-		["scheduledAt"] = scheduled_at;
+		["scheduledAt"] = scheduled_at,
 	})
 end
 
 return {
-	cast = cast_notes___schedule___create_request_schedule_note;
-	new = new_notes___schedule___create_request_schedule_note;
+	cast = cast_notes___schedule___create_request_schedule_note,
+	new = new_notes___schedule___create_request_schedule_note,
 }

@@ -11,8 +11,8 @@
 -- drive_file class
 local drive_file = {}
 local drive_file_mt = {
-	__name = "drive_file";
-	__index = drive_file;
+	__name = "drive_file",
+	__index = drive_file,
 }
 
 local function cast_drive_file(t)
@@ -21,26 +21,26 @@ end
 
 local function new_drive_file(id, created_at, name, type, md5, size, is_sensitive, blurhash, properties, url, thumbnail_url, comment, folder_id, folder, user_id, user)
 	return cast_drive_file({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["name"] = name;
-		["type"] = type;
-		["md5"] = md5;
-		["size"] = size;
-		["isSensitive"] = is_sensitive;
-		["blurhash"] = blurhash;
-		["properties"] = properties;
-		["url"] = url;
-		["thumbnailUrl"] = thumbnail_url;
-		["comment"] = comment;
-		["folderId"] = folder_id;
-		["folder"] = folder;
-		["userId"] = user_id;
-		["user"] = user;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["name"] = name,
+		["type"] = type,
+		["md5"] = md5,
+		["size"] = size,
+		["isSensitive"] = is_sensitive,
+		["blurhash"] = blurhash,
+		["properties"] = properties,
+		["url"] = url,
+		["thumbnailUrl"] = thumbnail_url,
+		["comment"] = comment,
+		["folderId"] = folder_id,
+		["folder"] = folder,
+		["userId"] = user_id,
+		["user"] = user,
 	})
 end
 
 return {
-	cast = cast_drive_file;
-	new = new_drive_file;
+	cast = cast_drive_file,
+	new = new_drive_file,
 }

@@ -11,8 +11,8 @@
 -- i___2fa___key_done_200_response class
 local i___2fa___key_done_200_response = {}
 local i___2fa___key_done_200_response_mt = {
-	__name = "i___2fa___key_done_200_response";
-	__index = i___2fa___key_done_200_response;
+	__name = "i___2fa___key_done_200_response",
+	__index = i___2fa___key_done_200_response,
 }
 
 local function cast_i___2fa___key_done_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___2fa___key_done_200_response(id, name)
 	return cast_i___2fa___key_done_200_response({
-		["id"] = id;
-		["name"] = name;
+		["id"] = id,
+		["name"] = name,
 	})
 end
 
 return {
-	cast = cast_i___2fa___key_done_200_response;
-	new = new_i___2fa___key_done_200_response;
+	cast = cast_i___2fa___key_done_200_response,
+	new = new_i___2fa___key_done_200_response,
 }

@@ -11,8 +11,8 @@
 -- user_list class
 local user_list = {}
 local user_list_mt = {
-	__name = "user_list";
-	__index = user_list;
+	__name = "user_list",
+	__index = user_list,
 }
 
 local function cast_user_list(t)
@@ -21,15 +21,15 @@ end
 
 local function new_user_list(id, created_at, name, user_ids, is_public)
 	return cast_user_list({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["name"] = name;
-		["userIds"] = user_ids;
-		["isPublic"] = is_public;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["name"] = name,
+		["userIds"] = user_ids,
+		["isPublic"] = is_public,
 	})
 end
 
 return {
-	cast = cast_user_list;
-	new = new_user_list;
+	cast = cast_user_list,
+	new = new_user_list,
 }

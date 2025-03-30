@@ -11,8 +11,8 @@
 -- gallery___posts___update_request class
 local gallery___posts___update_request = {}
 local gallery___posts___update_request_mt = {
-	__name = "gallery___posts___update_request";
-	__index = gallery___posts___update_request;
+	__name = "gallery___posts___update_request",
+	__index = gallery___posts___update_request,
 }
 
 local function cast_gallery___posts___update_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_gallery___posts___update_request(post_id, title, description, file_ids, is_sensitive)
 	return cast_gallery___posts___update_request({
-		["postId"] = post_id;
-		["title"] = title;
-		["description"] = description;
-		["fileIds"] = file_ids;
-		["isSensitive"] = is_sensitive;
+		["postId"] = post_id,
+		["title"] = title,
+		["description"] = description,
+		["fileIds"] = file_ids,
+		["isSensitive"] = is_sensitive,
 	})
 end
 
 return {
-	cast = cast_gallery___posts___update_request;
-	new = new_gallery___posts___update_request;
+	cast = cast_gallery___posts___update_request,
+	new = new_gallery___posts___update_request,
 }

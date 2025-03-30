@@ -11,8 +11,8 @@
 -- fetch_rss_200_response_items_inner_enclosure class
 local fetch_rss_200_response_items_inner_enclosure = {}
 local fetch_rss_200_response_items_inner_enclosure_mt = {
-	__name = "fetch_rss_200_response_items_inner_enclosure";
-	__index = fetch_rss_200_response_items_inner_enclosure;
+	__name = "fetch_rss_200_response_items_inner_enclosure",
+	__index = fetch_rss_200_response_items_inner_enclosure,
 }
 
 local function cast_fetch_rss_200_response_items_inner_enclosure(t)
@@ -21,13 +21,13 @@ end
 
 local function new_fetch_rss_200_response_items_inner_enclosure(url, length, type)
 	return cast_fetch_rss_200_response_items_inner_enclosure({
-		["url"] = url;
-		["length"] = length;
-		["type"] = type;
+		["url"] = url,
+		["length"] = length,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_fetch_rss_200_response_items_inner_enclosure;
-	new = new_fetch_rss_200_response_items_inner_enclosure;
+	cast = cast_fetch_rss_200_response_items_inner_enclosure,
+	new = new_fetch_rss_200_response_items_inner_enclosure,
 }

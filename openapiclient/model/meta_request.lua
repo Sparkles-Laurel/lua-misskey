@@ -11,8 +11,8 @@
 -- meta_request class
 local meta_request = {}
 local meta_request_mt = {
-	__name = "meta_request";
-	__index = meta_request;
+	__name = "meta_request",
+	__index = meta_request,
 }
 
 local function cast_meta_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_meta_request(detail)
 	return cast_meta_request({
-		["detail"] = detail;
+		["detail"] = detail,
 	})
 end
 
 return {
-	cast = cast_meta_request;
-	new = new_meta_request;
+	cast = cast_meta_request,
+	new = new_meta_request,
 }

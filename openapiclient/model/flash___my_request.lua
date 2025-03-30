@@ -11,8 +11,8 @@
 -- flash___my_request class
 local flash___my_request = {}
 local flash___my_request_mt = {
-	__name = "flash___my_request";
-	__index = flash___my_request;
+	__name = "flash___my_request",
+	__index = flash___my_request,
 }
 
 local function cast_flash___my_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_flash___my_request(limit, since_id, until_id)
 	return cast_flash___my_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_flash___my_request;
-	new = new_flash___my_request;
+	cast = cast_flash___my_request,
+	new = new_flash___my_request,
 }

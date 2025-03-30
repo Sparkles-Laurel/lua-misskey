@@ -26,8 +26,8 @@ local openapiclient_roles___users_200_response_inner = require "openapiclient.mo
 
 local role_api = {}
 local role_api_mt = {
-	__name = "role_api";
-	__index = role_api;
+	__name = "role_api",
+	__index = role_api,
 }
 
 local function new_role_api(authority, basePath, schemes)
@@ -38,25 +38,25 @@ local function new_role_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, role_api_mt)
 end
 
 function role_api:roles_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/roles/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -101,11 +101,11 @@ end
 
 function role_api:roles_notes(roles___notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/roles/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -156,11 +156,11 @@ end
 
 function role_api:roles_show(admin___roles___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/roles/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -208,11 +208,11 @@ end
 
 function role_api:roles_users(admin___roles___users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/roles/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -262,5 +262,5 @@ function role_api:roles_users(admin___roles___users_request)
 end
 
 return {
-	new = new_role_api;
+	new = new_role_api,
 }

@@ -11,8 +11,8 @@
 -- fetch_external_resources_200_response class
 local fetch_external_resources_200_response = {}
 local fetch_external_resources_200_response_mt = {
-	__name = "fetch_external_resources_200_response";
-	__index = fetch_external_resources_200_response;
+	__name = "fetch_external_resources_200_response",
+	__index = fetch_external_resources_200_response,
 }
 
 local function cast_fetch_external_resources_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_fetch_external_resources_200_response(type, data)
 	return cast_fetch_external_resources_200_response({
-		["type"] = type;
-		["data"] = data;
+		["type"] = type,
+		["data"] = data,
 	})
 end
 
 return {
-	cast = cast_fetch_external_resources_200_response;
-	new = new_fetch_external_resources_200_response;
+	cast = cast_fetch_external_resources_200_response,
+	new = new_fetch_external_resources_200_response,
 }

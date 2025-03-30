@@ -11,8 +11,8 @@
 -- note_reaction class
 local note_reaction = {}
 local note_reaction_mt = {
-	__name = "note_reaction";
-	__index = note_reaction;
+	__name = "note_reaction",
+	__index = note_reaction,
 }
 
 local function cast_note_reaction(t)
@@ -21,14 +21,14 @@ end
 
 local function new_note_reaction(id, created_at, user, type)
 	return cast_note_reaction({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["user"] = user;
-		["type"] = type;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["user"] = user,
+		["type"] = type,
 	})
 end
 
 return {
-	cast = cast_note_reaction;
-	new = new_note_reaction;
+	cast = cast_note_reaction,
+	new = new_note_reaction,
 }

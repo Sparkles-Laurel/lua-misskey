@@ -11,8 +11,8 @@
 -- notes___unrenote_request class
 local notes___unrenote_request = {}
 local notes___unrenote_request_mt = {
-	__name = "notes___unrenote_request";
-	__index = notes___unrenote_request;
+	__name = "notes___unrenote_request",
+	__index = notes___unrenote_request,
 }
 
 local function cast_notes___unrenote_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___unrenote_request(note_id, quote)
 	return cast_notes___unrenote_request({
-		["noteId"] = note_id;
-		["quote"] = quote;
+		["noteId"] = note_id,
+		["quote"] = quote,
 	})
 end
 
 return {
-	cast = cast_notes___unrenote_request;
-	new = new_notes___unrenote_request;
+	cast = cast_notes___unrenote_request,
+	new = new_notes___unrenote_request,
 }

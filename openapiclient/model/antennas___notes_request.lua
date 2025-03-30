@@ -11,8 +11,8 @@
 -- antennas___notes_request class
 local antennas___notes_request = {}
 local antennas___notes_request_mt = {
-	__name = "antennas___notes_request";
-	__index = antennas___notes_request;
+	__name = "antennas___notes_request",
+	__index = antennas___notes_request,
 }
 
 local function cast_antennas___notes_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_antennas___notes_request(antenna_id, limit, since_id, until_id, since_date, until_date)
 	return cast_antennas___notes_request({
-		["antennaId"] = antenna_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["antennaId"] = antenna_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_antennas___notes_request;
-	new = new_antennas___notes_request;
+	cast = cast_antennas___notes_request,
+	new = new_antennas___notes_request,
 }

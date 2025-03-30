@@ -11,8 +11,8 @@
 -- following class
 local following = {}
 local following_mt = {
-	__name = "following";
-	__index = following;
+	__name = "following",
+	__index = following,
 }
 
 local function cast_following(t)
@@ -21,16 +21,16 @@ end
 
 local function new_following(id, created_at, followee_id, follower_id, followee, follower)
 	return cast_following({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["followeeId"] = followee_id;
-		["followerId"] = follower_id;
-		["followee"] = followee;
-		["follower"] = follower;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["followeeId"] = followee_id,
+		["followerId"] = follower_id,
+		["followee"] = followee,
+		["follower"] = follower,
 	})
 end
 
 return {
-	cast = cast_following;
-	new = new_following;
+	cast = cast_following,
+	new = new_following,
 }

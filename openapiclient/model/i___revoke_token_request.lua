@@ -11,8 +11,8 @@
 -- i___revoke_token_request class
 local i___revoke_token_request = {}
 local i___revoke_token_request_mt = {
-	__name = "i___revoke_token_request";
-	__index = i___revoke_token_request;
+	__name = "i___revoke_token_request",
+	__index = i___revoke_token_request,
 }
 
 local function cast_i___revoke_token_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___revoke_token_request(token_id, token)
 	return cast_i___revoke_token_request({
-		["tokenId"] = token_id;
-		["token"] = token;
+		["tokenId"] = token_id,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_i___revoke_token_request;
-	new = new_i___revoke_token_request;
+	cast = cast_i___revoke_token_request,
+	new = new_i___revoke_token_request,
 }

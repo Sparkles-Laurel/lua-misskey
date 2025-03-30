@@ -11,8 +11,8 @@
 -- admin___emoji___add_aliases_bulk_request class
 local admin___emoji___add_aliases_bulk_request = {}
 local admin___emoji___add_aliases_bulk_request_mt = {
-	__name = "admin___emoji___add_aliases_bulk_request";
-	__index = admin___emoji___add_aliases_bulk_request;
+	__name = "admin___emoji___add_aliases_bulk_request",
+	__index = admin___emoji___add_aliases_bulk_request,
 }
 
 local function cast_admin___emoji___add_aliases_bulk_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___emoji___add_aliases_bulk_request(ids, aliases)
 	return cast_admin___emoji___add_aliases_bulk_request({
-		["ids"] = ids;
-		["aliases"] = aliases;
+		["ids"] = ids,
+		["aliases"] = aliases,
 	})
 end
 
 return {
-	cast = cast_admin___emoji___add_aliases_bulk_request;
-	new = new_admin___emoji___add_aliases_bulk_request;
+	cast = cast_admin___emoji___add_aliases_bulk_request,
+	new = new_admin___emoji___add_aliases_bulk_request,
 }

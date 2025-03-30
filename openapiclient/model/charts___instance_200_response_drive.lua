@@ -11,8 +11,8 @@
 -- charts___instance_200_response_drive class
 local charts___instance_200_response_drive = {}
 local charts___instance_200_response_drive_mt = {
-	__name = "charts___instance_200_response_drive";
-	__index = charts___instance_200_response_drive;
+	__name = "charts___instance_200_response_drive",
+	__index = charts___instance_200_response_drive,
 }
 
 local function cast_charts___instance_200_response_drive(t)
@@ -21,15 +21,15 @@ end
 
 local function new_charts___instance_200_response_drive(total_files, inc_files, dec_files, inc_usage, dec_usage)
 	return cast_charts___instance_200_response_drive({
-		["totalFiles"] = total_files;
-		["incFiles"] = inc_files;
-		["decFiles"] = dec_files;
-		["incUsage"] = inc_usage;
-		["decUsage"] = dec_usage;
+		["totalFiles"] = total_files,
+		["incFiles"] = inc_files,
+		["decFiles"] = dec_files,
+		["incUsage"] = inc_usage,
+		["decUsage"] = dec_usage,
 	})
 end
 
 return {
-	cast = cast_charts___instance_200_response_drive;
-	new = new_charts___instance_200_response_drive;
+	cast = cast_charts___instance_200_response_drive,
+	new = new_charts___instance_200_response_drive,
 }

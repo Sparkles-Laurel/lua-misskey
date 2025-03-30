@@ -11,8 +11,8 @@
 -- roles___users_200_response_inner class
 local roles___users_200_response_inner = {}
 local roles___users_200_response_inner_mt = {
-	__name = "roles___users_200_response_inner";
-	__index = roles___users_200_response_inner;
+	__name = "roles___users_200_response_inner",
+	__index = roles___users_200_response_inner,
 }
 
 local function cast_roles___users_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_roles___users_200_response_inner(id, user)
 	return cast_roles___users_200_response_inner({
-		["id"] = id;
-		["user"] = user;
+		["id"] = id,
+		["user"] = user,
 	})
 end
 
 return {
-	cast = cast_roles___users_200_response_inner;
-	new = new_roles___users_200_response_inner;
+	cast = cast_roles___users_200_response_inner,
+	new = new_roles___users_200_response_inner,
 }

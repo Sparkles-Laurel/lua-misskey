@@ -11,8 +11,8 @@
 -- notes___like_request class
 local notes___like_request = {}
 local notes___like_request_mt = {
-	__name = "notes___like_request";
-	__index = notes___like_request;
+	__name = "notes___like_request",
+	__index = notes___like_request,
 }
 
 local function cast_notes___like_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___like_request(note_id, override)
 	return cast_notes___like_request({
-		["noteId"] = note_id;
-		["override"] = override;
+		["noteId"] = note_id,
+		["override"] = override,
 	})
 end
 
 return {
-	cast = cast_notes___like_request;
-	new = new_notes___like_request;
+	cast = cast_notes___like_request,
+	new = new_notes___like_request,
 }

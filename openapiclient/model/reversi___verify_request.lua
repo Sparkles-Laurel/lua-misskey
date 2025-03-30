@@ -11,8 +11,8 @@
 -- reversi___verify_request class
 local reversi___verify_request = {}
 local reversi___verify_request_mt = {
-	__name = "reversi___verify_request";
-	__index = reversi___verify_request;
+	__name = "reversi___verify_request",
+	__index = reversi___verify_request,
 }
 
 local function cast_reversi___verify_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_reversi___verify_request(game_id, crc32)
 	return cast_reversi___verify_request({
-		["gameId"] = game_id;
-		["crc32"] = crc32;
+		["gameId"] = game_id,
+		["crc32"] = crc32,
 	})
 end
 
 return {
-	cast = cast_reversi___verify_request;
-	new = new_reversi___verify_request;
+	cast = cast_reversi___verify_request,
+	new = new_reversi___verify_request,
 }

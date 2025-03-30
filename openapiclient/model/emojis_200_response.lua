@@ -11,8 +11,8 @@
 -- emojis_200_response class
 local emojis_200_response = {}
 local emojis_200_response_mt = {
-	__name = "emojis_200_response";
-	__index = emojis_200_response;
+	__name = "emojis_200_response",
+	__index = emojis_200_response,
 }
 
 local function cast_emojis_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_emojis_200_response(emojis)
 	return cast_emojis_200_response({
-		["emojis"] = emojis;
+		["emojis"] = emojis,
 	})
 end
 
 return {
-	cast = cast_emojis_200_response;
-	new = new_emojis_200_response;
+	cast = cast_emojis_200_response,
+	new = new_emojis_200_response,
 }

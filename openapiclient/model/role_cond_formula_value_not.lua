@@ -11,8 +11,8 @@
 -- role_cond_formula_value_not class
 local role_cond_formula_value_not = {}
 local role_cond_formula_value_not_mt = {
-	__name = "role_cond_formula_value_not";
-	__index = role_cond_formula_value_not;
+	__name = "role_cond_formula_value_not",
+	__index = role_cond_formula_value_not,
 }
 
 local function cast_role_cond_formula_value_not(t)
@@ -21,13 +21,13 @@ end
 
 local function new_role_cond_formula_value_not(id, type, value)
 	return cast_role_cond_formula_value_not({
-		["id"] = id;
-		["type"] = type;
-		["value"] = value;
+		["id"] = id,
+		["type"] = type,
+		["value"] = value,
 	})
 end
 
 return {
-	cast = cast_role_cond_formula_value_not;
-	new = new_role_cond_formula_value_not;
+	cast = cast_role_cond_formula_value_not,
+	new = new_role_cond_formula_value_not,
 }

@@ -11,8 +11,8 @@
 -- notifications___create_request class
 local notifications___create_request = {}
 local notifications___create_request_mt = {
-	__name = "notifications___create_request";
-	__index = notifications___create_request;
+	__name = "notifications___create_request",
+	__index = notifications___create_request,
 }
 
 local function cast_notifications___create_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_notifications___create_request(body, header, icon)
 	return cast_notifications___create_request({
-		["body"] = body;
-		["header"] = header;
-		["icon"] = icon;
+		["body"] = body,
+		["header"] = header,
+		["icon"] = icon,
 	})
 end
 
 return {
-	cast = cast_notifications___create_request;
-	new = new_notifications___create_request;
+	cast = cast_notifications___create_request,
+	new = new_notifications___create_request,
 }

@@ -27,8 +27,8 @@ local openapiclient_miauth___gen_token_request = require "openapiclient.model.mi
 
 local auth_api = {}
 local auth_api_mt = {
-	__name = "auth_api";
-	__index = auth_api;
+	__name = "auth_api",
+	__index = auth_api,
 }
 
 local function new_auth_api(authority, basePath, schemes)
@@ -39,25 +39,25 @@ local function new_auth_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, auth_api_mt)
 end
 
 function auth_api:auth_accept(auth___accept_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/auth/accept",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -94,11 +94,11 @@ end
 
 function auth_api:auth_session_generate(auth___session___generate_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/auth/session/generate",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -146,11 +146,11 @@ end
 
 function auth_api:auth_session_show(auth___accept_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/auth/session/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -198,11 +198,11 @@ end
 
 function auth_api:auth_session_userkey(auth___session___userkey_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/auth/session/userkey",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -250,11 +250,11 @@ end
 
 function auth_api:miauth_gen_token(miauth___gen_token_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/miauth/gen-token",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -301,5 +301,5 @@ function auth_api:miauth_gen_token(miauth___gen_token_request)
 end
 
 return {
-	new = new_auth_api;
+	new = new_auth_api,
 }

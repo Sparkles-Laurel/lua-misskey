@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response_rp class
 local i___2fa___register_key_200_response_rp = {}
 local i___2fa___register_key_200_response_rp_mt = {
-	__name = "i___2fa___register_key_200_response_rp";
-	__index = i___2fa___register_key_200_response_rp;
+	__name = "i___2fa___register_key_200_response_rp",
+	__index = i___2fa___register_key_200_response_rp,
 }
 
 local function cast_i___2fa___register_key_200_response_rp(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___2fa___register_key_200_response_rp(id)
 	return cast_i___2fa___register_key_200_response_rp({
-		["id"] = id;
+		["id"] = id,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response_rp;
-	new = new_i___2fa___register_key_200_response_rp;
+	cast = cast_i___2fa___register_key_200_response_rp,
+	new = new_i___2fa___register_key_200_response_rp,
 }

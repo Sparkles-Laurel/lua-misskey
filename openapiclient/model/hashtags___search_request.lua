@@ -11,8 +11,8 @@
 -- hashtags___search_request class
 local hashtags___search_request = {}
 local hashtags___search_request_mt = {
-	__name = "hashtags___search_request";
-	__index = hashtags___search_request;
+	__name = "hashtags___search_request",
+	__index = hashtags___search_request,
 }
 
 local function cast_hashtags___search_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_hashtags___search_request(limit, query, offset)
 	return cast_hashtags___search_request({
-		["limit"] = limit;
-		["query"] = query;
-		["offset"] = offset;
+		["limit"] = limit,
+		["query"] = query,
+		["offset"] = offset,
 	})
 end
 
 return {
-	cast = cast_hashtags___search_request;
-	new = new_hashtags___search_request;
+	cast = cast_hashtags___search_request,
+	new = new_hashtags___search_request,
 }

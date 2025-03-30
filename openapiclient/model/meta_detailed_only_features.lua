@@ -11,8 +11,8 @@
 -- meta_detailed_only_features class
 local meta_detailed_only_features = {}
 local meta_detailed_only_features_mt = {
-	__name = "meta_detailed_only_features";
-	__index = meta_detailed_only_features;
+	__name = "meta_detailed_only_features",
+	__index = meta_detailed_only_features,
 }
 
 local function cast_meta_detailed_only_features(t)
@@ -21,20 +21,20 @@ end
 
 local function new_meta_detailed_only_features(registration, email_required_for_signup, local_timeline, global_timeline, hcaptcha, turnstile, recaptcha, object_storage, service_worker, miauth)
 	return cast_meta_detailed_only_features({
-		["registration"] = registration;
-		["emailRequiredForSignup"] = email_required_for_signup;
-		["localTimeline"] = local_timeline;
-		["globalTimeline"] = global_timeline;
-		["hcaptcha"] = hcaptcha;
-		["turnstile"] = turnstile;
-		["recaptcha"] = recaptcha;
-		["objectStorage"] = object_storage;
-		["serviceWorker"] = service_worker;
-		["miauth"] = miauth;
+		["registration"] = registration,
+		["emailRequiredForSignup"] = email_required_for_signup,
+		["localTimeline"] = local_timeline,
+		["globalTimeline"] = global_timeline,
+		["hcaptcha"] = hcaptcha,
+		["turnstile"] = turnstile,
+		["recaptcha"] = recaptcha,
+		["objectStorage"] = object_storage,
+		["serviceWorker"] = service_worker,
+		["miauth"] = miauth,
 	})
 end
 
 return {
-	cast = cast_meta_detailed_only_features;
-	new = new_meta_detailed_only_features;
+	cast = cast_meta_detailed_only_features,
+	new = new_meta_detailed_only_features,
 }

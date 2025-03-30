@@ -11,8 +11,8 @@
 -- get_avatar_decorations_200_response_inner class
 local get_avatar_decorations_200_response_inner = {}
 local get_avatar_decorations_200_response_inner_mt = {
-	__name = "get_avatar_decorations_200_response_inner";
-	__index = get_avatar_decorations_200_response_inner;
+	__name = "get_avatar_decorations_200_response_inner",
+	__index = get_avatar_decorations_200_response_inner,
 }
 
 local function cast_get_avatar_decorations_200_response_inner(t)
@@ -21,15 +21,15 @@ end
 
 local function new_get_avatar_decorations_200_response_inner(id, name, description, url, role_ids_that_can_be_used_this_decoration)
 	return cast_get_avatar_decorations_200_response_inner({
-		["id"] = id;
-		["name"] = name;
-		["description"] = description;
-		["url"] = url;
-		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration;
+		["id"] = id,
+		["name"] = name,
+		["description"] = description,
+		["url"] = url,
+		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration,
 	})
 end
 
 return {
-	cast = cast_get_avatar_decorations_200_response_inner;
-	new = new_get_avatar_decorations_200_response_inner;
+	cast = cast_get_avatar_decorations_200_response_inner,
+	new = new_get_avatar_decorations_200_response_inner,
 }

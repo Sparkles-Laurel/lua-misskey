@@ -11,8 +11,8 @@
 -- users___featured_notes_request class
 local users___featured_notes_request = {}
 local users___featured_notes_request_mt = {
-	__name = "users___featured_notes_request";
-	__index = users___featured_notes_request;
+	__name = "users___featured_notes_request",
+	__index = users___featured_notes_request,
 }
 
 local function cast_users___featured_notes_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_users___featured_notes_request(limit, until_id, user_id)
 	return cast_users___featured_notes_request({
-		["limit"] = limit;
-		["untilId"] = until_id;
-		["userId"] = user_id;
+		["limit"] = limit,
+		["untilId"] = until_id,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_users___featured_notes_request;
-	new = new_users___featured_notes_request;
+	cast = cast_users___featured_notes_request,
+	new = new_users___featured_notes_request,
 }

@@ -11,8 +11,8 @@
 -- hashtag class
 local hashtag = {}
 local hashtag_mt = {
-	__name = "hashtag";
-	__index = hashtag;
+	__name = "hashtag",
+	__index = hashtag,
 }
 
 local function cast_hashtag(t)
@@ -21,17 +21,17 @@ end
 
 local function new_hashtag(tag, mentioned_users_count, mentioned_local_users_count, mentioned_remote_users_count, attached_users_count, attached_local_users_count, attached_remote_users_count)
 	return cast_hashtag({
-		["tag"] = tag;
-		["mentionedUsersCount"] = mentioned_users_count;
-		["mentionedLocalUsersCount"] = mentioned_local_users_count;
-		["mentionedRemoteUsersCount"] = mentioned_remote_users_count;
-		["attachedUsersCount"] = attached_users_count;
-		["attachedLocalUsersCount"] = attached_local_users_count;
-		["attachedRemoteUsersCount"] = attached_remote_users_count;
+		["tag"] = tag,
+		["mentionedUsersCount"] = mentioned_users_count,
+		["mentionedLocalUsersCount"] = mentioned_local_users_count,
+		["mentionedRemoteUsersCount"] = mentioned_remote_users_count,
+		["attachedUsersCount"] = attached_users_count,
+		["attachedLocalUsersCount"] = attached_local_users_count,
+		["attachedRemoteUsersCount"] = attached_remote_users_count,
 	})
 end
 
 return {
-	cast = cast_hashtag;
-	new = new_hashtag;
+	cast = cast_hashtag,
+	new = new_hashtag,
 }

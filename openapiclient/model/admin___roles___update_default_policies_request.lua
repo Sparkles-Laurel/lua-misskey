@@ -11,8 +11,8 @@
 -- admin___roles___update_default_policies_request class
 local admin___roles___update_default_policies_request = {}
 local admin___roles___update_default_policies_request_mt = {
-	__name = "admin___roles___update_default_policies_request";
-	__index = admin___roles___update_default_policies_request;
+	__name = "admin___roles___update_default_policies_request",
+	__index = admin___roles___update_default_policies_request,
 }
 
 local function cast_admin___roles___update_default_policies_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___roles___update_default_policies_request(policies)
 	return cast_admin___roles___update_default_policies_request({
-		["policies"] = policies;
+		["policies"] = policies,
 	})
 end
 
 return {
-	cast = cast_admin___roles___update_default_policies_request;
-	new = new_admin___roles___update_default_policies_request;
+	cast = cast_admin___roles___update_default_policies_request,
+	new = new_admin___roles___update_default_policies_request,
 }

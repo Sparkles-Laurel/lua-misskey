@@ -11,8 +11,8 @@
 -- auth___accept_request class
 local auth___accept_request = {}
 local auth___accept_request_mt = {
-	__name = "auth___accept_request";
-	__index = auth___accept_request;
+	__name = "auth___accept_request",
+	__index = auth___accept_request,
 }
 
 local function cast_auth___accept_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_auth___accept_request(token)
 	return cast_auth___accept_request({
-		["token"] = token;
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_auth___accept_request;
-	new = new_auth___accept_request;
+	cast = cast_auth___accept_request,
+	new = new_auth___accept_request,
 }

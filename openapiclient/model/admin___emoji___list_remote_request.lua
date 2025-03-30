@@ -11,8 +11,8 @@
 -- admin___emoji___list_remote_request class
 local admin___emoji___list_remote_request = {}
 local admin___emoji___list_remote_request_mt = {
-	__name = "admin___emoji___list_remote_request";
-	__index = admin___emoji___list_remote_request;
+	__name = "admin___emoji___list_remote_request",
+	__index = admin___emoji___list_remote_request,
 }
 
 local function cast_admin___emoji___list_remote_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_admin___emoji___list_remote_request(query, host, limit, since_id, until_id)
 	return cast_admin___emoji___list_remote_request({
-		["query"] = query;
-		["host"] = host;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["query"] = query,
+		["host"] = host,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_admin___emoji___list_remote_request;
-	new = new_admin___emoji___list_remote_request;
+	cast = cast_admin___emoji___list_remote_request,
+	new = new_admin___emoji___list_remote_request,
 }

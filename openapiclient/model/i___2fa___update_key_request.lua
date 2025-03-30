@@ -11,8 +11,8 @@
 -- i___2fa___update_key_request class
 local i___2fa___update_key_request = {}
 local i___2fa___update_key_request_mt = {
-	__name = "i___2fa___update_key_request";
-	__index = i___2fa___update_key_request;
+	__name = "i___2fa___update_key_request",
+	__index = i___2fa___update_key_request,
 }
 
 local function cast_i___2fa___update_key_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___2fa___update_key_request(name, credential_id)
 	return cast_i___2fa___update_key_request({
-		["name"] = name;
-		["credentialId"] = credential_id;
+		["name"] = name,
+		["credentialId"] = credential_id,
 	})
 end
 
 return {
-	cast = cast_i___2fa___update_key_request;
-	new = new_i___2fa___update_key_request;
+	cast = cast_i___2fa___update_key_request,
+	new = new_i___2fa___update_key_request,
 }

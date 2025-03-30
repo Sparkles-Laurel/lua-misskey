@@ -11,8 +11,8 @@
 -- admin___system_webhook___test_request_override class
 local admin___system_webhook___test_request_override = {}
 local admin___system_webhook___test_request_override_mt = {
-	__name = "admin___system_webhook___test_request_override";
-	__index = admin___system_webhook___test_request_override;
+	__name = "admin___system_webhook___test_request_override",
+	__index = admin___system_webhook___test_request_override,
 }
 
 local function cast_admin___system_webhook___test_request_override(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___system_webhook___test_request_override(url, secret)
 	return cast_admin___system_webhook___test_request_override({
-		["url"] = url;
-		["secret"] = secret;
+		["url"] = url,
+		["secret"] = secret,
 	})
 end
 
 return {
-	cast = cast_admin___system_webhook___test_request_override;
-	new = new_admin___system_webhook___test_request_override;
+	cast = cast_admin___system_webhook___test_request_override,
+	new = new_admin___system_webhook___test_request_override,
 }

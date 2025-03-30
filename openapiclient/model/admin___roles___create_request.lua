@@ -11,8 +11,8 @@
 -- admin___roles___create_request class
 local admin___roles___create_request = {}
 local admin___roles___create_request_mt = {
-	__name = "admin___roles___create_request";
-	__index = admin___roles___create_request;
+	__name = "admin___roles___create_request",
+	__index = admin___roles___create_request,
 }
 
 local function cast_admin___roles___create_request(t)
@@ -21,24 +21,24 @@ end
 
 local function new_admin___roles___create_request(name, description, color, icon_url, target, cond_formula, is_public, is_moderator, is_administrator, is_explorable, as_badge, can_edit_members_by_moderator, display_order, policies)
 	return cast_admin___roles___create_request({
-		["name"] = name;
-		["description"] = description;
-		["color"] = color;
-		["iconUrl"] = icon_url;
-		["target"] = target;
-		["condFormula"] = cond_formula;
-		["isPublic"] = is_public;
-		["isModerator"] = is_moderator;
-		["isAdministrator"] = is_administrator;
-		["isExplorable"] = is_explorable;
-		["asBadge"] = as_badge;
-		["canEditMembersByModerator"] = can_edit_members_by_moderator;
-		["displayOrder"] = display_order;
-		["policies"] = policies;
+		["name"] = name,
+		["description"] = description,
+		["color"] = color,
+		["iconUrl"] = icon_url,
+		["target"] = target,
+		["condFormula"] = cond_formula,
+		["isPublic"] = is_public,
+		["isModerator"] = is_moderator,
+		["isAdministrator"] = is_administrator,
+		["isExplorable"] = is_explorable,
+		["asBadge"] = as_badge,
+		["canEditMembersByModerator"] = can_edit_members_by_moderator,
+		["displayOrder"] = display_order,
+		["policies"] = policies,
 	})
 end
 
 return {
-	cast = cast_admin___roles___create_request;
-	new = new_admin___roles___create_request;
+	cast = cast_admin___roles___create_request,
+	new = new_admin___roles___create_request,
 }

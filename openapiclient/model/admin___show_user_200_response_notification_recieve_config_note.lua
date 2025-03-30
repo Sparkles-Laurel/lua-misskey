@@ -11,8 +11,8 @@
 -- admin___show_user_200_response_notification_recieve_config_note class
 local admin___show_user_200_response_notification_recieve_config_note = {}
 local admin___show_user_200_response_notification_recieve_config_note_mt = {
-	__name = "admin___show_user_200_response_notification_recieve_config_note";
-	__index = admin___show_user_200_response_notification_recieve_config_note;
+	__name = "admin___show_user_200_response_notification_recieve_config_note",
+	__index = admin___show_user_200_response_notification_recieve_config_note,
 }
 
 local function cast_admin___show_user_200_response_notification_recieve_config_note(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___show_user_200_response_notification_recieve_config_note(type, user_list_id)
 	return cast_admin___show_user_200_response_notification_recieve_config_note({
-		["type"] = type;
-		["userListId"] = user_list_id;
+		["type"] = type,
+		["userListId"] = user_list_id,
 	})
 end
 
 return {
-	cast = cast_admin___show_user_200_response_notification_recieve_config_note;
-	new = new_admin___show_user_200_response_notification_recieve_config_note;
+	cast = cast_admin___show_user_200_response_notification_recieve_config_note,
+	new = new_admin___show_user_200_response_notification_recieve_config_note,
 }

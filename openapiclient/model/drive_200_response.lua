@@ -11,8 +11,8 @@
 -- drive_200_response class
 local drive_200_response = {}
 local drive_200_response_mt = {
-	__name = "drive_200_response";
-	__index = drive_200_response;
+	__name = "drive_200_response",
+	__index = drive_200_response,
 }
 
 local function cast_drive_200_response(t)
@@ -21,12 +21,12 @@ end
 
 local function new_drive_200_response(capacity, usage)
 	return cast_drive_200_response({
-		["capacity"] = capacity;
-		["usage"] = usage;
+		["capacity"] = capacity,
+		["usage"] = usage,
 	})
 end
 
 return {
-	cast = cast_drive_200_response;
-	new = new_drive_200_response;
+	cast = cast_drive_200_response,
+	new = new_drive_200_response,
 }

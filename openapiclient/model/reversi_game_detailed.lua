@@ -11,8 +11,8 @@
 -- reversi_game_detailed class
 local reversi_game_detailed = {}
 local reversi_game_detailed_mt = {
-	__name = "reversi_game_detailed";
-	__index = reversi_game_detailed;
+	__name = "reversi_game_detailed",
+	__index = reversi_game_detailed,
 }
 
 local function cast_reversi_game_detailed(t)
@@ -21,37 +21,37 @@ end
 
 local function new_reversi_game_detailed(id, created_at, started_at, ended_at, is_started, is_ended, form1, form2, user1_ready, user2_ready, user1_id, user2_id, user1, user2, winner_id, winner, surrendered_user_id, timeout_user_id, black, bw, no_irregular_rules, is_llotheo, can_put_everywhere, looped_board, time_limit_for_each_turn, logs, map)
 	return cast_reversi_game_detailed({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["startedAt"] = started_at;
-		["endedAt"] = ended_at;
-		["isStarted"] = is_started;
-		["isEnded"] = is_ended;
-		["form1"] = form1;
-		["form2"] = form2;
-		["user1Ready"] = user1_ready;
-		["user2Ready"] = user2_ready;
-		["user1Id"] = user1_id;
-		["user2Id"] = user2_id;
-		["user1"] = user1;
-		["user2"] = user2;
-		["winnerId"] = winner_id;
-		["winner"] = winner;
-		["surrenderedUserId"] = surrendered_user_id;
-		["timeoutUserId"] = timeout_user_id;
-		["black"] = black;
-		["bw"] = bw;
-		["noIrregularRules"] = no_irregular_rules;
-		["isLlotheo"] = is_llotheo;
-		["canPutEverywhere"] = can_put_everywhere;
-		["loopedBoard"] = looped_board;
-		["timeLimitForEachTurn"] = time_limit_for_each_turn;
-		["logs"] = logs;
-		["map"] = map;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["startedAt"] = started_at,
+		["endedAt"] = ended_at,
+		["isStarted"] = is_started,
+		["isEnded"] = is_ended,
+		["form1"] = form1,
+		["form2"] = form2,
+		["user1Ready"] = user1_ready,
+		["user2Ready"] = user2_ready,
+		["user1Id"] = user1_id,
+		["user2Id"] = user2_id,
+		["user1"] = user1,
+		["user2"] = user2,
+		["winnerId"] = winner_id,
+		["winner"] = winner,
+		["surrenderedUserId"] = surrendered_user_id,
+		["timeoutUserId"] = timeout_user_id,
+		["black"] = black,
+		["bw"] = bw,
+		["noIrregularRules"] = no_irregular_rules,
+		["isLlotheo"] = is_llotheo,
+		["canPutEverywhere"] = can_put_everywhere,
+		["loopedBoard"] = looped_board,
+		["timeLimitForEachTurn"] = time_limit_for_each_turn,
+		["logs"] = logs,
+		["map"] = map,
 	})
 end
 
 return {
-	cast = cast_reversi_game_detailed;
-	new = new_reversi_game_detailed;
+	cast = cast_reversi_game_detailed,
+	new = new_reversi_game_detailed,
 }

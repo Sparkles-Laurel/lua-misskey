@@ -11,8 +11,8 @@
 -- i___registry___get_all_request class
 local i___registry___get_all_request = {}
 local i___registry___get_all_request_mt = {
-	__name = "i___registry___get_all_request";
-	__index = i___registry___get_all_request;
+	__name = "i___registry___get_all_request",
+	__index = i___registry___get_all_request,
 }
 
 local function cast_i___registry___get_all_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___registry___get_all_request(scope, domain)
 	return cast_i___registry___get_all_request({
-		["scope"] = scope;
-		["domain"] = domain;
+		["scope"] = scope,
+		["domain"] = domain,
 	})
 end
 
 return {
-	cast = cast_i___registry___get_all_request;
-	new = new_i___registry___get_all_request;
+	cast = cast_i___registry___get_all_request,
+	new = new_i___registry___get_all_request,
 }

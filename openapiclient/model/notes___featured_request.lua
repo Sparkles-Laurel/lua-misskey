@@ -11,8 +11,8 @@
 -- notes___featured_request class
 local notes___featured_request = {}
 local notes___featured_request_mt = {
-	__name = "notes___featured_request";
-	__index = notes___featured_request;
+	__name = "notes___featured_request",
+	__index = notes___featured_request,
 }
 
 local function cast_notes___featured_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_notes___featured_request(limit, until_id, channel_id)
 	return cast_notes___featured_request({
-		["limit"] = limit;
-		["untilId"] = until_id;
-		["channelId"] = channel_id;
+		["limit"] = limit,
+		["untilId"] = until_id,
+		["channelId"] = channel_id,
 	})
 end
 
 return {
-	cast = cast_notes___featured_request;
-	new = new_notes___featured_request;
+	cast = cast_notes___featured_request,
+	new = new_notes___featured_request,
 }

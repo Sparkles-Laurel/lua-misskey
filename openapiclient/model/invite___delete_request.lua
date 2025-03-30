@@ -11,8 +11,8 @@
 -- invite___delete_request class
 local invite___delete_request = {}
 local invite___delete_request_mt = {
-	__name = "invite___delete_request";
-	__index = invite___delete_request;
+	__name = "invite___delete_request",
+	__index = invite___delete_request,
 }
 
 local function cast_invite___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_invite___delete_request(invite_id)
 	return cast_invite___delete_request({
-		["inviteId"] = invite_id;
+		["inviteId"] = invite_id,
 	})
 end
 
 return {
-	cast = cast_invite___delete_request;
-	new = new_invite___delete_request;
+	cast = cast_invite___delete_request,
+	new = new_invite___delete_request,
 }

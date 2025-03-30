@@ -11,8 +11,8 @@
 -- charts___active_users_200_response class
 local charts___active_users_200_response = {}
 local charts___active_users_200_response_mt = {
-	__name = "charts___active_users_200_response";
-	__index = charts___active_users_200_response;
+	__name = "charts___active_users_200_response",
+	__index = charts___active_users_200_response,
 }
 
 local function cast_charts___active_users_200_response(t)
@@ -21,19 +21,19 @@ end
 
 local function new_charts___active_users_200_response(read_write, read, write, registered_within_week, registered_within_month, registered_within_year, registered_outside_week, registered_outside_month, registered_outside_year)
 	return cast_charts___active_users_200_response({
-		["readWrite"] = read_write;
-		["read"] = read;
-		["write"] = write;
-		["registeredWithinWeek"] = registered_within_week;
-		["registeredWithinMonth"] = registered_within_month;
-		["registeredWithinYear"] = registered_within_year;
-		["registeredOutsideWeek"] = registered_outside_week;
-		["registeredOutsideMonth"] = registered_outside_month;
-		["registeredOutsideYear"] = registered_outside_year;
+		["readWrite"] = read_write,
+		["read"] = read,
+		["write"] = write,
+		["registeredWithinWeek"] = registered_within_week,
+		["registeredWithinMonth"] = registered_within_month,
+		["registeredWithinYear"] = registered_within_year,
+		["registeredOutsideWeek"] = registered_outside_week,
+		["registeredOutsideMonth"] = registered_outside_month,
+		["registeredOutsideYear"] = registered_outside_year,
 	})
 end
 
 return {
-	cast = cast_charts___active_users_200_response;
-	new = new_charts___active_users_200_response;
+	cast = cast_charts___active_users_200_response,
+	new = new_charts___active_users_200_response,
 }

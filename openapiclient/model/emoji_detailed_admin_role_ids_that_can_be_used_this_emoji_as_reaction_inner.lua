@@ -11,8 +11,8 @@
 -- emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner class
 local emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner = {}
 local emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner_mt = {
-	__name = "emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner";
-	__index = emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner;
+	__name = "emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner",
+	__index = emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner,
 }
 
 local function cast_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner(id, name)
 	return cast_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner({
-		["id"] = id;
-		["name"] = name;
+		["id"] = id,
+		["name"] = name,
 	})
 end
 
 return {
-	cast = cast_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner;
-	new = new_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner;
+	cast = cast_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner,
+	new = new_emoji_detailed_admin_role_ids_that_can_be_used_this_emoji_as_reaction_inner,
 }

@@ -11,8 +11,8 @@
 -- i___2fa___key_done_request class
 local i___2fa___key_done_request = {}
 local i___2fa___key_done_request_mt = {
-	__name = "i___2fa___key_done_request";
-	__index = i___2fa___key_done_request;
+	__name = "i___2fa___key_done_request",
+	__index = i___2fa___key_done_request,
 }
 
 local function cast_i___2fa___key_done_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_i___2fa___key_done_request(password, token, name, credential)
 	return cast_i___2fa___key_done_request({
-		["password"] = password;
-		["token"] = token;
-		["name"] = name;
-		["credential"] = credential;
+		["password"] = password,
+		["token"] = token,
+		["name"] = name,
+		["credential"] = credential,
 	})
 end
 
 return {
-	cast = cast_i___2fa___key_done_request;
-	new = new_i___2fa___key_done_request;
+	cast = cast_i___2fa___key_done_request,
+	new = new_i___2fa___key_done_request,
 }

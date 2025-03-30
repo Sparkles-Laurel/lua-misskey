@@ -11,8 +11,8 @@
 -- server_info_200_response_fs class
 local server_info_200_response_fs = {}
 local server_info_200_response_fs_mt = {
-	__name = "server_info_200_response_fs";
-	__index = server_info_200_response_fs;
+	__name = "server_info_200_response_fs",
+	__index = server_info_200_response_fs,
 }
 
 local function cast_server_info_200_response_fs(t)
@@ -21,12 +21,12 @@ end
 
 local function new_server_info_200_response_fs(total, used)
 	return cast_server_info_200_response_fs({
-		["total"] = total;
-		["used"] = used;
+		["total"] = total,
+		["used"] = used,
 	})
 end
 
 return {
-	cast = cast_server_info_200_response_fs;
-	new = new_server_info_200_response_fs;
+	cast = cast_server_info_200_response_fs,
+	new = new_server_info_200_response_fs,
 }

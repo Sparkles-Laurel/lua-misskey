@@ -25,8 +25,8 @@ local openapiclient_flash___update_request = require "openapiclient.model.flash_
 
 local flash_api = {}
 local flash_api_mt = {
-	__name = "flash_api";
-	__index = flash_api;
+	__name = "flash_api",
+	__index = flash_api,
 }
 
 local function new_flash_api(authority, basePath, schemes)
@@ -37,25 +37,25 @@ local function new_flash_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, flash_api_mt)
 end
 
 function flash_api:flash_create(flash___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -103,11 +103,11 @@ end
 
 function flash_api:flash_featured(flash___featured_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -158,11 +158,11 @@ end
 
 function flash_api:flash_like(flash___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/like",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -199,11 +199,11 @@ end
 
 function flash_api:flash_unlike(flash___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/unlike",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -240,11 +240,11 @@ end
 
 function flash_api:flash_update(flash___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -280,5 +280,5 @@ function flash_api:flash_update(flash___update_request)
 end
 
 return {
-	new = new_flash_api;
+	new = new_flash_api,
 }

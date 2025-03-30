@@ -11,8 +11,8 @@
 -- note_emojis_value class
 local note_emojis_value = {}
 local note_emojis_value_mt = {
-	__name = "note_emojis_value";
-	__index = note_emojis_value;
+	__name = "note_emojis_value",
+	__index = note_emojis_value,
 }
 
 local function cast_note_emojis_value(t)
@@ -25,6 +25,6 @@ local function new_note_emojis_value()
 end
 
 return {
-	cast = cast_note_emojis_value;
-	new = new_note_emojis_value;
+	cast = cast_note_emojis_value,
+	new = new_note_emojis_value,
 }

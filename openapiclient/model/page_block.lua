@@ -11,8 +11,8 @@
 -- page_block class
 local page_block = {}
 local page_block_mt = {
-	__name = "page_block";
-	__index = page_block;
+	__name = "page_block",
+	__index = page_block,
 }
 
 local function cast_page_block(t)
@@ -21,18 +21,18 @@ end
 
 local function new_page_block(id, type, text, title, children, file_id, detailed, note)
 	return cast_page_block({
-		["id"] = id;
-		["type"] = type;
-		["text"] = text;
-		["title"] = title;
-		["children"] = children;
-		["fileId"] = file_id;
-		["detailed"] = detailed;
-		["note"] = note;
+		["id"] = id,
+		["type"] = type,
+		["text"] = text,
+		["title"] = title,
+		["children"] = children,
+		["fileId"] = file_id,
+		["detailed"] = detailed,
+		["note"] = note,
 	})
 end
 
 return {
-	cast = cast_page_block;
-	new = new_page_block;
+	cast = cast_page_block,
+	new = new_page_block,
 }

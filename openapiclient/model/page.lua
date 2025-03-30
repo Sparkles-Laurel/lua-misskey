@@ -11,8 +11,8 @@
 -- page class
 local page = {}
 local page_mt = {
-	__name = "page";
-	__index = page;
+	__name = "page",
+	__index = page,
 }
 
 local function cast_page(t)
@@ -21,29 +21,29 @@ end
 
 local function new_page(id, created_at, updated_at, user_id, user, content, variables, title, name, summary, hide_title_when_pinned, align_center, font, script, eye_catching_image_id, eye_catching_image, attached_files, liked_count, is_liked)
 	return cast_page({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["updatedAt"] = updated_at;
-		["userId"] = user_id;
-		["user"] = user;
-		["content"] = content;
-		["variables"] = variables;
-		["title"] = title;
-		["name"] = name;
-		["summary"] = summary;
-		["hideTitleWhenPinned"] = hide_title_when_pinned;
-		["alignCenter"] = align_center;
-		["font"] = font;
-		["script"] = script;
-		["eyeCatchingImageId"] = eye_catching_image_id;
-		["eyeCatchingImage"] = eye_catching_image;
-		["attachedFiles"] = attached_files;
-		["likedCount"] = liked_count;
-		["isLiked"] = is_liked;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["updatedAt"] = updated_at,
+		["userId"] = user_id,
+		["user"] = user,
+		["content"] = content,
+		["variables"] = variables,
+		["title"] = title,
+		["name"] = name,
+		["summary"] = summary,
+		["hideTitleWhenPinned"] = hide_title_when_pinned,
+		["alignCenter"] = align_center,
+		["font"] = font,
+		["script"] = script,
+		["eyeCatchingImageId"] = eye_catching_image_id,
+		["eyeCatchingImage"] = eye_catching_image,
+		["attachedFiles"] = attached_files,
+		["likedCount"] = liked_count,
+		["isLiked"] = is_liked,
 	})
 end
 
 return {
-	cast = cast_page;
-	new = new_page;
+	cast = cast_page,
+	new = new_page,
 }

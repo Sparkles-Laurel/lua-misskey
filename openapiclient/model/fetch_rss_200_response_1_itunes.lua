@@ -11,8 +11,8 @@
 -- fetch_rss_200_response_1_itunes class
 local fetch_rss_200_response_1_itunes = {}
 local fetch_rss_200_response_1_itunes_mt = {
-	__name = "fetch_rss_200_response_1_itunes";
-	__index = fetch_rss_200_response_1_itunes;
+	__name = "fetch_rss_200_response_1_itunes",
+	__index = fetch_rss_200_response_1_itunes,
 }
 
 local function cast_fetch_rss_200_response_1_itunes(t)
@@ -21,17 +21,17 @@ end
 
 local function new_fetch_rss_200_response_1_itunes(image, owner, author, summary, explicit, categories, keywords)
 	return cast_fetch_rss_200_response_1_itunes({
-		["image"] = image;
-		["owner"] = owner;
-		["author"] = author;
-		["summary"] = summary;
-		["explicit"] = explicit;
-		["categories"] = categories;
-		["keywords"] = keywords;
+		["image"] = image,
+		["owner"] = owner,
+		["author"] = author,
+		["summary"] = summary,
+		["explicit"] = explicit,
+		["categories"] = categories,
+		["keywords"] = keywords,
 	})
 end
 
 return {
-	cast = cast_fetch_rss_200_response_1_itunes;
-	new = new_fetch_rss_200_response_1_itunes;
+	cast = cast_fetch_rss_200_response_1_itunes,
+	new = new_fetch_rss_200_response_1_itunes,
 }

@@ -11,8 +11,8 @@
 -- reversi___games_request class
 local reversi___games_request = {}
 local reversi___games_request_mt = {
-	__name = "reversi___games_request";
-	__index = reversi___games_request;
+	__name = "reversi___games_request",
+	__index = reversi___games_request,
 }
 
 local function cast_reversi___games_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_reversi___games_request(limit, since_id, until_id, my)
 	return cast_reversi___games_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["my"] = my;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["my"] = my,
 	})
 end
 
 return {
-	cast = cast_reversi___games_request;
-	new = new_reversi___games_request;
+	cast = cast_reversi___games_request,
+	new = new_reversi___games_request,
 }

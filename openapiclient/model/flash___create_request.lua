@@ -11,8 +11,8 @@
 -- flash___create_request class
 local flash___create_request = {}
 local flash___create_request_mt = {
-	__name = "flash___create_request";
-	__index = flash___create_request;
+	__name = "flash___create_request",
+	__index = flash___create_request,
 }
 
 local function cast_flash___create_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_flash___create_request(title, summary, script, permissions, visibility)
 	return cast_flash___create_request({
-		["title"] = title;
-		["summary"] = summary;
-		["script"] = script;
-		["permissions"] = permissions;
-		["visibility"] = visibility;
+		["title"] = title,
+		["summary"] = summary,
+		["script"] = script,
+		["permissions"] = permissions,
+		["visibility"] = visibility,
 	})
 end
 
 return {
-	cast = cast_flash___create_request;
-	new = new_flash___create_request;
+	cast = cast_flash___create_request,
+	new = new_flash___create_request,
 }

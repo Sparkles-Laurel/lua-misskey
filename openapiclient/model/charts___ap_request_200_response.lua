@@ -11,8 +11,8 @@
 -- charts___ap_request_200_response class
 local charts___ap_request_200_response = {}
 local charts___ap_request_200_response_mt = {
-	__name = "charts___ap_request_200_response";
-	__index = charts___ap_request_200_response;
+	__name = "charts___ap_request_200_response",
+	__index = charts___ap_request_200_response,
 }
 
 local function cast_charts___ap_request_200_response(t)
@@ -21,13 +21,13 @@ end
 
 local function new_charts___ap_request_200_response(deliver_failed, deliver_succeeded, inbox_received)
 	return cast_charts___ap_request_200_response({
-		["deliverFailed"] = deliver_failed;
-		["deliverSucceeded"] = deliver_succeeded;
-		["inboxReceived"] = inbox_received;
+		["deliverFailed"] = deliver_failed,
+		["deliverSucceeded"] = deliver_succeeded,
+		["inboxReceived"] = inbox_received,
 	})
 end
 
 return {
-	cast = cast_charts___ap_request_200_response;
-	new = new_charts___ap_request_200_response;
+	cast = cast_charts___ap_request_200_response,
+	new = new_charts___ap_request_200_response,
 }

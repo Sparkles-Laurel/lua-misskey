@@ -11,8 +11,8 @@
 -- federation___followers_request class
 local federation___followers_request = {}
 local federation___followers_request_mt = {
-	__name = "federation___followers_request";
-	__index = federation___followers_request;
+	__name = "federation___followers_request",
+	__index = federation___followers_request,
 }
 
 local function cast_federation___followers_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_federation___followers_request(host, since_id, until_id, limit, include_follower, include_followee)
 	return cast_federation___followers_request({
-		["host"] = host;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
-		["includeFollower"] = include_follower;
-		["includeFollowee"] = include_followee;
+		["host"] = host,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
+		["includeFollower"] = include_follower,
+		["includeFollowee"] = include_followee,
 	})
 end
 
 return {
-	cast = cast_federation___followers_request;
-	new = new_federation___followers_request;
+	cast = cast_federation___followers_request,
+	new = new_federation___followers_request,
 }

@@ -11,8 +11,8 @@
 -- channels___update_request class
 local channels___update_request = {}
 local channels___update_request_mt = {
-	__name = "channels___update_request";
-	__index = channels___update_request;
+	__name = "channels___update_request",
+	__index = channels___update_request,
 }
 
 local function cast_channels___update_request(t)
@@ -21,19 +21,19 @@ end
 
 local function new_channels___update_request(channel_id, name, description, banner_id, is_archived, pinned_note_ids, color, is_sensitive, allow_renote_to_external)
 	return cast_channels___update_request({
-		["channelId"] = channel_id;
-		["name"] = name;
-		["description"] = description;
-		["bannerId"] = banner_id;
-		["isArchived"] = is_archived;
-		["pinnedNoteIds"] = pinned_note_ids;
-		["color"] = color;
-		["isSensitive"] = is_sensitive;
-		["allowRenoteToExternal"] = allow_renote_to_external;
+		["channelId"] = channel_id,
+		["name"] = name,
+		["description"] = description,
+		["bannerId"] = banner_id,
+		["isArchived"] = is_archived,
+		["pinnedNoteIds"] = pinned_note_ids,
+		["color"] = color,
+		["isSensitive"] = is_sensitive,
+		["allowRenoteToExternal"] = allow_renote_to_external,
 	})
 end
 
 return {
-	cast = cast_channels___update_request;
-	new = new_channels___update_request;
+	cast = cast_channels___update_request,
+	new = new_channels___update_request,
 }

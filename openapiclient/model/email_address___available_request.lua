@@ -11,8 +11,8 @@
 -- email_address___available_request class
 local email_address___available_request = {}
 local email_address___available_request_mt = {
-	__name = "email_address___available_request";
-	__index = email_address___available_request;
+	__name = "email_address___available_request",
+	__index = email_address___available_request,
 }
 
 local function cast_email_address___available_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_email_address___available_request(email_address)
 	return cast_email_address___available_request({
-		["emailAddress"] = email_address;
+		["emailAddress"] = email_address,
 	})
 end
 
 return {
-	cast = cast_email_address___available_request;
-	new = new_email_address___available_request;
+	cast = cast_email_address___available_request,
+	new = new_email_address___available_request,
 }

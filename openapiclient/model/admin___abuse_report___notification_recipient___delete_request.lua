@@ -11,8 +11,8 @@
 -- admin___abuse_report___notification_recipient___delete_request class
 local admin___abuse_report___notification_recipient___delete_request = {}
 local admin___abuse_report___notification_recipient___delete_request_mt = {
-	__name = "admin___abuse_report___notification_recipient___delete_request";
-	__index = admin___abuse_report___notification_recipient___delete_request;
+	__name = "admin___abuse_report___notification_recipient___delete_request",
+	__index = admin___abuse_report___notification_recipient___delete_request,
 }
 
 local function cast_admin___abuse_report___notification_recipient___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___abuse_report___notification_recipient___delete_request(id)
 	return cast_admin___abuse_report___notification_recipient___delete_request({
-		["id"] = id;
+		["id"] = id,
 	})
 end
 
 return {
-	cast = cast_admin___abuse_report___notification_recipient___delete_request;
-	new = new_admin___abuse_report___notification_recipient___delete_request;
+	cast = cast_admin___abuse_report___notification_recipient___delete_request,
+	new = new_admin___abuse_report___notification_recipient___delete_request,
 }

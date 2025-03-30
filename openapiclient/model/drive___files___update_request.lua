@@ -11,8 +11,8 @@
 -- drive___files___update_request class
 local drive___files___update_request = {}
 local drive___files___update_request_mt = {
-	__name = "drive___files___update_request";
-	__index = drive___files___update_request;
+	__name = "drive___files___update_request",
+	__index = drive___files___update_request,
 }
 
 local function cast_drive___files___update_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_drive___files___update_request(file_id, folder_id, name, is_sensitive, comment)
 	return cast_drive___files___update_request({
-		["fileId"] = file_id;
-		["folderId"] = folder_id;
-		["name"] = name;
-		["isSensitive"] = is_sensitive;
-		["comment"] = comment;
+		["fileId"] = file_id,
+		["folderId"] = folder_id,
+		["name"] = name,
+		["isSensitive"] = is_sensitive,
+		["comment"] = comment,
 	})
 end
 
 return {
-	cast = cast_drive___files___update_request;
-	new = new_drive___files___update_request;
+	cast = cast_drive___files___update_request,
+	new = new_drive___files___update_request,
 }

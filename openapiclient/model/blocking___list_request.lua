@@ -11,8 +11,8 @@
 -- blocking___list_request class
 local blocking___list_request = {}
 local blocking___list_request_mt = {
-	__name = "blocking___list_request";
-	__index = blocking___list_request;
+	__name = "blocking___list_request",
+	__index = blocking___list_request,
 }
 
 local function cast_blocking___list_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_blocking___list_request(limit, since_id, until_id)
 	return cast_blocking___list_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_blocking___list_request;
-	new = new_blocking___list_request;
+	cast = cast_blocking___list_request,
+	new = new_blocking___list_request,
 }

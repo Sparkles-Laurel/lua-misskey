@@ -11,8 +11,8 @@
 -- notes___polls___recommendation_request class
 local notes___polls___recommendation_request = {}
 local notes___polls___recommendation_request_mt = {
-	__name = "notes___polls___recommendation_request";
-	__index = notes___polls___recommendation_request;
+	__name = "notes___polls___recommendation_request",
+	__index = notes___polls___recommendation_request,
 }
 
 local function cast_notes___polls___recommendation_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_notes___polls___recommendation_request(limit, offset, exclude_channels)
 	return cast_notes___polls___recommendation_request({
-		["limit"] = limit;
-		["offset"] = offset;
-		["excludeChannels"] = exclude_channels;
+		["limit"] = limit,
+		["offset"] = offset,
+		["excludeChannels"] = exclude_channels,
 	})
 end
 
 return {
-	cast = cast_notes___polls___recommendation_request;
-	new = new_notes___polls___recommendation_request;
+	cast = cast_notes___polls___recommendation_request,
+	new = new_notes___polls___recommendation_request,
 }

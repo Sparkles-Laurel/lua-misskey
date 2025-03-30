@@ -11,8 +11,8 @@
 -- notes___translate_request class
 local notes___translate_request = {}
 local notes___translate_request_mt = {
-	__name = "notes___translate_request";
-	__index = notes___translate_request;
+	__name = "notes___translate_request",
+	__index = notes___translate_request,
 }
 
 local function cast_notes___translate_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___translate_request(note_id, target_lang)
 	return cast_notes___translate_request({
-		["noteId"] = note_id;
-		["targetLang"] = target_lang;
+		["noteId"] = note_id,
+		["targetLang"] = target_lang,
 	})
 end
 
 return {
-	cast = cast_notes___translate_request;
-	new = new_notes___translate_request;
+	cast = cast_notes___translate_request,
+	new = new_notes___translate_request,
 }

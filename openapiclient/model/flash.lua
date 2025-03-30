@@ -11,8 +11,8 @@
 -- flash class
 local flash = {}
 local flash_mt = {
-	__name = "flash";
-	__index = flash;
+	__name = "flash",
+	__index = flash,
 }
 
 local function cast_flash(t)
@@ -21,21 +21,21 @@ end
 
 local function new_flash(id, created_at, updated_at, user_id, user, title, summary, script, visibility, liked_count, is_liked)
 	return cast_flash({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["updatedAt"] = updated_at;
-		["userId"] = user_id;
-		["user"] = user;
-		["title"] = title;
-		["summary"] = summary;
-		["script"] = script;
-		["visibility"] = visibility;
-		["likedCount"] = liked_count;
-		["isLiked"] = is_liked;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["updatedAt"] = updated_at,
+		["userId"] = user_id,
+		["user"] = user,
+		["title"] = title,
+		["summary"] = summary,
+		["script"] = script,
+		["visibility"] = visibility,
+		["likedCount"] = liked_count,
+		["isLiked"] = is_liked,
 	})
 end
 
 return {
-	cast = cast_flash;
-	new = new_flash;
+	cast = cast_flash,
+	new = new_flash,
 }

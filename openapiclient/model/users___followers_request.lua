@@ -11,8 +11,8 @@
 -- users___followers_request class
 local users___followers_request = {}
 local users___followers_request_mt = {
-	__name = "users___followers_request";
-	__index = users___followers_request;
+	__name = "users___followers_request",
+	__index = users___followers_request,
 }
 
 local function cast_users___followers_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_users___followers_request(since_id, until_id, limit, user_id, username, host)
 	return cast_users___followers_request({
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
-		["userId"] = user_id;
-		["username"] = username;
-		["host"] = host;
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
+		["userId"] = user_id,
+		["username"] = username,
+		["host"] = host,
 	})
 end
 
 return {
-	cast = cast_users___followers_request;
-	new = new_users___followers_request;
+	cast = cast_users___followers_request,
+	new = new_users___followers_request,
 }

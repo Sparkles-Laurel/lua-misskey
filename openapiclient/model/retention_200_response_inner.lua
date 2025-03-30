@@ -11,8 +11,8 @@
 -- retention_200_response_inner class
 local retention_200_response_inner = {}
 local retention_200_response_inner_mt = {
-	__name = "retention_200_response_inner";
-	__index = retention_200_response_inner;
+	__name = "retention_200_response_inner",
+	__index = retention_200_response_inner,
 }
 
 local function cast_retention_200_response_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_retention_200_response_inner(created_at, users, data)
 	return cast_retention_200_response_inner({
-		["createdAt"] = created_at;
-		["users"] = users;
-		["data"] = data;
+		["createdAt"] = created_at,
+		["users"] = users,
+		["data"] = data,
 	})
 end
 
 return {
-	cast = cast_retention_200_response_inner;
-	new = new_retention_200_response_inner;
+	cast = cast_retention_200_response_inner,
+	new = new_retention_200_response_inner,
 }

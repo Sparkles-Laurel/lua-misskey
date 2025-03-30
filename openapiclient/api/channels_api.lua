@@ -26,8 +26,8 @@ local openapiclient_channels___update_request = require "openapiclient.model.cha
 
 local channels_api = {}
 local channels_api_mt = {
-	__name = "channels_api";
-	__index = channels_api;
+	__name = "channels_api",
+	__index = channels_api,
 }
 
 local function new_channels_api(authority, basePath, schemes)
@@ -38,25 +38,25 @@ local function new_channels_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, channels_api_mt)
 end
 
 function channels_api:channels_create(channels___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -104,11 +104,11 @@ end
 
 function channels_api:channels_favorite(channels___favorite_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/favorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -145,11 +145,11 @@ end
 
 function channels_api:channels_featured()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -194,11 +194,11 @@ end
 
 function channels_api:channels_follow(channels___favorite_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/follow",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -235,11 +235,11 @@ end
 
 function channels_api:channels_followed(channels___followed_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/followed",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -290,11 +290,11 @@ end
 
 function channels_api:channels_my_favorites()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/my-favorites",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -339,11 +339,11 @@ end
 
 function channels_api:channels_owned(channels___followed_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/owned",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -394,11 +394,11 @@ end
 
 function channels_api:channels_search(channels___search_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/search",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -449,11 +449,11 @@ end
 
 function channels_api:channels_show(channels___favorite_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -501,11 +501,11 @@ end
 
 function channels_api:channels_unfavorite(channels___favorite_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/unfavorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -542,11 +542,11 @@ end
 
 function channels_api:channels_unfollow(channels___favorite_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/unfollow",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -583,11 +583,11 @@ end
 
 function channels_api:channels_update(channels___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/channels/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -634,5 +634,5 @@ function channels_api:channels_update(channels___update_request)
 end
 
 return {
-	new = new_channels_api;
+	new = new_channels_api,
 }

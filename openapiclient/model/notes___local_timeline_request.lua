@@ -11,8 +11,8 @@
 -- notes___local_timeline_request class
 local notes___local_timeline_request = {}
 local notes___local_timeline_request_mt = {
-	__name = "notes___local_timeline_request";
-	__index = notes___local_timeline_request;
+	__name = "notes___local_timeline_request",
+	__index = notes___local_timeline_request,
 }
 
 local function cast_notes___local_timeline_request(t)
@@ -21,20 +21,20 @@ end
 
 local function new_notes___local_timeline_request(with_files, with_renotes, with_replies, with_bots, limit, since_id, until_id, allow_partial, since_date, until_date)
 	return cast_notes___local_timeline_request({
-		["withFiles"] = with_files;
-		["withRenotes"] = with_renotes;
-		["withReplies"] = with_replies;
-		["withBots"] = with_bots;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["allowPartial"] = allow_partial;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["withFiles"] = with_files,
+		["withRenotes"] = with_renotes,
+		["withReplies"] = with_replies,
+		["withBots"] = with_bots,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["allowPartial"] = allow_partial,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_notes___local_timeline_request;
-	new = new_notes___local_timeline_request;
+	cast = cast_notes___local_timeline_request,
+	new = new_notes___local_timeline_request,
 }

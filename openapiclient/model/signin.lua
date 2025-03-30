@@ -11,8 +11,8 @@
 -- signin class
 local signin = {}
 local signin_mt = {
-	__name = "signin";
-	__index = signin;
+	__name = "signin",
+	__index = signin,
 }
 
 local function cast_signin(t)
@@ -21,15 +21,15 @@ end
 
 local function new_signin(id, created_at, ip, headers, success)
 	return cast_signin({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["ip"] = ip;
-		["headers"] = headers;
-		["success"] = success;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["ip"] = ip,
+		["headers"] = headers,
+		["success"] = success,
 	})
 end
 
 return {
-	cast = cast_signin;
-	new = new_signin;
+	cast = cast_signin,
+	new = new_signin,
 }

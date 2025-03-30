@@ -25,8 +25,8 @@ local openapiclient_pages___update_request = require "openapiclient.model.pages_
 
 local pages_api = {}
 local pages_api_mt = {
-	__name = "pages_api";
-	__index = pages_api;
+	__name = "pages_api",
+	__index = pages_api,
 }
 
 local function new_pages_api(authority, basePath, schemes)
@@ -37,25 +37,25 @@ local function new_pages_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, pages_api_mt)
 end
 
 function pages_api:pages_create(pages___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -103,11 +103,11 @@ end
 
 function pages_api:pages_delete(pages___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -144,11 +144,11 @@ end
 
 function pages_api:pages_featured()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/featured",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -193,11 +193,11 @@ end
 
 function pages_api:pages_like(pages___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/like",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -234,11 +234,11 @@ end
 
 function pages_api:pages_show(pages___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -286,11 +286,11 @@ end
 
 function pages_api:pages_unlike(pages___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/unlike",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -327,11 +327,11 @@ end
 
 function pages_api:pages_update(pages___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/pages/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -367,5 +367,5 @@ function pages_api:pages_update(pages___update_request)
 end
 
 return {
-	new = new_pages_api;
+	new = new_pages_api,
 }

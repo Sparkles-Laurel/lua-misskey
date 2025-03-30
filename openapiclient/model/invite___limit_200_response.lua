@@ -11,8 +11,8 @@
 -- invite___limit_200_response class
 local invite___limit_200_response = {}
 local invite___limit_200_response_mt = {
-	__name = "invite___limit_200_response";
-	__index = invite___limit_200_response;
+	__name = "invite___limit_200_response",
+	__index = invite___limit_200_response,
 }
 
 local function cast_invite___limit_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_invite___limit_200_response(remaining)
 	return cast_invite___limit_200_response({
-		["remaining"] = remaining;
+		["remaining"] = remaining,
 	})
 end
 
 return {
-	cast = cast_invite___limit_200_response;
-	new = new_invite___limit_200_response;
+	cast = cast_invite___limit_200_response,
+	new = new_invite___limit_200_response,
 }

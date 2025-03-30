@@ -11,8 +11,8 @@
 -- notes___reactions___create_request class
 local notes___reactions___create_request = {}
 local notes___reactions___create_request_mt = {
-	__name = "notes___reactions___create_request";
-	__index = notes___reactions___create_request;
+	__name = "notes___reactions___create_request",
+	__index = notes___reactions___create_request,
 }
 
 local function cast_notes___reactions___create_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_notes___reactions___create_request(note_id, reaction)
 	return cast_notes___reactions___create_request({
-		["noteId"] = note_id;
-		["reaction"] = reaction;
+		["noteId"] = note_id,
+		["reaction"] = reaction,
 	})
 end
 
 return {
-	cast = cast_notes___reactions___create_request;
-	new = new_notes___reactions___create_request;
+	cast = cast_notes___reactions___create_request,
+	new = new_notes___reactions___create_request,
 }

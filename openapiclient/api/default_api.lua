@@ -71,8 +71,8 @@ local openapiclient_users___lists___delete_request = require "openapiclient.mode
 
 local default_api = {}
 local default_api_mt = {
-	__name = "default_api";
-	__index = default_api;
+	__name = "default_api",
+	__index = default_api,
 }
 
 local function new_default_api(authority, basePath, schemes)
@@ -83,25 +83,25 @@ local function new_default_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, default_api_mt)
 end
 
 function default_api:admin_emoji_import_zip(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/emoji/import-zip",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -138,11 +138,11 @@ end
 
 function default_api:bubble_game_ranking(bubble_game___ranking_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/bubble-game/ranking",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -193,11 +193,11 @@ end
 
 function default_api:bubble_game_ranking_0(bubble_game___ranking_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/bubble-game/ranking",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -248,11 +248,11 @@ end
 
 function default_api:bubble_game_register(bubble_game___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/bubble-game/register",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -289,11 +289,11 @@ end
 
 function default_api:export_custom_emojis()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/export-custom-emojis",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -324,11 +324,11 @@ end
 
 function default_api:i2fa_done(auth___accept_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/done",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -376,11 +376,11 @@ end
 
 function default_api:i2fa_key_done(i___2fa___key_done_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/key-done",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -428,11 +428,11 @@ end
 
 function default_api:i2fa_password_less(i___2fa___password_less_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/password-less",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -469,11 +469,11 @@ end
 
 function default_api:i2fa_register(i___2fa___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/register",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -521,11 +521,11 @@ end
 
 function default_api:i2fa_register_key(i___2fa___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/register-key",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -573,11 +573,11 @@ end
 
 function default_api:i2fa_remove_key(i___2fa___remove_key_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/remove-key",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -614,11 +614,11 @@ end
 
 function default_api:i2fa_unregister(i___2fa___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/unregister",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -655,11 +655,11 @@ end
 
 function default_api:i2fa_update_key(i___2fa___update_key_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/2fa/update-key",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -696,11 +696,11 @@ end
 
 function default_api:i_apps(i___apps_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/apps",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -751,11 +751,11 @@ end
 
 function default_api:i_authorized_apps(i___authorized_apps_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/authorized-apps",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -806,11 +806,11 @@ end
 
 function default_api:i_change_password(i___change_password_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/change-password",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -847,11 +847,11 @@ end
 
 function default_api:i_claim_achievement(i___claim_achievement_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/claim-achievement",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -888,11 +888,11 @@ end
 
 function default_api:i_delete_account(i___2fa___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/delete-account",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -929,11 +929,11 @@ end
 
 function default_api:i_export_antennas()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-antennas",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -964,11 +964,11 @@ end
 
 function default_api:i_export_blocking()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-blocking",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -999,11 +999,11 @@ end
 
 function default_api:i_export_clips()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-clips",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1034,11 +1034,11 @@ end
 
 function default_api:i_export_data()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-data",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1069,11 +1069,11 @@ end
 
 function default_api:i_export_favorites()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-favorites",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1104,11 +1104,11 @@ end
 
 function default_api:i_export_following(i___export_following_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1145,11 +1145,11 @@ end
 
 function default_api:i_export_mute()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-mute",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1180,11 +1180,11 @@ end
 
 function default_api:i_export_notes()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1215,11 +1215,11 @@ end
 
 function default_api:i_export_user_lists()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/export-user-lists",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1250,11 +1250,11 @@ end
 
 function default_api:i_import_antennas(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-antennas",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1291,11 +1291,11 @@ end
 
 function default_api:i_import_blocking(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-blocking",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1332,11 +1332,11 @@ end
 
 function default_api:i_import_following(i___import_following_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1373,11 +1373,11 @@ end
 
 function default_api:i_import_muting(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-muting",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1414,11 +1414,11 @@ end
 
 function default_api:i_import_notes(i___import_notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1455,11 +1455,11 @@ end
 
 function default_api:i_import_user_lists(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/import-user-lists",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1496,11 +1496,11 @@ end
 
 function default_api:i_regenerate_token(i___regenerate_token_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/regenerate-token",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1537,11 +1537,11 @@ end
 
 function default_api:i_registry_get(i___registry___get_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/get",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1589,11 +1589,11 @@ end
 
 function default_api:i_registry_get_all(i___registry___get_all_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/get-all",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1641,11 +1641,11 @@ end
 
 function default_api:i_registry_get_detail(i___registry___get_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/get-detail",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1693,11 +1693,11 @@ end
 
 function default_api:i_registry_get_unsecure(i___registry___get_unsecure_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/get-unsecure",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1734,11 +1734,11 @@ end
 
 function default_api:i_registry_keys(i___registry___get_all_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/keys",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1786,11 +1786,11 @@ end
 
 function default_api:i_registry_keys_with_type(i___registry___get_all_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/keys-with-type",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1838,11 +1838,11 @@ end
 
 function default_api:i_registry_remove(i___registry___get_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/remove",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1879,11 +1879,11 @@ end
 
 function default_api:i_registry_scopes_with_domain()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/scopes-with-domain",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1928,11 +1928,11 @@ end
 
 function default_api:i_registry_set(i___registry___set_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/registry/set",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1969,11 +1969,11 @@ end
 
 function default_api:i_revoke_token(i___revoke_token_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/revoke-token",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2010,11 +2010,11 @@ end
 
 function default_api:i_signin_history(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/signin-history",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2065,11 +2065,11 @@ end
 
 function default_api:i_update_email(i___update_email_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/update-email",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2117,11 +2117,11 @@ end
 
 function default_api:page_push(page_push_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/page-push",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2158,11 +2158,11 @@ end
 
 function default_api:reversi_cancel_match(reversi___cancel_match_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/cancel-match",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2199,11 +2199,11 @@ end
 
 function default_api:reversi_games(reversi___games_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/games",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2254,11 +2254,11 @@ end
 
 function default_api:reversi_invitations()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/invitations",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2303,11 +2303,11 @@ end
 
 function default_api:reversi_match(reversi___match_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/match",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2355,11 +2355,11 @@ end
 
 function default_api:reversi_show_game(reversi___show_game_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/show-game",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2407,11 +2407,11 @@ end
 
 function default_api:reversi_surrender(reversi___show_game_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/surrender",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2448,11 +2448,11 @@ end
 
 function default_api:reversi_verify(reversi___verify_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/reversi/verify",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2500,11 +2500,11 @@ end
 
 function default_api:users_achievements(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/achievements",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2555,11 +2555,11 @@ end
 
 function default_api:users_lists_create_from_public(users___lists___create_from_public_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/create-from-public",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2607,11 +2607,11 @@ end
 
 function default_api:users_lists_favorite(users___lists___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/favorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2648,11 +2648,11 @@ end
 
 function default_api:users_lists_unfavorite(users___lists___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/lists/unfavorite",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -2688,5 +2688,5 @@ function default_api:users_lists_unfavorite(users___lists___delete_request)
 end
 
 return {
-	new = new_default_api;
+	new = new_default_api,
 }

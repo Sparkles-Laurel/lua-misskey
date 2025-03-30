@@ -36,8 +36,8 @@ local openapiclient_charts___users_200_response = require "openapiclient.model.c
 
 local charts_api = {}
 local charts_api_mt = {
-	__name = "charts_api";
-	__index = charts_api;
+	__name = "charts_api",
+	__index = charts_api,
 }
 
 local function new_charts_api(authority, basePath, schemes)
@@ -48,25 +48,25 @@ local function new_charts_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, charts_api_mt)
 end
 
 function charts_api:charts_active_users(charts___active_users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/active-users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -114,11 +114,11 @@ end
 
 function charts_api:charts_active_users_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/active-users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -166,11 +166,11 @@ end
 
 function charts_api:charts_ap_request(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/ap-request",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -218,11 +218,11 @@ end
 
 function charts_api:charts_ap_request_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/ap-request",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -270,11 +270,11 @@ end
 
 function charts_api:charts_drive(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/drive",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -322,11 +322,11 @@ end
 
 function charts_api:charts_drive_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/drive",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -374,11 +374,11 @@ end
 
 function charts_api:charts_federation(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/federation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -426,11 +426,11 @@ end
 
 function charts_api:charts_federation_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/federation",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -478,11 +478,11 @@ end
 
 function charts_api:charts_instance(charts___instance_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/instance",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -530,11 +530,11 @@ end
 
 function charts_api:charts_instance_0(charts___instance_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/instance",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -582,11 +582,11 @@ end
 
 function charts_api:charts_notes(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -634,11 +634,11 @@ end
 
 function charts_api:charts_notes_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -686,11 +686,11 @@ end
 
 function charts_api:charts_user_drive(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/drive",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -738,11 +738,11 @@ end
 
 function charts_api:charts_user_drive_0(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/drive",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -790,11 +790,11 @@ end
 
 function charts_api:charts_user_following(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -842,11 +842,11 @@ end
 
 function charts_api:charts_user_following_0(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -894,11 +894,11 @@ end
 
 function charts_api:charts_user_notes(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -946,11 +946,11 @@ end
 
 function charts_api:charts_user_notes_0(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -998,11 +998,11 @@ end
 
 function charts_api:charts_user_pv(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/pv",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1050,11 +1050,11 @@ end
 
 function charts_api:charts_user_pv_0(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/pv",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1102,11 +1102,11 @@ end
 
 function charts_api:charts_user_reactions(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/reactions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1154,11 +1154,11 @@ end
 
 function charts_api:charts_user_reactions_0(charts___user___drive_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/user/reactions",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1206,11 +1206,11 @@ end
 
 function charts_api:charts_users(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1258,11 +1258,11 @@ end
 
 function charts_api:charts_users_0(charts___active_users_request_1)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/charts/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1309,5 +1309,5 @@ function charts_api:charts_users_0(charts___active_users_request_1)
 end
 
 return {
-	new = new_charts_api;
+	new = new_charts_api,
 }

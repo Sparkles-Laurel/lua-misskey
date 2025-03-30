@@ -23,8 +23,8 @@ local openapiclient_app___show_request = require "openapiclient.model.app___show
 
 local app_api = {}
 local app_api_mt = {
-	__name = "app_api";
-	__index = app_api;
+	__name = "app_api",
+	__index = app_api,
 }
 
 local function new_app_api(authority, basePath, schemes)
@@ -35,25 +35,25 @@ local function new_app_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, app_api_mt)
 end
 
 function app_api:app_create(app___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/app/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -101,11 +101,11 @@ end
 
 function app_api:app_show(app___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/app/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -152,5 +152,5 @@ function app_api:app_show(app___show_request)
 end
 
 return {
-	new = new_app_api;
+	new = new_app_api,
 }

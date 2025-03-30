@@ -11,8 +11,8 @@
 -- users___clips_request class
 local users___clips_request = {}
 local users___clips_request_mt = {
-	__name = "users___clips_request";
-	__index = users___clips_request;
+	__name = "users___clips_request",
+	__index = users___clips_request,
 }
 
 local function cast_users___clips_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_users___clips_request(user_id, limit, since_id, until_id)
 	return cast_users___clips_request({
-		["userId"] = user_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["userId"] = user_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_users___clips_request;
-	new = new_users___clips_request;
+	cast = cast_users___clips_request,
+	new = new_users___clips_request,
 }

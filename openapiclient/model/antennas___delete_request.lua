@@ -11,8 +11,8 @@
 -- antennas___delete_request class
 local antennas___delete_request = {}
 local antennas___delete_request_mt = {
-	__name = "antennas___delete_request";
-	__index = antennas___delete_request;
+	__name = "antennas___delete_request",
+	__index = antennas___delete_request,
 }
 
 local function cast_antennas___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_antennas___delete_request(antenna_id)
 	return cast_antennas___delete_request({
-		["antennaId"] = antenna_id;
+		["antennaId"] = antenna_id,
 	})
 end
 
 return {
-	cast = cast_antennas___delete_request;
-	new = new_antennas___delete_request;
+	cast = cast_antennas___delete_request,
+	new = new_antennas___delete_request,
 }

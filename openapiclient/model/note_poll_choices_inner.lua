@@ -11,8 +11,8 @@
 -- note_poll_choices_inner class
 local note_poll_choices_inner = {}
 local note_poll_choices_inner_mt = {
-	__name = "note_poll_choices_inner";
-	__index = note_poll_choices_inner;
+	__name = "note_poll_choices_inner",
+	__index = note_poll_choices_inner,
 }
 
 local function cast_note_poll_choices_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_note_poll_choices_inner(is_voted, text, votes)
 	return cast_note_poll_choices_inner({
-		["isVoted"] = is_voted;
-		["text"] = text;
-		["votes"] = votes;
+		["isVoted"] = is_voted,
+		["text"] = text,
+		["votes"] = votes,
 	})
 end
 
 return {
-	cast = cast_note_poll_choices_inner;
-	new = new_note_poll_choices_inner;
+	cast = cast_note_poll_choices_inner,
+	new = new_note_poll_choices_inner,
 }

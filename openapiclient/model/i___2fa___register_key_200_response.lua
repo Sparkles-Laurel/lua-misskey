@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response class
 local i___2fa___register_key_200_response = {}
 local i___2fa___register_key_200_response_mt = {
-	__name = "i___2fa___register_key_200_response";
-	__index = i___2fa___register_key_200_response;
+	__name = "i___2fa___register_key_200_response",
+	__index = i___2fa___register_key_200_response,
 }
 
 local function cast_i___2fa___register_key_200_response(t)
@@ -21,19 +21,19 @@ end
 
 local function new_i___2fa___register_key_200_response(rp, user, challenge, pub_key_cred_params, timeout, exclude_credentials, authenticator_selection, attestation, extensions)
 	return cast_i___2fa___register_key_200_response({
-		["rp"] = rp;
-		["user"] = user;
-		["challenge"] = challenge;
-		["pubKeyCredParams"] = pub_key_cred_params;
-		["timeout"] = timeout;
-		["excludeCredentials"] = exclude_credentials;
-		["authenticatorSelection"] = authenticator_selection;
-		["attestation"] = attestation;
-		["extensions"] = extensions;
+		["rp"] = rp,
+		["user"] = user,
+		["challenge"] = challenge,
+		["pubKeyCredParams"] = pub_key_cred_params,
+		["timeout"] = timeout,
+		["excludeCredentials"] = exclude_credentials,
+		["authenticatorSelection"] = authenticator_selection,
+		["attestation"] = attestation,
+		["extensions"] = extensions,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response;
-	new = new_i___2fa___register_key_200_response;
+	cast = cast_i___2fa___register_key_200_response,
+	new = new_i___2fa___register_key_200_response,
 }

@@ -22,8 +22,8 @@ local openapiclient_notes___reactions___create_request = require "openapiclient.
 
 local reactions_api = {}
 local reactions_api_mt = {
-	__name = "reactions_api";
-	__index = reactions_api;
+	__name = "reactions_api",
+	__index = reactions_api,
 }
 
 local function new_reactions_api(authority, basePath, schemes)
@@ -34,25 +34,25 @@ local function new_reactions_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, reactions_api_mt)
 end
 
 function reactions_api:notes_reactions_create(notes___reactions___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/reactions/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -89,11 +89,11 @@ end
 
 function reactions_api:notes_reactions_delete(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/notes/reactions/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -129,5 +129,5 @@ function reactions_api:notes_reactions_delete(i___pin_request)
 end
 
 return {
-	new = new_reactions_api;
+	new = new_reactions_api,
 }

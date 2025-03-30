@@ -11,8 +11,8 @@
 -- gallery___posts___delete_request class
 local gallery___posts___delete_request = {}
 local gallery___posts___delete_request_mt = {
-	__name = "gallery___posts___delete_request";
-	__index = gallery___posts___delete_request;
+	__name = "gallery___posts___delete_request",
+	__index = gallery___posts___delete_request,
 }
 
 local function cast_gallery___posts___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_gallery___posts___delete_request(post_id)
 	return cast_gallery___posts___delete_request({
-		["postId"] = post_id;
+		["postId"] = post_id,
 	})
 end
 
 return {
-	cast = cast_gallery___posts___delete_request;
-	new = new_gallery___posts___delete_request;
+	cast = cast_gallery___posts___delete_request,
+	new = new_gallery___posts___delete_request,
 }

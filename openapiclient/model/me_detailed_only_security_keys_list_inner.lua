@@ -11,8 +11,8 @@
 -- me_detailed_only_security_keys_list_inner class
 local me_detailed_only_security_keys_list_inner = {}
 local me_detailed_only_security_keys_list_inner_mt = {
-	__name = "me_detailed_only_security_keys_list_inner";
-	__index = me_detailed_only_security_keys_list_inner;
+	__name = "me_detailed_only_security_keys_list_inner",
+	__index = me_detailed_only_security_keys_list_inner,
 }
 
 local function cast_me_detailed_only_security_keys_list_inner(t)
@@ -21,13 +21,13 @@ end
 
 local function new_me_detailed_only_security_keys_list_inner(id, name, last_used)
 	return cast_me_detailed_only_security_keys_list_inner({
-		["id"] = id;
-		["name"] = name;
-		["lastUsed"] = last_used;
+		["id"] = id,
+		["name"] = name,
+		["lastUsed"] = last_used,
 	})
 end
 
 return {
-	cast = cast_me_detailed_only_security_keys_list_inner;
-	new = new_me_detailed_only_security_keys_list_inner;
+	cast = cast_me_detailed_only_security_keys_list_inner,
+	new = new_me_detailed_only_security_keys_list_inner,
 }

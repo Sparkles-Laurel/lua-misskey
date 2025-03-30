@@ -11,8 +11,8 @@
 -- auth___session___userkey_request class
 local auth___session___userkey_request = {}
 local auth___session___userkey_request_mt = {
-	__name = "auth___session___userkey_request";
-	__index = auth___session___userkey_request;
+	__name = "auth___session___userkey_request",
+	__index = auth___session___userkey_request,
 }
 
 local function cast_auth___session___userkey_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_auth___session___userkey_request(app_secret, token)
 	return cast_auth___session___userkey_request({
-		["appSecret"] = app_secret;
-		["token"] = token;
+		["appSecret"] = app_secret,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_auth___session___userkey_request;
-	new = new_auth___session___userkey_request;
+	cast = cast_auth___session___userkey_request,
+	new = new_auth___session___userkey_request,
 }

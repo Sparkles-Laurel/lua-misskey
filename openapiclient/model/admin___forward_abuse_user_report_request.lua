@@ -11,8 +11,8 @@
 -- admin___forward_abuse_user_report_request class
 local admin___forward_abuse_user_report_request = {}
 local admin___forward_abuse_user_report_request_mt = {
-	__name = "admin___forward_abuse_user_report_request";
-	__index = admin___forward_abuse_user_report_request;
+	__name = "admin___forward_abuse_user_report_request",
+	__index = admin___forward_abuse_user_report_request,
 }
 
 local function cast_admin___forward_abuse_user_report_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___forward_abuse_user_report_request(report_id)
 	return cast_admin___forward_abuse_user_report_request({
-		["reportId"] = report_id;
+		["reportId"] = report_id,
 	})
 end
 
 return {
-	cast = cast_admin___forward_abuse_user_report_request;
-	new = new_admin___forward_abuse_user_report_request;
+	cast = cast_admin___forward_abuse_user_report_request,
+	new = new_admin___forward_abuse_user_report_request,
 }

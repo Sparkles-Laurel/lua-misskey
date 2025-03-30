@@ -11,8 +11,8 @@
 -- charts___user___drive_request class
 local charts___user___drive_request = {}
 local charts___user___drive_request_mt = {
-	__name = "charts___user___drive_request";
-	__index = charts___user___drive_request;
+	__name = "charts___user___drive_request",
+	__index = charts___user___drive_request,
 }
 
 local function cast_charts___user___drive_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_charts___user___drive_request(span, limit, offset, user_id)
 	return cast_charts___user___drive_request({
-		["span"] = span;
-		["limit"] = limit;
-		["offset"] = offset;
-		["userId"] = user_id;
+		["span"] = span,
+		["limit"] = limit,
+		["offset"] = offset,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_charts___user___drive_request;
-	new = new_charts___user___drive_request;
+	cast = cast_charts___user___drive_request,
+	new = new_charts___user___drive_request,
 }

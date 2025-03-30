@@ -11,8 +11,8 @@
 -- notes___renotes_request class
 local notes___renotes_request = {}
 local notes___renotes_request_mt = {
-	__name = "notes___renotes_request";
-	__index = notes___renotes_request;
+	__name = "notes___renotes_request",
+	__index = notes___renotes_request,
 }
 
 local function cast_notes___renotes_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_notes___renotes_request(note_id, user_id, limit, since_id, until_id, quote)
 	return cast_notes___renotes_request({
-		["noteId"] = note_id;
-		["userId"] = user_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["quote"] = quote;
+		["noteId"] = note_id,
+		["userId"] = user_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["quote"] = quote,
 	})
 end
 
 return {
-	cast = cast_notes___renotes_request;
-	new = new_notes___renotes_request;
+	cast = cast_notes___renotes_request,
+	new = new_notes___renotes_request,
 }

@@ -11,8 +11,8 @@
 -- following___update_all_request class
 local following___update_all_request = {}
 local following___update_all_request_mt = {
-	__name = "following___update_all_request";
-	__index = following___update_all_request;
+	__name = "following___update_all_request",
+	__index = following___update_all_request,
 }
 
 local function cast_following___update_all_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_following___update_all_request(notify, with_replies)
 	return cast_following___update_all_request({
-		["notify"] = notify;
-		["withReplies"] = with_replies;
+		["notify"] = notify,
+		["withReplies"] = with_replies,
 	})
 end
 
 return {
-	cast = cast_following___update_all_request;
-	new = new_following___update_all_request;
+	cast = cast_following___update_all_request,
+	new = new_following___update_all_request,
 }

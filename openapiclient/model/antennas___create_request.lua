@@ -11,8 +11,8 @@
 -- antennas___create_request class
 local antennas___create_request = {}
 local antennas___create_request_mt = {
-	__name = "antennas___create_request";
-	__index = antennas___create_request;
+	__name = "antennas___create_request",
+	__index = antennas___create_request,
 }
 
 local function cast_antennas___create_request(t)
@@ -21,21 +21,21 @@ end
 
 local function new_antennas___create_request(name, src, user_list_id, keywords, exclude_keywords, users, case_sensitive, local_only, exclude_bots, with_replies, with_file)
 	return cast_antennas___create_request({
-		["name"] = name;
-		["src"] = src;
-		["userListId"] = user_list_id;
-		["keywords"] = keywords;
-		["excludeKeywords"] = exclude_keywords;
-		["users"] = users;
-		["caseSensitive"] = case_sensitive;
-		["localOnly"] = local_only;
-		["excludeBots"] = exclude_bots;
-		["withReplies"] = with_replies;
-		["withFile"] = with_file;
+		["name"] = name,
+		["src"] = src,
+		["userListId"] = user_list_id,
+		["keywords"] = keywords,
+		["excludeKeywords"] = exclude_keywords,
+		["users"] = users,
+		["caseSensitive"] = case_sensitive,
+		["localOnly"] = local_only,
+		["excludeBots"] = exclude_bots,
+		["withReplies"] = with_replies,
+		["withFile"] = with_file,
 	})
 end
 
 return {
-	cast = cast_antennas___create_request;
-	new = new_antennas___create_request;
+	cast = cast_antennas___create_request,
+	new = new_antennas___create_request,
 }

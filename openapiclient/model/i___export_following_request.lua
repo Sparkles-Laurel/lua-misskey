@@ -11,8 +11,8 @@
 -- i___export_following_request class
 local i___export_following_request = {}
 local i___export_following_request_mt = {
-	__name = "i___export_following_request";
-	__index = i___export_following_request;
+	__name = "i___export_following_request",
+	__index = i___export_following_request,
 }
 
 local function cast_i___export_following_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___export_following_request(exclude_muting, exclude_inactive)
 	return cast_i___export_following_request({
-		["excludeMuting"] = exclude_muting;
-		["excludeInactive"] = exclude_inactive;
+		["excludeMuting"] = exclude_muting,
+		["excludeInactive"] = exclude_inactive,
 	})
 end
 
 return {
-	cast = cast_i___export_following_request;
-	new = new_i___export_following_request;
+	cast = cast_i___export_following_request,
+	new = new_i___export_following_request,
 }

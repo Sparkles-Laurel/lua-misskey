@@ -11,8 +11,8 @@
 -- server_info_200_response_mem class
 local server_info_200_response_mem = {}
 local server_info_200_response_mem_mt = {
-	__name = "server_info_200_response_mem";
-	__index = server_info_200_response_mem;
+	__name = "server_info_200_response_mem",
+	__index = server_info_200_response_mem,
 }
 
 local function cast_server_info_200_response_mem(t)
@@ -21,11 +21,11 @@ end
 
 local function new_server_info_200_response_mem(total)
 	return cast_server_info_200_response_mem({
-		["total"] = total;
+		["total"] = total,
 	})
 end
 
 return {
-	cast = cast_server_info_200_response_mem;
-	new = new_server_info_200_response_mem;
+	cast = cast_server_info_200_response_mem,
+	new = new_server_info_200_response_mem,
 }

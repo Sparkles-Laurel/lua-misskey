@@ -11,8 +11,8 @@
 -- notes___mentions_request class
 local notes___mentions_request = {}
 local notes___mentions_request_mt = {
-	__name = "notes___mentions_request";
-	__index = notes___mentions_request;
+	__name = "notes___mentions_request",
+	__index = notes___mentions_request,
 }
 
 local function cast_notes___mentions_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_notes___mentions_request(following, limit, since_id, until_id, visibility)
 	return cast_notes___mentions_request({
-		["following"] = following;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["visibility"] = visibility;
+		["following"] = following,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["visibility"] = visibility,
 	})
 end
 
 return {
-	cast = cast_notes___mentions_request;
-	new = new_notes___mentions_request;
+	cast = cast_notes___mentions_request,
+	new = new_notes___mentions_request,
 }

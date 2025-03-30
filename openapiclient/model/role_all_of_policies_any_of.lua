@@ -11,8 +11,8 @@
 -- role_all_of_policies_any_of class
 local role_all_of_policies_any_of = {}
 local role_all_of_policies_any_of_mt = {
-	__name = "role_all_of_policies_any_of";
-	__index = role_all_of_policies_any_of;
+	__name = "role_all_of_policies_any_of",
+	__index = role_all_of_policies_any_of,
 }
 
 local function cast_role_all_of_policies_any_of(t)
@@ -21,13 +21,13 @@ end
 
 local function new_role_all_of_policies_any_of(value, priority, use_default)
 	return cast_role_all_of_policies_any_of({
-		["value"] = value;
-		["priority"] = priority;
-		["useDefault"] = use_default;
+		["value"] = value,
+		["priority"] = priority,
+		["useDefault"] = use_default,
 	})
 end
 
 return {
-	cast = cast_role_all_of_policies_any_of;
-	new = new_role_all_of_policies_any_of;
+	cast = cast_role_all_of_policies_any_of,
+	new = new_role_all_of_policies_any_of,
 }

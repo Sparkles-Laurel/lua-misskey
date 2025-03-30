@@ -11,8 +11,8 @@
 -- users___relation_200_response_one_of class
 local users___relation_200_response_one_of = {}
 local users___relation_200_response_one_of_mt = {
-	__name = "users___relation_200_response_one_of";
-	__index = users___relation_200_response_one_of;
+	__name = "users___relation_200_response_one_of",
+	__index = users___relation_200_response_one_of,
 }
 
 local function cast_users___relation_200_response_one_of(t)
@@ -21,21 +21,21 @@ end
 
 local function new_users___relation_200_response_one_of(id, is_following, has_pending_follow_request_from_you, has_pending_follow_request_to_you, is_followed, is_blocking, is_blocked, is_muted, is_renote_muted, is_instance_muted, memo)
 	return cast_users___relation_200_response_one_of({
-		["id"] = id;
-		["isFollowing"] = is_following;
-		["hasPendingFollowRequestFromYou"] = has_pending_follow_request_from_you;
-		["hasPendingFollowRequestToYou"] = has_pending_follow_request_to_you;
-		["isFollowed"] = is_followed;
-		["isBlocking"] = is_blocking;
-		["isBlocked"] = is_blocked;
-		["isMuted"] = is_muted;
-		["isRenoteMuted"] = is_renote_muted;
-		["isInstanceMuted"] = is_instance_muted;
-		["memo"] = memo;
+		["id"] = id,
+		["isFollowing"] = is_following,
+		["hasPendingFollowRequestFromYou"] = has_pending_follow_request_from_you,
+		["hasPendingFollowRequestToYou"] = has_pending_follow_request_to_you,
+		["isFollowed"] = is_followed,
+		["isBlocking"] = is_blocking,
+		["isBlocked"] = is_blocked,
+		["isMuted"] = is_muted,
+		["isRenoteMuted"] = is_renote_muted,
+		["isInstanceMuted"] = is_instance_muted,
+		["memo"] = memo,
 	})
 end
 
 return {
-	cast = cast_users___relation_200_response_one_of;
-	new = new_users___relation_200_response_one_of;
+	cast = cast_users___relation_200_response_one_of,
+	new = new_users___relation_200_response_one_of,
 }

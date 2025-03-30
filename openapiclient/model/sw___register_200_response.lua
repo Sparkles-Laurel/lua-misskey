@@ -11,8 +11,8 @@
 -- sw___register_200_response class
 local sw___register_200_response = {}
 local sw___register_200_response_mt = {
-	__name = "sw___register_200_response";
-	__index = sw___register_200_response;
+	__name = "sw___register_200_response",
+	__index = sw___register_200_response,
 }
 
 local function cast_sw___register_200_response(t)
@@ -21,15 +21,15 @@ end
 
 local function new_sw___register_200_response(state, key, user_id, endpoint, send_read_message)
 	return cast_sw___register_200_response({
-		["state"] = state;
-		["key"] = key;
-		["userId"] = user_id;
-		["endpoint"] = endpoint;
-		["sendReadMessage"] = send_read_message;
+		["state"] = state,
+		["key"] = key,
+		["userId"] = user_id,
+		["endpoint"] = endpoint,
+		["sendReadMessage"] = send_read_message,
 	})
 end
 
 return {
-	cast = cast_sw___register_200_response;
-	new = new_sw___register_200_response;
+	cast = cast_sw___register_200_response,
+	new = new_sw___register_200_response,
 }

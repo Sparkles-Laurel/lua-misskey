@@ -11,8 +11,8 @@
 -- meta_lite_ads_inner class
 local meta_lite_ads_inner = {}
 local meta_lite_ads_inner_mt = {
-	__name = "meta_lite_ads_inner";
-	__index = meta_lite_ads_inner;
+	__name = "meta_lite_ads_inner",
+	__index = meta_lite_ads_inner,
 }
 
 local function cast_meta_lite_ads_inner(t)
@@ -21,16 +21,16 @@ end
 
 local function new_meta_lite_ads_inner(id, url, place, ratio, image_url, day_of_week)
 	return cast_meta_lite_ads_inner({
-		["id"] = id;
-		["url"] = url;
-		["place"] = place;
-		["ratio"] = ratio;
-		["imageUrl"] = image_url;
-		["dayOfWeek"] = day_of_week;
+		["id"] = id,
+		["url"] = url,
+		["place"] = place,
+		["ratio"] = ratio,
+		["imageUrl"] = image_url,
+		["dayOfWeek"] = day_of_week,
 	})
 end
 
 return {
-	cast = cast_meta_lite_ads_inner;
-	new = new_meta_lite_ads_inner;
+	cast = cast_meta_lite_ads_inner,
+	new = new_meta_lite_ads_inner,
 }

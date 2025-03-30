@@ -11,8 +11,8 @@
 -- muting class
 local muting = {}
 local muting_mt = {
-	__name = "muting";
-	__index = muting;
+	__name = "muting",
+	__index = muting,
 }
 
 local function cast_muting(t)
@@ -21,15 +21,15 @@ end
 
 local function new_muting(id, created_at, expires_at, mutee_id, mutee)
 	return cast_muting({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["expiresAt"] = expires_at;
-		["muteeId"] = mutee_id;
-		["mutee"] = mutee;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["expiresAt"] = expires_at,
+		["muteeId"] = mutee_id,
+		["mutee"] = mutee,
 	})
 end
 
 return {
-	cast = cast_muting;
-	new = new_muting;
+	cast = cast_muting,
+	new = new_muting,
 }

@@ -11,8 +11,8 @@
 -- notification class
 local notification = {}
 local notification_mt = {
-	__name = "notification";
-	__index = notification;
+	__name = "notification",
+	__index = notification,
 }
 
 local function cast_notification(t)
@@ -21,28 +21,28 @@ end
 
 local function new_notification(id, created_at, type, user, user_id, note, reaction, message, role, achievement, exported_entity, file_id, body, header, icon, reason, reactions, users)
 	return cast_notification({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["type"] = type;
-		["user"] = user;
-		["userId"] = user_id;
-		["note"] = note;
-		["reaction"] = reaction;
-		["message"] = message;
-		["role"] = role;
-		["achievement"] = achievement;
-		["exportedEntity"] = exported_entity;
-		["fileId"] = file_id;
-		["body"] = body;
-		["header"] = header;
-		["icon"] = icon;
-		["reason"] = reason;
-		["reactions"] = reactions;
-		["users"] = users;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["type"] = type,
+		["user"] = user,
+		["userId"] = user_id,
+		["note"] = note,
+		["reaction"] = reaction,
+		["message"] = message,
+		["role"] = role,
+		["achievement"] = achievement,
+		["exportedEntity"] = exported_entity,
+		["fileId"] = file_id,
+		["body"] = body,
+		["header"] = header,
+		["icon"] = icon,
+		["reason"] = reason,
+		["reactions"] = reactions,
+		["users"] = users,
 	})
 end
 
 return {
-	cast = cast_notification;
-	new = new_notification;
+	cast = cast_notification,
+	new = new_notification,
 }

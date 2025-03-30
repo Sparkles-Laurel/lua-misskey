@@ -11,8 +11,8 @@
 -- i___update_email_request class
 local i___update_email_request = {}
 local i___update_email_request_mt = {
-	__name = "i___update_email_request";
-	__index = i___update_email_request;
+	__name = "i___update_email_request",
+	__index = i___update_email_request,
 }
 
 local function cast_i___update_email_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___update_email_request(password, email, token)
 	return cast_i___update_email_request({
-		["password"] = password;
-		["email"] = email;
-		["token"] = token;
+		["password"] = password,
+		["email"] = email,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_i___update_email_request;
-	new = new_i___update_email_request;
+	cast = cast_i___update_email_request,
+	new = new_i___update_email_request,
 }

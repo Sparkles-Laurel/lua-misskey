@@ -11,8 +11,8 @@
 -- bubble_game___ranking_request class
 local bubble_game___ranking_request = {}
 local bubble_game___ranking_request_mt = {
-	__name = "bubble_game___ranking_request";
-	__index = bubble_game___ranking_request;
+	__name = "bubble_game___ranking_request",
+	__index = bubble_game___ranking_request,
 }
 
 local function cast_bubble_game___ranking_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_bubble_game___ranking_request(game_mode)
 	return cast_bubble_game___ranking_request({
-		["gameMode"] = game_mode;
+		["gameMode"] = game_mode,
 	})
 end
 
 return {
-	cast = cast_bubble_game___ranking_request;
-	new = new_bubble_game___ranking_request;
+	cast = cast_bubble_game___ranking_request,
+	new = new_bubble_game___ranking_request,
 }

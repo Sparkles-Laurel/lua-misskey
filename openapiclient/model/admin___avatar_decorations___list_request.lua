@@ -11,8 +11,8 @@
 -- admin___avatar_decorations___list_request class
 local admin___avatar_decorations___list_request = {}
 local admin___avatar_decorations___list_request_mt = {
-	__name = "admin___avatar_decorations___list_request";
-	__index = admin___avatar_decorations___list_request;
+	__name = "admin___avatar_decorations___list_request",
+	__index = admin___avatar_decorations___list_request,
 }
 
 local function cast_admin___avatar_decorations___list_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___avatar_decorations___list_request(limit, since_id, until_id, user_id)
 	return cast_admin___avatar_decorations___list_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["userId"] = user_id;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_admin___avatar_decorations___list_request;
-	new = new_admin___avatar_decorations___list_request;
+	cast = cast_admin___avatar_decorations___list_request,
+	new = new_admin___avatar_decorations___list_request,
 }

@@ -11,8 +11,8 @@
 -- i___apps_request class
 local i___apps_request = {}
 local i___apps_request_mt = {
-	__name = "i___apps_request";
-	__index = i___apps_request;
+	__name = "i___apps_request",
+	__index = i___apps_request,
 }
 
 local function cast_i___apps_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___apps_request(sort)
 	return cast_i___apps_request({
-		["sort"] = sort;
+		["sort"] = sort,
 	})
 end
 
 return {
-	cast = cast_i___apps_request;
-	new = new_i___apps_request;
+	cast = cast_i___apps_request,
+	new = new_i___apps_request,
 }

@@ -38,8 +38,8 @@ local openapiclient_drive___stream_request = require "openapiclient.model.drive_
 
 local drive_api = {}
 local drive_api_mt = {
-	__name = "drive_api";
-	__index = drive_api;
+	__name = "drive_api",
+	__index = drive_api,
 }
 
 local function new_drive_api(authority, basePath, schemes)
@@ -50,25 +50,25 @@ local function new_drive_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, drive_api_mt)
 end
 
 function drive_api:drive()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -110,11 +110,11 @@ end
 
 function drive_api:drive_files(drive___files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -165,11 +165,11 @@ end
 
 function drive_api:drive_files_attached_notes(drive___files___attached_notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/attached-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -220,11 +220,11 @@ end
 
 function drive_api:drive_files_check_existence(drive___files___check_existence_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/check-existence",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -272,11 +272,11 @@ end
 
 function drive_api:drive_files_create(file, folder_id, name, comment, is_sensitive, force)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -290,12 +290,12 @@ function drive_api:drive_files_create(file, folder_id, name, comment, is_sensiti
 	req.headers:upsert("content-type", "application/json")
 
 	req:set_body(http_util.dict_to_query({
-		["folderId"] = folder_id;
-		["name"] = name;
-		["comment"] = comment;
-		["isSensitive"] = is_sensitive;
-		["force"] = force;
-		["file"] = file;
+		["folderId"] = folder_id,
+		["name"] = name,
+		["comment"] = comment,
+		["isSensitive"] = is_sensitive,
+		["force"] = force,
+		["file"] = file,
 	}))
 
 	-- make the HTTP call
@@ -330,11 +330,11 @@ end
 
 function drive_api:drive_files_delete(admin___emoji___import_zip_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -371,11 +371,11 @@ end
 
 function drive_api:drive_files_find(drive___files___find_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/find",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -426,11 +426,11 @@ end
 
 function drive_api:drive_files_find_by_hash(drive___files___check_existence_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/find-by-hash",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -481,11 +481,11 @@ end
 
 function drive_api:drive_files_show(admin___drive___show_file_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -533,11 +533,11 @@ end
 
 function drive_api:drive_files_update(drive___files___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -585,11 +585,11 @@ end
 
 function drive_api:drive_files_upload_from_url(drive___files___upload_from_url_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/files/upload-from-url",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -626,11 +626,11 @@ end
 
 function drive_api:drive_folders(drive___folders_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -681,11 +681,11 @@ end
 
 function drive_api:drive_folders_create(drive___folders___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -733,11 +733,11 @@ end
 
 function drive_api:drive_folders_delete(drive___folders___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -774,11 +774,11 @@ end
 
 function drive_api:drive_folders_find(drive___folders___find_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders/find",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -829,11 +829,11 @@ end
 
 function drive_api:drive_folders_show(drive___folders___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -881,11 +881,11 @@ end
 
 function drive_api:drive_folders_update(drive___folders___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/folders/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -933,11 +933,11 @@ end
 
 function drive_api:drive_stream(drive___stream_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/drive/stream",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -987,5 +987,5 @@ function drive_api:drive_stream(drive___stream_request)
 end
 
 return {
-	new = new_drive_api;
+	new = new_drive_api,
 }

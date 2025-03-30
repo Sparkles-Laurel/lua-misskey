@@ -11,8 +11,8 @@
 -- notes___search_request class
 local notes___search_request = {}
 local notes___search_request_mt = {
-	__name = "notes___search_request";
-	__index = notes___search_request;
+	__name = "notes___search_request",
+	__index = notes___search_request,
 }
 
 local function cast_notes___search_request(t)
@@ -21,20 +21,20 @@ end
 
 local function new_notes___search_request(query, since_id, until_id, limit, offset, host, filetype, user_id, channel_id, order)
 	return cast_notes___search_request({
-		["query"] = query;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
-		["offset"] = offset;
-		["host"] = host;
-		["filetype"] = filetype;
-		["userId"] = user_id;
-		["channelId"] = channel_id;
-		["order"] = order;
+		["query"] = query,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
+		["offset"] = offset,
+		["host"] = host,
+		["filetype"] = filetype,
+		["userId"] = user_id,
+		["channelId"] = channel_id,
+		["order"] = order,
 	})
 end
 
 return {
-	cast = cast_notes___search_request;
-	new = new_notes___search_request;
+	cast = cast_notes___search_request,
+	new = new_notes___search_request,
 }

@@ -11,8 +11,8 @@
 -- bubble_game___register_request class
 local bubble_game___register_request = {}
 local bubble_game___register_request_mt = {
-	__name = "bubble_game___register_request";
-	__index = bubble_game___register_request;
+	__name = "bubble_game___register_request",
+	__index = bubble_game___register_request,
 }
 
 local function cast_bubble_game___register_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_bubble_game___register_request(score, seed, logs, game_mode, game_version)
 	return cast_bubble_game___register_request({
-		["score"] = score;
-		["seed"] = seed;
-		["logs"] = logs;
-		["gameMode"] = game_mode;
-		["gameVersion"] = game_version;
+		["score"] = score,
+		["seed"] = seed,
+		["logs"] = logs,
+		["gameMode"] = game_mode,
+		["gameVersion"] = game_version,
 	})
 end
 
 return {
-	cast = cast_bubble_game___register_request;
-	new = new_bubble_game___register_request;
+	cast = cast_bubble_game___register_request,
+	new = new_bubble_game___register_request,
 }

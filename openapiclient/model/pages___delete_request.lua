@@ -11,8 +11,8 @@
 -- pages___delete_request class
 local pages___delete_request = {}
 local pages___delete_request_mt = {
-	__name = "pages___delete_request";
-	__index = pages___delete_request;
+	__name = "pages___delete_request",
+	__index = pages___delete_request,
 }
 
 local function cast_pages___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_pages___delete_request(page_id)
 	return cast_pages___delete_request({
-		["pageId"] = page_id;
+		["pageId"] = page_id,
 	})
 end
 
 return {
-	cast = cast_pages___delete_request;
-	new = new_pages___delete_request;
+	cast = cast_pages___delete_request,
+	new = new_pages___delete_request,
 }

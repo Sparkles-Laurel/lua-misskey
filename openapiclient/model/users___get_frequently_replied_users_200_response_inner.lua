@@ -11,8 +11,8 @@
 -- users___get_frequently_replied_users_200_response_inner class
 local users___get_frequently_replied_users_200_response_inner = {}
 local users___get_frequently_replied_users_200_response_inner_mt = {
-	__name = "users___get_frequently_replied_users_200_response_inner";
-	__index = users___get_frequently_replied_users_200_response_inner;
+	__name = "users___get_frequently_replied_users_200_response_inner",
+	__index = users___get_frequently_replied_users_200_response_inner,
 }
 
 local function cast_users___get_frequently_replied_users_200_response_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_users___get_frequently_replied_users_200_response_inner(user, weight)
 	return cast_users___get_frequently_replied_users_200_response_inner({
-		["user"] = user;
-		["weight"] = weight;
+		["user"] = user,
+		["weight"] = weight,
 	})
 end
 
 return {
-	cast = cast_users___get_frequently_replied_users_200_response_inner;
-	new = new_users___get_frequently_replied_users_200_response_inner;
+	cast = cast_users___get_frequently_replied_users_200_response_inner,
+	new = new_users___get_frequently_replied_users_200_response_inner,
 }

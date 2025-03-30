@@ -11,8 +11,8 @@
 -- i___webhooks___test_request class
 local i___webhooks___test_request = {}
 local i___webhooks___test_request_mt = {
-	__name = "i___webhooks___test_request";
-	__index = i___webhooks___test_request;
+	__name = "i___webhooks___test_request",
+	__index = i___webhooks___test_request,
 }
 
 local function cast_i___webhooks___test_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___webhooks___test_request(webhook_id, type, override)
 	return cast_i___webhooks___test_request({
-		["webhookId"] = webhook_id;
-		["type"] = type;
-		["override"] = override;
+		["webhookId"] = webhook_id,
+		["type"] = type,
+		["override"] = override,
 	})
 end
 
 return {
-	cast = cast_i___webhooks___test_request;
-	new = new_i___webhooks___test_request;
+	cast = cast_i___webhooks___test_request,
+	new = new_i___webhooks___test_request,
 }

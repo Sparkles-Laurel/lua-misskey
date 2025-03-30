@@ -11,8 +11,8 @@
 -- users___lists___update_membership_request class
 local users___lists___update_membership_request = {}
 local users___lists___update_membership_request_mt = {
-	__name = "users___lists___update_membership_request";
-	__index = users___lists___update_membership_request;
+	__name = "users___lists___update_membership_request",
+	__index = users___lists___update_membership_request,
 }
 
 local function cast_users___lists___update_membership_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_users___lists___update_membership_request(list_id, user_id, with_replies)
 	return cast_users___lists___update_membership_request({
-		["listId"] = list_id;
-		["userId"] = user_id;
-		["withReplies"] = with_replies;
+		["listId"] = list_id,
+		["userId"] = user_id,
+		["withReplies"] = with_replies,
 	})
 end
 
 return {
-	cast = cast_users___lists___update_membership_request;
-	new = new_users___lists___update_membership_request;
+	cast = cast_users___lists___update_membership_request,
+	new = new_users___lists___update_membership_request,
 }

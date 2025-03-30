@@ -11,8 +11,8 @@
 -- admin___show_moderation_logs_request class
 local admin___show_moderation_logs_request = {}
 local admin___show_moderation_logs_request_mt = {
-	__name = "admin___show_moderation_logs_request";
-	__index = admin___show_moderation_logs_request;
+	__name = "admin___show_moderation_logs_request",
+	__index = admin___show_moderation_logs_request,
 }
 
 local function cast_admin___show_moderation_logs_request(t)
@@ -21,15 +21,15 @@ end
 
 local function new_admin___show_moderation_logs_request(limit, since_id, until_id, type, user_id)
 	return cast_admin___show_moderation_logs_request({
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["type"] = type;
-		["userId"] = user_id;
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["type"] = type,
+		["userId"] = user_id,
 	})
 end
 
 return {
-	cast = cast_admin___show_moderation_logs_request;
-	new = new_admin___show_moderation_logs_request;
+	cast = cast_admin___show_moderation_logs_request,
+	new = new_admin___show_moderation_logs_request,
 }

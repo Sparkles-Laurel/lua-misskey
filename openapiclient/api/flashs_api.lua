@@ -22,8 +22,8 @@ local openapiclient_flash___delete_request = require "openapiclient.model.flash_
 
 local flashs_api = {}
 local flashs_api_mt = {
-	__name = "flashs_api";
-	__index = flashs_api;
+	__name = "flashs_api",
+	__index = flashs_api,
 }
 
 local function new_flashs_api(authority, basePath, schemes)
@@ -34,25 +34,25 @@ local function new_flashs_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, flashs_api_mt)
 end
 
 function flashs_api:flash_delete(flash___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -89,11 +89,11 @@ end
 
 function flashs_api:flash_show(flash___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -140,5 +140,5 @@ function flashs_api:flash_show(flash___delete_request)
 end
 
 return {
-	new = new_flashs_api;
+	new = new_flashs_api,
 }

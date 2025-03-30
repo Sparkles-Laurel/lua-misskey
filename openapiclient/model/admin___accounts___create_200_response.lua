@@ -11,8 +11,8 @@
 -- admin___accounts___create_200_response class
 local admin___accounts___create_200_response = {}
 local admin___accounts___create_200_response_mt = {
-	__name = "admin___accounts___create_200_response";
-	__index = admin___accounts___create_200_response;
+	__name = "admin___accounts___create_200_response",
+	__index = admin___accounts___create_200_response,
 }
 
 local function cast_admin___accounts___create_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___accounts___create_200_response(token)
 	return cast_admin___accounts___create_200_response({
-		["token"] = token;
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_admin___accounts___create_200_response;
-	new = new_admin___accounts___create_200_response;
+	cast = cast_admin___accounts___create_200_response,
+	new = new_admin___accounts___create_200_response,
 }

@@ -11,8 +11,8 @@
 -- admin___queue___stats_200_response class
 local admin___queue___stats_200_response = {}
 local admin___queue___stats_200_response_mt = {
-	__name = "admin___queue___stats_200_response";
-	__index = admin___queue___stats_200_response;
+	__name = "admin___queue___stats_200_response",
+	__index = admin___queue___stats_200_response,
 }
 
 local function cast_admin___queue___stats_200_response(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___queue___stats_200_response(deliver, inbox, db, object_storage)
 	return cast_admin___queue___stats_200_response({
-		["deliver"] = deliver;
-		["inbox"] = inbox;
-		["db"] = db;
-		["objectStorage"] = object_storage;
+		["deliver"] = deliver,
+		["inbox"] = inbox,
+		["db"] = db,
+		["objectStorage"] = object_storage,
 	})
 end
 
 return {
-	cast = cast_admin___queue___stats_200_response;
-	new = new_admin___queue___stats_200_response;
+	cast = cast_admin___queue___stats_200_response,
+	new = new_admin___queue___stats_200_response,
 }

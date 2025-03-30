@@ -11,8 +11,8 @@
 -- admin___roles___delete_request class
 local admin___roles___delete_request = {}
 local admin___roles___delete_request_mt = {
-	__name = "admin___roles___delete_request";
-	__index = admin___roles___delete_request;
+	__name = "admin___roles___delete_request",
+	__index = admin___roles___delete_request,
 }
 
 local function cast_admin___roles___delete_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___roles___delete_request(role_id)
 	return cast_admin___roles___delete_request({
-		["roleId"] = role_id;
+		["roleId"] = role_id,
 	})
 end
 
 return {
-	cast = cast_admin___roles___delete_request;
-	new = new_admin___roles___delete_request;
+	cast = cast_admin___roles___delete_request,
+	new = new_admin___roles___delete_request,
 }

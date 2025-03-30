@@ -11,8 +11,8 @@
 -- i___2fa___password_less_request class
 local i___2fa___password_less_request = {}
 local i___2fa___password_less_request_mt = {
-	__name = "i___2fa___password_less_request";
-	__index = i___2fa___password_less_request;
+	__name = "i___2fa___password_less_request",
+	__index = i___2fa___password_less_request,
 }
 
 local function cast_i___2fa___password_less_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___2fa___password_less_request(value)
 	return cast_i___2fa___password_less_request({
-		["value"] = value;
+		["value"] = value,
 	})
 end
 
 return {
-	cast = cast_i___2fa___password_less_request;
-	new = new_i___2fa___password_less_request;
+	cast = cast_i___2fa___password_less_request,
+	new = new_i___2fa___password_less_request,
 }

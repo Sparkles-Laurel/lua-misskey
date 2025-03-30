@@ -11,8 +11,8 @@
 -- hashtags___show_request class
 local hashtags___show_request = {}
 local hashtags___show_request_mt = {
-	__name = "hashtags___show_request";
-	__index = hashtags___show_request;
+	__name = "hashtags___show_request",
+	__index = hashtags___show_request,
 }
 
 local function cast_hashtags___show_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_hashtags___show_request(tag)
 	return cast_hashtags___show_request({
-		["tag"] = tag;
+		["tag"] = tag,
 	})
 end
 
 return {
-	cast = cast_hashtags___show_request;
-	new = new_hashtags___show_request;
+	cast = cast_hashtags___show_request,
+	new = new_hashtags___show_request,
 }

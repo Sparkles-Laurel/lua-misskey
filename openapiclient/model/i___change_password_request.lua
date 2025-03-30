@@ -11,8 +11,8 @@
 -- i___change_password_request class
 local i___change_password_request = {}
 local i___change_password_request_mt = {
-	__name = "i___change_password_request";
-	__index = i___change_password_request;
+	__name = "i___change_password_request",
+	__index = i___change_password_request,
 }
 
 local function cast_i___change_password_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___change_password_request(current_password, new_password, token)
 	return cast_i___change_password_request({
-		["currentPassword"] = current_password;
-		["newPassword"] = new_password;
-		["token"] = token;
+		["currentPassword"] = current_password,
+		["newPassword"] = new_password,
+		["token"] = token,
 	})
 end
 
 return {
-	cast = cast_i___change_password_request;
-	new = new_i___change_password_request;
+	cast = cast_i___change_password_request,
+	new = new_i___change_password_request,
 }

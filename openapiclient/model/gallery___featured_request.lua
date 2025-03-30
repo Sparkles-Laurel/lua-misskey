@@ -11,8 +11,8 @@
 -- gallery___featured_request class
 local gallery___featured_request = {}
 local gallery___featured_request_mt = {
-	__name = "gallery___featured_request";
-	__index = gallery___featured_request;
+	__name = "gallery___featured_request",
+	__index = gallery___featured_request,
 }
 
 local function cast_gallery___featured_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_gallery___featured_request(limit, until_id)
 	return cast_gallery___featured_request({
-		["limit"] = limit;
-		["untilId"] = until_id;
+		["limit"] = limit,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_gallery___featured_request;
-	new = new_gallery___featured_request;
+	cast = cast_gallery___featured_request,
+	new = new_gallery___featured_request,
 }

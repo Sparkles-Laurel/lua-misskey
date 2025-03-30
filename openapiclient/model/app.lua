@@ -11,8 +11,8 @@
 -- app class
 local app = {}
 local app_mt = {
-	__name = "app";
-	__index = app;
+	__name = "app",
+	__index = app,
 }
 
 local function cast_app(t)
@@ -21,16 +21,16 @@ end
 
 local function new_app(id, name, callback_url, permission, secret, is_authorized)
 	return cast_app({
-		["id"] = id;
-		["name"] = name;
-		["callbackUrl"] = callback_url;
-		["permission"] = permission;
-		["secret"] = secret;
-		["isAuthorized"] = is_authorized;
+		["id"] = id,
+		["name"] = name,
+		["callbackUrl"] = callback_url,
+		["permission"] = permission,
+		["secret"] = secret,
+		["isAuthorized"] = is_authorized,
 	})
 end
 
 return {
-	cast = cast_app;
-	new = new_app;
+	cast = cast_app,
+	new = new_app,
 }

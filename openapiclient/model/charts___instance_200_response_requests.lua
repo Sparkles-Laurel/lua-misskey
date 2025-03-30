@@ -11,8 +11,8 @@
 -- charts___instance_200_response_requests class
 local charts___instance_200_response_requests = {}
 local charts___instance_200_response_requests_mt = {
-	__name = "charts___instance_200_response_requests";
-	__index = charts___instance_200_response_requests;
+	__name = "charts___instance_200_response_requests",
+	__index = charts___instance_200_response_requests,
 }
 
 local function cast_charts___instance_200_response_requests(t)
@@ -21,13 +21,13 @@ end
 
 local function new_charts___instance_200_response_requests(failed, succeeded, received)
 	return cast_charts___instance_200_response_requests({
-		["failed"] = failed;
-		["succeeded"] = succeeded;
-		["received"] = received;
+		["failed"] = failed,
+		["succeeded"] = succeeded,
+		["received"] = received,
 	})
 end
 
 return {
-	cast = cast_charts___instance_200_response_requests;
-	new = new_charts___instance_200_response_requests;
+	cast = cast_charts___instance_200_response_requests,
+	new = new_charts___instance_200_response_requests,
 }

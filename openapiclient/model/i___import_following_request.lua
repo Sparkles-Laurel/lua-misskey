@@ -11,8 +11,8 @@
 -- i___import_following_request class
 local i___import_following_request = {}
 local i___import_following_request_mt = {
-	__name = "i___import_following_request";
-	__index = i___import_following_request;
+	__name = "i___import_following_request",
+	__index = i___import_following_request,
 }
 
 local function cast_i___import_following_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___import_following_request(file_id, with_replies)
 	return cast_i___import_following_request({
-		["fileId"] = file_id;
-		["withReplies"] = with_replies;
+		["fileId"] = file_id,
+		["withReplies"] = with_replies,
 	})
 end
 
 return {
-	cast = cast_i___import_following_request;
-	new = new_i___import_following_request;
+	cast = cast_i___import_following_request,
+	new = new_i___import_following_request,
 }

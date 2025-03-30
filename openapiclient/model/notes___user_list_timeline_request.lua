@@ -11,8 +11,8 @@
 -- notes___user_list_timeline_request class
 local notes___user_list_timeline_request = {}
 local notes___user_list_timeline_request_mt = {
-	__name = "notes___user_list_timeline_request";
-	__index = notes___user_list_timeline_request;
+	__name = "notes___user_list_timeline_request",
+	__index = notes___user_list_timeline_request,
 }
 
 local function cast_notes___user_list_timeline_request(t)
@@ -21,22 +21,22 @@ end
 
 local function new_notes___user_list_timeline_request(list_id, limit, since_id, until_id, since_date, until_date, allow_partial, include_my_renotes, include_renoted_my_notes, include_local_renotes, with_renotes, with_files)
 	return cast_notes___user_list_timeline_request({
-		["listId"] = list_id;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
-		["allowPartial"] = allow_partial;
-		["includeMyRenotes"] = include_my_renotes;
-		["includeRenotedMyNotes"] = include_renoted_my_notes;
-		["includeLocalRenotes"] = include_local_renotes;
-		["withRenotes"] = with_renotes;
-		["withFiles"] = with_files;
+		["listId"] = list_id,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
+		["allowPartial"] = allow_partial,
+		["includeMyRenotes"] = include_my_renotes,
+		["includeRenotedMyNotes"] = include_renoted_my_notes,
+		["includeLocalRenotes"] = include_local_renotes,
+		["withRenotes"] = with_renotes,
+		["withFiles"] = with_files,
 	})
 end
 
 return {
-	cast = cast_notes___user_list_timeline_request;
-	new = new_notes___user_list_timeline_request;
+	cast = cast_notes___user_list_timeline_request,
+	new = new_notes___user_list_timeline_request,
 }

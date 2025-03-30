@@ -11,8 +11,8 @@
 -- admin___relays___add_request class
 local admin___relays___add_request = {}
 local admin___relays___add_request_mt = {
-	__name = "admin___relays___add_request";
-	__index = admin___relays___add_request;
+	__name = "admin___relays___add_request",
+	__index = admin___relays___add_request,
 }
 
 local function cast_admin___relays___add_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___relays___add_request(inbox)
 	return cast_admin___relays___add_request({
-		["inbox"] = inbox;
+		["inbox"] = inbox,
 	})
 end
 
 return {
-	cast = cast_admin___relays___add_request;
-	new = new_admin___relays___add_request;
+	cast = cast_admin___relays___add_request,
+	new = new_admin___relays___add_request,
 }

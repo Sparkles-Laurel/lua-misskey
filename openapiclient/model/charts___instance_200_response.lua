@@ -11,8 +11,8 @@
 -- charts___instance_200_response class
 local charts___instance_200_response = {}
 local charts___instance_200_response_mt = {
-	__name = "charts___instance_200_response";
-	__index = charts___instance_200_response;
+	__name = "charts___instance_200_response",
+	__index = charts___instance_200_response,
 }
 
 local function cast_charts___instance_200_response(t)
@@ -21,16 +21,16 @@ end
 
 local function new_charts___instance_200_response(requests, notes, users, following, followers, drive)
 	return cast_charts___instance_200_response({
-		["requests"] = requests;
-		["notes"] = notes;
-		["users"] = users;
-		["following"] = following;
-		["followers"] = followers;
-		["drive"] = drive;
+		["requests"] = requests,
+		["notes"] = notes,
+		["users"] = users,
+		["following"] = following,
+		["followers"] = followers,
+		["drive"] = drive,
 	})
 end
 
 return {
-	cast = cast_charts___instance_200_response;
-	new = new_charts___instance_200_response;
+	cast = cast_charts___instance_200_response,
+	new = new_charts___instance_200_response,
 }

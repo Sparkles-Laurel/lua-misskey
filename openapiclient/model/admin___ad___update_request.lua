@@ -11,8 +11,8 @@
 -- admin___ad___update_request class
 local admin___ad___update_request = {}
 local admin___ad___update_request_mt = {
-	__name = "admin___ad___update_request";
-	__index = admin___ad___update_request;
+	__name = "admin___ad___update_request",
+	__index = admin___ad___update_request,
 }
 
 local function cast_admin___ad___update_request(t)
@@ -21,20 +21,20 @@ end
 
 local function new_admin___ad___update_request(id, memo, url, image_url, place, priority, ratio, expires_at, starts_at, day_of_week)
 	return cast_admin___ad___update_request({
-		["id"] = id;
-		["memo"] = memo;
-		["url"] = url;
-		["imageUrl"] = image_url;
-		["place"] = place;
-		["priority"] = priority;
-		["ratio"] = ratio;
-		["expiresAt"] = expires_at;
-		["startsAt"] = starts_at;
-		["dayOfWeek"] = day_of_week;
+		["id"] = id,
+		["memo"] = memo,
+		["url"] = url,
+		["imageUrl"] = image_url,
+		["place"] = place,
+		["priority"] = priority,
+		["ratio"] = ratio,
+		["expiresAt"] = expires_at,
+		["startsAt"] = starts_at,
+		["dayOfWeek"] = day_of_week,
 	})
 end
 
 return {
-	cast = cast_admin___ad___update_request;
-	new = new_admin___ad___update_request;
+	cast = cast_admin___ad___update_request,
+	new = new_admin___ad___update_request,
 }

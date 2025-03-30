@@ -11,8 +11,8 @@
 -- admin___accounts___find_by_email_request class
 local admin___accounts___find_by_email_request = {}
 local admin___accounts___find_by_email_request_mt = {
-	__name = "admin___accounts___find_by_email_request";
-	__index = admin___accounts___find_by_email_request;
+	__name = "admin___accounts___find_by_email_request",
+	__index = admin___accounts___find_by_email_request,
 }
 
 local function cast_admin___accounts___find_by_email_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___accounts___find_by_email_request(email)
 	return cast_admin___accounts___find_by_email_request({
-		["email"] = email;
+		["email"] = email,
 	})
 end
 
 return {
-	cast = cast_admin___accounts___find_by_email_request;
-	new = new_admin___accounts___find_by_email_request;
+	cast = cast_admin___accounts___find_by_email_request,
+	new = new_admin___accounts___find_by_email_request,
 }

@@ -11,8 +11,8 @@
 -- gallery___posts___create_request class
 local gallery___posts___create_request = {}
 local gallery___posts___create_request_mt = {
-	__name = "gallery___posts___create_request";
-	__index = gallery___posts___create_request;
+	__name = "gallery___posts___create_request",
+	__index = gallery___posts___create_request,
 }
 
 local function cast_gallery___posts___create_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_gallery___posts___create_request(title, description, file_ids, is_sensitive)
 	return cast_gallery___posts___create_request({
-		["title"] = title;
-		["description"] = description;
-		["fileIds"] = file_ids;
-		["isSensitive"] = is_sensitive;
+		["title"] = title,
+		["description"] = description,
+		["fileIds"] = file_ids,
+		["isSensitive"] = is_sensitive,
 	})
 end
 
 return {
-	cast = cast_gallery___posts___create_request;
-	new = new_gallery___posts___create_request;
+	cast = cast_gallery___posts___create_request,
+	new = new_gallery___posts___create_request,
 }

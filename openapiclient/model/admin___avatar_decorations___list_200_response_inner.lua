@@ -11,8 +11,8 @@
 -- admin___avatar_decorations___list_200_response_inner class
 local admin___avatar_decorations___list_200_response_inner = {}
 local admin___avatar_decorations___list_200_response_inner_mt = {
-	__name = "admin___avatar_decorations___list_200_response_inner";
-	__index = admin___avatar_decorations___list_200_response_inner;
+	__name = "admin___avatar_decorations___list_200_response_inner",
+	__index = admin___avatar_decorations___list_200_response_inner,
 }
 
 local function cast_admin___avatar_decorations___list_200_response_inner(t)
@@ -21,17 +21,17 @@ end
 
 local function new_admin___avatar_decorations___list_200_response_inner(id, created_at, updated_at, name, description, url, role_ids_that_can_be_used_this_decoration)
 	return cast_admin___avatar_decorations___list_200_response_inner({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["updatedAt"] = updated_at;
-		["name"] = name;
-		["description"] = description;
-		["url"] = url;
-		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["updatedAt"] = updated_at,
+		["name"] = name,
+		["description"] = description,
+		["url"] = url,
+		["roleIdsThatCanBeUsedThisDecoration"] = role_ids_that_can_be_used_this_decoration,
 	})
 end
 
 return {
-	cast = cast_admin___avatar_decorations___list_200_response_inner;
-	new = new_admin___avatar_decorations___list_200_response_inner;
+	cast = cast_admin___avatar_decorations___list_200_response_inner,
+	new = new_admin___avatar_decorations___list_200_response_inner,
 }

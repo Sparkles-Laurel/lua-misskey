@@ -11,8 +11,8 @@
 -- username___available_request class
 local username___available_request = {}
 local username___available_request_mt = {
-	__name = "username___available_request";
-	__index = username___available_request;
+	__name = "username___available_request",
+	__index = username___available_request,
 }
 
 local function cast_username___available_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_username___available_request(username)
 	return cast_username___available_request({
-		["username"] = username;
+		["username"] = username,
 	})
 end
 
 return {
-	cast = cast_username___available_request;
-	new = new_username___available_request;
+	cast = cast_username___available_request,
+	new = new_username___available_request,
 }

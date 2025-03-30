@@ -11,8 +11,8 @@
 -- request_reset_password_request class
 local request_reset_password_request = {}
 local request_reset_password_request_mt = {
-	__name = "request_reset_password_request";
-	__index = request_reset_password_request;
+	__name = "request_reset_password_request",
+	__index = request_reset_password_request,
 }
 
 local function cast_request_reset_password_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_request_reset_password_request(username, email)
 	return cast_request_reset_password_request({
-		["username"] = username;
-		["email"] = email;
+		["username"] = username,
+		["email"] = email,
 	})
 end
 
 return {
-	cast = cast_request_reset_password_request;
-	new = new_request_reset_password_request;
+	cast = cast_request_reset_password_request,
+	new = new_request_reset_password_request,
 }

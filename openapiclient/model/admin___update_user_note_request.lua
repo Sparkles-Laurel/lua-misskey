@@ -11,8 +11,8 @@
 -- admin___update_user_note_request class
 local admin___update_user_note_request = {}
 local admin___update_user_note_request_mt = {
-	__name = "admin___update_user_note_request";
-	__index = admin___update_user_note_request;
+	__name = "admin___update_user_note_request",
+	__index = admin___update_user_note_request,
 }
 
 local function cast_admin___update_user_note_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___update_user_note_request(user_id, text)
 	return cast_admin___update_user_note_request({
-		["userId"] = user_id;
-		["text"] = text;
+		["userId"] = user_id,
+		["text"] = text,
 	})
 end
 
 return {
-	cast = cast_admin___update_user_note_request;
-	new = new_admin___update_user_note_request;
+	cast = cast_admin___update_user_note_request,
+	new = new_admin___update_user_note_request,
 }

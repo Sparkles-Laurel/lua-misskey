@@ -11,8 +11,8 @@
 -- charts___instance_200_response_users class
 local charts___instance_200_response_users = {}
 local charts___instance_200_response_users_mt = {
-	__name = "charts___instance_200_response_users";
-	__index = charts___instance_200_response_users;
+	__name = "charts___instance_200_response_users",
+	__index = charts___instance_200_response_users,
 }
 
 local function cast_charts___instance_200_response_users(t)
@@ -21,13 +21,13 @@ end
 
 local function new_charts___instance_200_response_users(total, inc, dec)
 	return cast_charts___instance_200_response_users({
-		["total"] = total;
-		["inc"] = inc;
-		["dec"] = dec;
+		["total"] = total,
+		["inc"] = inc,
+		["dec"] = dec,
 	})
 end
 
 return {
-	cast = cast_charts___instance_200_response_users;
-	new = new_charts___instance_200_response_users;
+	cast = cast_charts___instance_200_response_users,
+	new = new_charts___instance_200_response_users,
 }

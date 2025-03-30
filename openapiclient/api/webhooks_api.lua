@@ -26,8 +26,8 @@ local openapiclient_i___webhooks___update_request = require "openapiclient.model
 
 local webhooks_api = {}
 local webhooks_api_mt = {
-	__name = "webhooks_api";
-	__index = webhooks_api;
+	__name = "webhooks_api",
+	__index = webhooks_api,
 }
 
 local function new_webhooks_api(authority, basePath, schemes)
@@ -38,25 +38,25 @@ local function new_webhooks_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, webhooks_api_mt)
 end
 
 function webhooks_api:admin_system_webhook_test(admin___system_webhook___test_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/admin/system-webhook/test",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -93,11 +93,11 @@ end
 
 function webhooks_api:i_webhooks_create(i___webhooks___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -145,11 +145,11 @@ end
 
 function webhooks_api:i_webhooks_delete(i___webhooks___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -186,11 +186,11 @@ end
 
 function webhooks_api:i_webhooks_list()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -235,11 +235,11 @@ end
 
 function webhooks_api:i_webhooks_show(i___webhooks___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -287,11 +287,11 @@ end
 
 function webhooks_api:i_webhooks_test(i___webhooks___test_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/test",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -328,11 +328,11 @@ end
 
 function webhooks_api:i_webhooks_update(i___webhooks___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/webhooks/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -368,5 +368,5 @@ function webhooks_api:i_webhooks_update(i___webhooks___update_request)
 end
 
 return {
-	new = new_webhooks_api;
+	new = new_webhooks_api,
 }

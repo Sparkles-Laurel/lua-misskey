@@ -11,8 +11,8 @@
 -- i___2fa___remove_key_request class
 local i___2fa___remove_key_request = {}
 local i___2fa___remove_key_request_mt = {
-	__name = "i___2fa___remove_key_request";
-	__index = i___2fa___remove_key_request;
+	__name = "i___2fa___remove_key_request",
+	__index = i___2fa___remove_key_request,
 }
 
 local function cast_i___2fa___remove_key_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_i___2fa___remove_key_request(password, token, credential_id)
 	return cast_i___2fa___remove_key_request({
-		["password"] = password;
-		["token"] = token;
-		["credentialId"] = credential_id;
+		["password"] = password,
+		["token"] = token,
+		["credentialId"] = credential_id,
 	})
 end
 
 return {
-	cast = cast_i___2fa___remove_key_request;
-	new = new_i___2fa___remove_key_request;
+	cast = cast_i___2fa___remove_key_request,
+	new = new_i___2fa___remove_key_request,
 }

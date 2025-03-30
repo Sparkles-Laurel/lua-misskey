@@ -11,8 +11,8 @@
 -- charts___user___following_200_response_local class
 local charts___user___following_200_response_local = {}
 local charts___user___following_200_response_local_mt = {
-	__name = "charts___user___following_200_response_local";
-	__index = charts___user___following_200_response_local;
+	__name = "charts___user___following_200_response_local",
+	__index = charts___user___following_200_response_local,
 }
 
 local function cast_charts___user___following_200_response_local(t)
@@ -21,12 +21,12 @@ end
 
 local function new_charts___user___following_200_response_local(followings, followers)
 	return cast_charts___user___following_200_response_local({
-		["followings"] = followings;
-		["followers"] = followers;
+		["followings"] = followings,
+		["followers"] = followers,
 	})
 end
 
 return {
-	cast = cast_charts___user___following_200_response_local;
-	new = new_charts___user___following_200_response_local;
+	cast = cast_charts___user___following_200_response_local,
+	new = new_charts___user___following_200_response_local,
 }

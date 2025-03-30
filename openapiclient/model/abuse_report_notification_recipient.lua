@@ -11,8 +11,8 @@
 -- abuse_report_notification_recipient class
 local abuse_report_notification_recipient = {}
 local abuse_report_notification_recipient_mt = {
-	__name = "abuse_report_notification_recipient";
-	__index = abuse_report_notification_recipient;
+	__name = "abuse_report_notification_recipient",
+	__index = abuse_report_notification_recipient,
 }
 
 local function cast_abuse_report_notification_recipient(t)
@@ -21,19 +21,19 @@ end
 
 local function new_abuse_report_notification_recipient(id, is_active, updated_at, name, method, user_id, user, system_webhook_id, system_webhook)
 	return cast_abuse_report_notification_recipient({
-		["id"] = id;
-		["isActive"] = is_active;
-		["updatedAt"] = updated_at;
-		["name"] = name;
-		["method"] = method;
-		["userId"] = user_id;
-		["user"] = user;
-		["systemWebhookId"] = system_webhook_id;
-		["systemWebhook"] = system_webhook;
+		["id"] = id,
+		["isActive"] = is_active,
+		["updatedAt"] = updated_at,
+		["name"] = name,
+		["method"] = method,
+		["userId"] = user_id,
+		["user"] = user,
+		["systemWebhookId"] = system_webhook_id,
+		["systemWebhook"] = system_webhook,
 	})
 end
 
 return {
-	cast = cast_abuse_report_notification_recipient;
-	new = new_abuse_report_notification_recipient;
+	cast = cast_abuse_report_notification_recipient,
+	new = new_abuse_report_notification_recipient,
 }

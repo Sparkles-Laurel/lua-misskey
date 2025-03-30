@@ -11,8 +11,8 @@
 -- meta_detailed_only class
 local meta_detailed_only = {}
 local meta_detailed_only_mt = {
-	__name = "meta_detailed_only";
-	__index = meta_detailed_only;
+	__name = "meta_detailed_only",
+	__index = meta_detailed_only,
 }
 
 local function cast_meta_detailed_only(t)
@@ -21,15 +21,15 @@ end
 
 local function new_meta_detailed_only(features, proxy_account_name, require_setup, cache_remote_files, cache_remote_sensitive_files)
 	return cast_meta_detailed_only({
-		["features"] = features;
-		["proxyAccountName"] = proxy_account_name;
-		["requireSetup"] = require_setup;
-		["cacheRemoteFiles"] = cache_remote_files;
-		["cacheRemoteSensitiveFiles"] = cache_remote_sensitive_files;
+		["features"] = features,
+		["proxyAccountName"] = proxy_account_name,
+		["requireSetup"] = require_setup,
+		["cacheRemoteFiles"] = cache_remote_files,
+		["cacheRemoteSensitiveFiles"] = cache_remote_sensitive_files,
 	})
 end
 
 return {
-	cast = cast_meta_detailed_only;
-	new = new_meta_detailed_only;
+	cast = cast_meta_detailed_only,
+	new = new_meta_detailed_only,
 }

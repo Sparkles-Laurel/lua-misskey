@@ -11,8 +11,8 @@
 -- admin___abuse_report___notification_recipient___update_request class
 local admin___abuse_report___notification_recipient___update_request = {}
 local admin___abuse_report___notification_recipient___update_request_mt = {
-	__name = "admin___abuse_report___notification_recipient___update_request";
-	__index = admin___abuse_report___notification_recipient___update_request;
+	__name = "admin___abuse_report___notification_recipient___update_request",
+	__index = admin___abuse_report___notification_recipient___update_request,
 }
 
 local function cast_admin___abuse_report___notification_recipient___update_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_admin___abuse_report___notification_recipient___update_request(id, is_active, name, method, user_id, system_webhook_id)
 	return cast_admin___abuse_report___notification_recipient___update_request({
-		["id"] = id;
-		["isActive"] = is_active;
-		["name"] = name;
-		["method"] = method;
-		["userId"] = user_id;
-		["systemWebhookId"] = system_webhook_id;
+		["id"] = id,
+		["isActive"] = is_active,
+		["name"] = name,
+		["method"] = method,
+		["userId"] = user_id,
+		["systemWebhookId"] = system_webhook_id,
 	})
 end
 
 return {
-	cast = cast_admin___abuse_report___notification_recipient___update_request;
-	new = new_admin___abuse_report___notification_recipient___update_request;
+	cast = cast_admin___abuse_report___notification_recipient___update_request,
+	new = new_admin___abuse_report___notification_recipient___update_request,
 }

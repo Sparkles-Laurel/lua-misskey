@@ -11,8 +11,8 @@
 -- notes___following_request class
 local notes___following_request = {}
 local notes___following_request_mt = {
-	__name = "notes___following_request";
-	__index = notes___following_request;
+	__name = "notes___following_request",
+	__index = notes___following_request,
 }
 
 local function cast_notes___following_request(t)
@@ -21,21 +21,21 @@ end
 
 local function new_notes___following_request(list, files_only, include_non_public, include_replies, include_quotes, include_bots, limit, since_id, until_id, since_date, until_date)
 	return cast_notes___following_request({
-		["list"] = list;
-		["filesOnly"] = files_only;
-		["includeNonPublic"] = include_non_public;
-		["includeReplies"] = include_replies;
-		["includeQuotes"] = include_quotes;
-		["includeBots"] = include_bots;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["sinceDate"] = since_date;
-		["untilDate"] = until_date;
+		["list"] = list,
+		["filesOnly"] = files_only,
+		["includeNonPublic"] = include_non_public,
+		["includeReplies"] = include_replies,
+		["includeQuotes"] = include_quotes,
+		["includeBots"] = include_bots,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["sinceDate"] = since_date,
+		["untilDate"] = until_date,
 	})
 end
 
 return {
-	cast = cast_notes___following_request;
-	new = new_notes___following_request;
+	cast = cast_notes___following_request,
+	new = new_notes___following_request,
 }

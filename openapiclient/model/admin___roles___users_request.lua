@@ -11,8 +11,8 @@
 -- admin___roles___users_request class
 local admin___roles___users_request = {}
 local admin___roles___users_request_mt = {
-	__name = "admin___roles___users_request";
-	__index = admin___roles___users_request;
+	__name = "admin___roles___users_request",
+	__index = admin___roles___users_request,
 }
 
 local function cast_admin___roles___users_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___roles___users_request(role_id, since_id, until_id, limit)
 	return cast_admin___roles___users_request({
-		["roleId"] = role_id;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
+		["roleId"] = role_id,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_admin___roles___users_request;
-	new = new_admin___roles___users_request;
+	cast = cast_admin___roles___users_request,
+	new = new_admin___roles___users_request,
 }

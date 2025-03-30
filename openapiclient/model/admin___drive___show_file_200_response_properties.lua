@@ -11,8 +11,8 @@
 -- admin___drive___show_file_200_response_properties class
 local admin___drive___show_file_200_response_properties = {}
 local admin___drive___show_file_200_response_properties_mt = {
-	__name = "admin___drive___show_file_200_response_properties";
-	__index = admin___drive___show_file_200_response_properties;
+	__name = "admin___drive___show_file_200_response_properties",
+	__index = admin___drive___show_file_200_response_properties,
 }
 
 local function cast_admin___drive___show_file_200_response_properties(t)
@@ -21,14 +21,14 @@ end
 
 local function new_admin___drive___show_file_200_response_properties(width, height, orientation, avg_color)
 	return cast_admin___drive___show_file_200_response_properties({
-		["width"] = width;
-		["height"] = height;
-		["orientation"] = orientation;
-		["avgColor"] = avg_color;
+		["width"] = width,
+		["height"] = height,
+		["orientation"] = orientation,
+		["avgColor"] = avg_color,
 	})
 end
 
 return {
-	cast = cast_admin___drive___show_file_200_response_properties;
-	new = new_admin___drive___show_file_200_response_properties;
+	cast = cast_admin___drive___show_file_200_response_properties,
+	new = new_admin___drive___show_file_200_response_properties,
 }

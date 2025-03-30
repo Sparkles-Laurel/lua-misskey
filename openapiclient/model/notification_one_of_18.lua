@@ -11,8 +11,8 @@
 -- notification_one_of_18 class
 local notification_one_of_18 = {}
 local notification_one_of_18_mt = {
-	__name = "notification_one_of_18";
-	__index = notification_one_of_18;
+	__name = "notification_one_of_18",
+	__index = notification_one_of_18,
 }
 
 local function cast_notification_one_of_18(t)
@@ -21,15 +21,15 @@ end
 
 local function new_notification_one_of_18(id, created_at, type, note, reactions)
 	return cast_notification_one_of_18({
-		["id"] = id;
-		["createdAt"] = created_at;
-		["type"] = type;
-		["note"] = note;
-		["reactions"] = reactions;
+		["id"] = id,
+		["createdAt"] = created_at,
+		["type"] = type,
+		["note"] = note,
+		["reactions"] = reactions,
 	})
 end
 
 return {
-	cast = cast_notification_one_of_18;
-	new = new_notification_one_of_18;
+	cast = cast_notification_one_of_18,
+	new = new_notification_one_of_18,
 }

@@ -11,8 +11,8 @@
 -- i___2fa___done_200_response class
 local i___2fa___done_200_response = {}
 local i___2fa___done_200_response_mt = {
-	__name = "i___2fa___done_200_response";
-	__index = i___2fa___done_200_response;
+	__name = "i___2fa___done_200_response",
+	__index = i___2fa___done_200_response,
 }
 
 local function cast_i___2fa___done_200_response(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___2fa___done_200_response(backup_codes)
 	return cast_i___2fa___done_200_response({
-		["backupCodes"] = backup_codes;
+		["backupCodes"] = backup_codes,
 	})
 end
 
 return {
-	cast = cast_i___2fa___done_200_response;
-	new = new_i___2fa___done_200_response;
+	cast = cast_i___2fa___done_200_response,
+	new = new_i___2fa___done_200_response,
 }

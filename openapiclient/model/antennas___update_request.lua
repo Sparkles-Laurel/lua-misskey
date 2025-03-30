@@ -11,8 +11,8 @@
 -- antennas___update_request class
 local antennas___update_request = {}
 local antennas___update_request_mt = {
-	__name = "antennas___update_request";
-	__index = antennas___update_request;
+	__name = "antennas___update_request",
+	__index = antennas___update_request,
 }
 
 local function cast_antennas___update_request(t)
@@ -21,22 +21,22 @@ end
 
 local function new_antennas___update_request(antenna_id, name, src, user_list_id, keywords, exclude_keywords, users, case_sensitive, local_only, exclude_bots, with_replies, with_file)
 	return cast_antennas___update_request({
-		["antennaId"] = antenna_id;
-		["name"] = name;
-		["src"] = src;
-		["userListId"] = user_list_id;
-		["keywords"] = keywords;
-		["excludeKeywords"] = exclude_keywords;
-		["users"] = users;
-		["caseSensitive"] = case_sensitive;
-		["localOnly"] = local_only;
-		["excludeBots"] = exclude_bots;
-		["withReplies"] = with_replies;
-		["withFile"] = with_file;
+		["antennaId"] = antenna_id,
+		["name"] = name,
+		["src"] = src,
+		["userListId"] = user_list_id,
+		["keywords"] = keywords,
+		["excludeKeywords"] = exclude_keywords,
+		["users"] = users,
+		["caseSensitive"] = case_sensitive,
+		["localOnly"] = local_only,
+		["excludeBots"] = exclude_bots,
+		["withReplies"] = with_replies,
+		["withFile"] = with_file,
 	})
 end
 
 return {
-	cast = cast_antennas___update_request;
-	new = new_antennas___update_request;
+	cast = cast_antennas___update_request,
+	new = new_antennas___update_request,
 }

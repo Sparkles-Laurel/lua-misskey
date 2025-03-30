@@ -11,8 +11,8 @@
 -- admin___abuse_report___notification_recipient___list_request class
 local admin___abuse_report___notification_recipient___list_request = {}
 local admin___abuse_report___notification_recipient___list_request_mt = {
-	__name = "admin___abuse_report___notification_recipient___list_request";
-	__index = admin___abuse_report___notification_recipient___list_request;
+	__name = "admin___abuse_report___notification_recipient___list_request",
+	__index = admin___abuse_report___notification_recipient___list_request,
 }
 
 local function cast_admin___abuse_report___notification_recipient___list_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_admin___abuse_report___notification_recipient___list_request(method)
 	return cast_admin___abuse_report___notification_recipient___list_request({
-		["method"] = method;
+		["method"] = method,
 	})
 end
 
 return {
-	cast = cast_admin___abuse_report___notification_recipient___list_request;
-	new = new_admin___abuse_report___notification_recipient___list_request;
+	cast = cast_admin___abuse_report___notification_recipient___list_request,
+	new = new_admin___abuse_report___notification_recipient___list_request,
 }

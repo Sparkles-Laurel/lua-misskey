@@ -11,8 +11,8 @@
 -- federation___users_request class
 local federation___users_request = {}
 local federation___users_request_mt = {
-	__name = "federation___users_request";
-	__index = federation___users_request;
+	__name = "federation___users_request",
+	__index = federation___users_request,
 }
 
 local function cast_federation___users_request(t)
@@ -21,14 +21,14 @@ end
 
 local function new_federation___users_request(host, since_id, until_id, limit)
 	return cast_federation___users_request({
-		["host"] = host;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
-		["limit"] = limit;
+		["host"] = host,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
+		["limit"] = limit,
 	})
 end
 
 return {
-	cast = cast_federation___users_request;
-	new = new_federation___users_request;
+	cast = cast_federation___users_request,
+	new = new_federation___users_request,
 }

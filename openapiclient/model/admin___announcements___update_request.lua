@@ -11,8 +11,8 @@
 -- admin___announcements___update_request class
 local admin___announcements___update_request = {}
 local admin___announcements___update_request_mt = {
-	__name = "admin___announcements___update_request";
-	__index = admin___announcements___update_request;
+	__name = "admin___announcements___update_request",
+	__index = admin___announcements___update_request,
 }
 
 local function cast_admin___announcements___update_request(t)
@@ -21,20 +21,20 @@ end
 
 local function new_admin___announcements___update_request(id, title, text, image_url, icon, display, for_existing_users, silence, need_confirmation_to_read, is_active)
 	return cast_admin___announcements___update_request({
-		["id"] = id;
-		["title"] = title;
-		["text"] = text;
-		["imageUrl"] = image_url;
-		["icon"] = icon;
-		["display"] = display;
-		["forExistingUsers"] = for_existing_users;
-		["silence"] = silence;
-		["needConfirmationToRead"] = need_confirmation_to_read;
-		["isActive"] = is_active;
+		["id"] = id,
+		["title"] = title,
+		["text"] = text,
+		["imageUrl"] = image_url,
+		["icon"] = icon,
+		["display"] = display,
+		["forExistingUsers"] = for_existing_users,
+		["silence"] = silence,
+		["needConfirmationToRead"] = need_confirmation_to_read,
+		["isActive"] = is_active,
 	})
 end
 
 return {
-	cast = cast_admin___announcements___update_request;
-	new = new_admin___announcements___update_request;
+	cast = cast_admin___announcements___update_request,
+	new = new_admin___announcements___update_request,
 }

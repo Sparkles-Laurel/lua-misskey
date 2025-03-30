@@ -11,8 +11,8 @@
 -- users___relation_request_user_id class
 local users___relation_request_user_id = {}
 local users___relation_request_user_id_mt = {
-	__name = "users___relation_request_user_id";
-	__index = users___relation_request_user_id;
+	__name = "users___relation_request_user_id",
+	__index = users___relation_request_user_id,
 }
 
 local function cast_users___relation_request_user_id(t)
@@ -25,6 +25,6 @@ local function new_users___relation_request_user_id()
 end
 
 return {
-	cast = cast_users___relation_request_user_id;
-	new = new_users___relation_request_user_id;
+	cast = cast_users___relation_request_user_id,
+	new = new_users___relation_request_user_id,
 }

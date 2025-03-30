@@ -11,8 +11,8 @@
 -- admin___drive___show_file_request class
 local admin___drive___show_file_request = {}
 local admin___drive___show_file_request_mt = {
-	__name = "admin___drive___show_file_request";
-	__index = admin___drive___show_file_request;
+	__name = "admin___drive___show_file_request",
+	__index = admin___drive___show_file_request,
 }
 
 local function cast_admin___drive___show_file_request(t)
@@ -21,12 +21,12 @@ end
 
 local function new_admin___drive___show_file_request(file_id, url)
 	return cast_admin___drive___show_file_request({
-		["fileId"] = file_id;
-		["url"] = url;
+		["fileId"] = file_id,
+		["url"] = url,
 	})
 end
 
 return {
-	cast = cast_admin___drive___show_file_request;
-	new = new_admin___drive___show_file_request;
+	cast = cast_admin___drive___show_file_request,
+	new = new_admin___drive___show_file_request,
 }

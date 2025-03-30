@@ -11,8 +11,8 @@
 -- charts___user___pv_200_response_upv class
 local charts___user___pv_200_response_upv = {}
 local charts___user___pv_200_response_upv_mt = {
-	__name = "charts___user___pv_200_response_upv";
-	__index = charts___user___pv_200_response_upv;
+	__name = "charts___user___pv_200_response_upv",
+	__index = charts___user___pv_200_response_upv,
 }
 
 local function cast_charts___user___pv_200_response_upv(t)
@@ -21,12 +21,12 @@ end
 
 local function new_charts___user___pv_200_response_upv(user, visitor)
 	return cast_charts___user___pv_200_response_upv({
-		["user"] = user;
-		["visitor"] = visitor;
+		["user"] = user,
+		["visitor"] = visitor,
 	})
 end
 
 return {
-	cast = cast_charts___user___pv_200_response_upv;
-	new = new_charts___user___pv_200_response_upv;
+	cast = cast_charts___user___pv_200_response_upv,
+	new = new_charts___user___pv_200_response_upv,
 }

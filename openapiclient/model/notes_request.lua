@@ -11,8 +11,8 @@
 -- notes_request class
 local notes_request = {}
 local notes_request_mt = {
-	__name = "notes_request";
-	__index = notes_request;
+	__name = "notes_request",
+	__index = notes_request,
 }
 
 local function cast_notes_request(t)
@@ -21,18 +21,18 @@ end
 
 local function new_notes_request(Local_, reply, renote, with_files, poll, limit, since_id, until_id)
 	return cast_notes_request({
-		["local"] = Local_;
-		["reply"] = reply;
-		["renote"] = renote;
-		["withFiles"] = with_files;
-		["poll"] = poll;
-		["limit"] = limit;
-		["sinceId"] = since_id;
-		["untilId"] = until_id;
+		["local"] = Local_,
+		["reply"] = reply,
+		["renote"] = renote,
+		["withFiles"] = with_files,
+		["poll"] = poll,
+		["limit"] = limit,
+		["sinceId"] = since_id,
+		["untilId"] = until_id,
 	})
 end
 
 return {
-	cast = cast_notes_request;
-	new = new_notes_request;
+	cast = cast_notes_request,
+	new = new_notes_request,
 }

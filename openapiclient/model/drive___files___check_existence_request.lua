@@ -11,8 +11,8 @@
 -- drive___files___check_existence_request class
 local drive___files___check_existence_request = {}
 local drive___files___check_existence_request_mt = {
-	__name = "drive___files___check_existence_request";
-	__index = drive___files___check_existence_request;
+	__name = "drive___files___check_existence_request",
+	__index = drive___files___check_existence_request,
 }
 
 local function cast_drive___files___check_existence_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_drive___files___check_existence_request(md5)
 	return cast_drive___files___check_existence_request({
-		["md5"] = md5;
+		["md5"] = md5,
 	})
 end
 
 return {
-	cast = cast_drive___files___check_existence_request;
-	new = new_drive___files___check_existence_request;
+	cast = cast_drive___files___check_existence_request,
+	new = new_drive___files___check_existence_request,
 }

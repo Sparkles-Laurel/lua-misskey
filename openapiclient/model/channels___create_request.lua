@@ -11,8 +11,8 @@
 -- channels___create_request class
 local channels___create_request = {}
 local channels___create_request_mt = {
-	__name = "channels___create_request";
-	__index = channels___create_request;
+	__name = "channels___create_request",
+	__index = channels___create_request,
 }
 
 local function cast_channels___create_request(t)
@@ -21,16 +21,16 @@ end
 
 local function new_channels___create_request(name, description, banner_id, color, is_sensitive, allow_renote_to_external)
 	return cast_channels___create_request({
-		["name"] = name;
-		["description"] = description;
-		["bannerId"] = banner_id;
-		["color"] = color;
-		["isSensitive"] = is_sensitive;
-		["allowRenoteToExternal"] = allow_renote_to_external;
+		["name"] = name,
+		["description"] = description,
+		["bannerId"] = banner_id,
+		["color"] = color,
+		["isSensitive"] = is_sensitive,
+		["allowRenoteToExternal"] = allow_renote_to_external,
 	})
 end
 
 return {
-	cast = cast_channels___create_request;
-	new = new_channels___create_request;
+	cast = cast_channels___create_request,
+	new = new_channels___create_request,
 }

@@ -11,8 +11,8 @@
 -- i___apps_200_response_inner class
 local i___apps_200_response_inner = {}
 local i___apps_200_response_inner_mt = {
-	__name = "i___apps_200_response_inner";
-	__index = i___apps_200_response_inner;
+	__name = "i___apps_200_response_inner",
+	__index = i___apps_200_response_inner,
 }
 
 local function cast_i___apps_200_response_inner(t)
@@ -21,15 +21,15 @@ end
 
 local function new_i___apps_200_response_inner(id, name, created_at, last_used_at, permission)
 	return cast_i___apps_200_response_inner({
-		["id"] = id;
-		["name"] = name;
-		["createdAt"] = created_at;
-		["lastUsedAt"] = last_used_at;
-		["permission"] = permission;
+		["id"] = id,
+		["name"] = name,
+		["createdAt"] = created_at,
+		["lastUsedAt"] = last_used_at,
+		["permission"] = permission,
 	})
 end
 
 return {
-	cast = cast_i___apps_200_response_inner;
-	new = new_i___apps_200_response_inner;
+	cast = cast_i___apps_200_response_inner,
+	new = new_i___apps_200_response_inner,
 }

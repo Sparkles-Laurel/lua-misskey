@@ -33,8 +33,8 @@ local openapiclient_federation___users_request = require "openapiclient.model.fe
 
 local federation_api = {}
 local federation_api_mt = {
-	__name = "federation_api";
-	__index = federation_api;
+	__name = "federation_api",
+	__index = federation_api,
 }
 
 local function new_federation_api(authority, basePath, schemes)
@@ -45,25 +45,25 @@ local function new_federation_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, federation_api_mt)
 end
 
 function federation_api:ap_get(ap___get_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/ap/get",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -111,11 +111,11 @@ end
 
 function federation_api:ap_show(ap___get_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/ap/show",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -163,11 +163,11 @@ end
 
 function federation_api:federation_followers(federation___followers_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/followers",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -218,11 +218,11 @@ end
 
 function federation_api:federation_following(federation___followers_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/following",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -273,11 +273,11 @@ end
 
 function federation_api:federation_instances(federation___instances_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/instances",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -328,11 +328,11 @@ end
 
 function federation_api:federation_instances_0(federation___instances_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/instances",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -383,11 +383,11 @@ end
 
 function federation_api:federation_show_instance(admin___federation___delete_all_files_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/show-instance",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -435,11 +435,11 @@ end
 
 function federation_api:federation_stats(federation___stats_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -487,11 +487,11 @@ end
 
 function federation_api:federation_stats_0(federation___stats_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/stats",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -539,11 +539,11 @@ end
 
 function federation_api:federation_update_remote_user(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/update-remote-user",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -580,11 +580,11 @@ end
 
 function federation_api:federation_users(federation___users_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/federation/users",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -634,5 +634,5 @@ function federation_api:federation_users(federation___users_request)
 end
 
 return {
-	new = new_federation_api;
+	new = new_federation_api,
 }

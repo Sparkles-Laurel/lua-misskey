@@ -11,8 +11,8 @@
 -- i___move_request class
 local i___move_request = {}
 local i___move_request_mt = {
-	__name = "i___move_request";
-	__index = i___move_request;
+	__name = "i___move_request",
+	__index = i___move_request,
 }
 
 local function cast_i___move_request(t)
@@ -21,11 +21,11 @@ end
 
 local function new_i___move_request(move_to_account)
 	return cast_i___move_request({
-		["moveToAccount"] = move_to_account;
+		["moveToAccount"] = move_to_account,
 	})
 end
 
 return {
-	cast = cast_i___move_request;
-	new = new_i___move_request;
+	cast = cast_i___move_request,
+	new = new_i___move_request,
 }

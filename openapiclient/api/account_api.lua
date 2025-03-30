@@ -54,8 +54,8 @@ local openapiclient_users___update_memo_request = require "openapiclient.model.u
 
 local account_api = {}
 local account_api_mt = {
-	__name = "account_api";
-	__index = account_api;
+	__name = "account_api",
+	__index = account_api,
 }
 
 local function new_account_api(authority, basePath, schemes)
@@ -66,25 +66,25 @@ local function new_account_api(authority, basePath, schemes)
 	local default_scheme = schemes_map.https or schemes_map.http
 	local host, port = http_util.split_authority(authority, default_scheme)
 	return setmetatable({
-		host = host;
-		port = port;
-		basePath = basePath;
-		schemes = schemes_map;
-		default_scheme = default_scheme;
-		http_username = nil;
-		http_password = nil;
-		api_key = {};
-		access_token = nil;
+		host = host,
+		port = port,
+		basePath = basePath,
+		schemes = schemes_map,
+		default_scheme = default_scheme,
+		http_username = nil,
+		http_password = nil,
+		api_key = {},
+		access_token = nil,
 	}, account_api_mt)
 end
 
 function account_api:blocking_create(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/blocking/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -132,11 +132,11 @@ end
 
 function account_api:blocking_delete(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/blocking/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -184,11 +184,11 @@ end
 
 function account_api:blocking_list(blocking___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/blocking/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -239,11 +239,11 @@ end
 
 function account_api:clips_add_note(clips___add_note_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/add-note",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -280,11 +280,11 @@ end
 
 function account_api:clips_my_favorites()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/my-favorites",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -329,11 +329,11 @@ end
 
 function account_api:clips_notes(clips___notes_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -384,11 +384,11 @@ end
 
 function account_api:clips_remove_note(clips___add_note_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/clips/remove-note",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -425,11 +425,11 @@ end
 
 function account_api:flash_my(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/my",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -480,11 +480,11 @@ end
 
 function account_api:flash_my_likes(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/flash/my-likes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -535,11 +535,11 @@ end
 
 function account_api:i()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -581,11 +581,11 @@ end
 
 function account_api:i_favorites(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/favorites",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -636,11 +636,11 @@ end
 
 function account_api:i_gallery_likes(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/gallery/likes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -691,11 +691,11 @@ end
 
 function account_api:i_gallery_posts(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/gallery/posts",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -746,11 +746,11 @@ end
 
 function account_api:i_notifications(i___notifications_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/notifications",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -801,11 +801,11 @@ end
 
 function account_api:i_notifications_grouped(i___notifications_grouped_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/notifications-grouped",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -856,11 +856,11 @@ end
 
 function account_api:i_page_likes(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/page-likes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -911,11 +911,11 @@ end
 
 function account_api:i_pages(flash___my_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/pages",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -966,11 +966,11 @@ end
 
 function account_api:i_pin(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/pin",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1018,11 +1018,11 @@ end
 
 function account_api:i_read_all_unread_notes()
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/read-all-unread-notes",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1053,11 +1053,11 @@ end
 
 function account_api:i_read_announcement(announcements___show_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/read-announcement",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1094,11 +1094,11 @@ end
 
 function account_api:i_unpin(i___pin_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/unpin",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1146,11 +1146,11 @@ end
 
 function account_api:i_update(i___update_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/i/update",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1198,11 +1198,11 @@ end
 
 function account_api:mute_create(mute___create_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/mute/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1239,11 +1239,11 @@ end
 
 function account_api:mute_delete(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/mute/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1280,11 +1280,11 @@ end
 
 function account_api:mute_list(blocking___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/mute/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1335,11 +1335,11 @@ end
 
 function account_api:my_apps(my___apps_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/my/apps",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1390,11 +1390,11 @@ end
 
 function account_api:renote_mute_create(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/renote-mute/create",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1431,11 +1431,11 @@ end
 
 function account_api:renote_mute_delete(admin___accounts___delete_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/renote-mute/delete",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1472,11 +1472,11 @@ end
 
 function account_api:renote_mute_list(blocking___list_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/renote-mute/list",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1527,11 +1527,11 @@ end
 
 function account_api:sw_register(sw___register_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/sw/register",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1579,11 +1579,11 @@ end
 
 function account_api:sw_show_registration(endpoint_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/sw/show-registration",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1631,11 +1631,11 @@ end
 
 function account_api:sw_unregister(endpoint_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/sw/unregister",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1672,11 +1672,11 @@ end
 
 function account_api:sw_update_registration(sw___update_registration_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/sw/update-registration",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1724,11 +1724,11 @@ end
 
 function account_api:users_update_memo(users___update_memo_request)
 	local req = http_request.new_from_uri({
-		scheme = self.default_scheme;
-		host = self.host;
-		port = self.port;
+		scheme = self.default_scheme,
+		host = self.host,
+		port = self.port,
 		path = string.format("%s/users/update-memo",
-			self.basePath);
+			self.basePath),
 	})
 
 	-- set HTTP verb
@@ -1764,5 +1764,5 @@ function account_api:users_update_memo(users___update_memo_request)
 end
 
 return {
-	new = new_account_api;
+	new = new_account_api,
 }

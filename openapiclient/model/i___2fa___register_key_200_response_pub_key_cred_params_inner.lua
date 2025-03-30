@@ -11,8 +11,8 @@
 -- i___2fa___register_key_200_response_pub_key_cred_params_inner class
 local i___2fa___register_key_200_response_pub_key_cred_params_inner = {}
 local i___2fa___register_key_200_response_pub_key_cred_params_inner_mt = {
-	__name = "i___2fa___register_key_200_response_pub_key_cred_params_inner";
-	__index = i___2fa___register_key_200_response_pub_key_cred_params_inner;
+	__name = "i___2fa___register_key_200_response_pub_key_cred_params_inner",
+	__index = i___2fa___register_key_200_response_pub_key_cred_params_inner,
 }
 
 local function cast_i___2fa___register_key_200_response_pub_key_cred_params_inner(t)
@@ -21,12 +21,12 @@ end
 
 local function new_i___2fa___register_key_200_response_pub_key_cred_params_inner(type, alg)
 	return cast_i___2fa___register_key_200_response_pub_key_cred_params_inner({
-		["type"] = type;
-		["alg"] = alg;
+		["type"] = type,
+		["alg"] = alg,
 	})
 end
 
 return {
-	cast = cast_i___2fa___register_key_200_response_pub_key_cred_params_inner;
-	new = new_i___2fa___register_key_200_response_pub_key_cred_params_inner;
+	cast = cast_i___2fa___register_key_200_response_pub_key_cred_params_inner,
+	new = new_i___2fa___register_key_200_response_pub_key_cred_params_inner,
 }

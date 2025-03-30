@@ -11,8 +11,8 @@
 -- admin___send_email_request class
 local admin___send_email_request = {}
 local admin___send_email_request_mt = {
-	__name = "admin___send_email_request";
-	__index = admin___send_email_request;
+	__name = "admin___send_email_request",
+	__index = admin___send_email_request,
 }
 
 local function cast_admin___send_email_request(t)
@@ -21,13 +21,13 @@ end
 
 local function new_admin___send_email_request(to, subject, text)
 	return cast_admin___send_email_request({
-		["to"] = to;
-		["subject"] = subject;
-		["text"] = text;
+		["to"] = to,
+		["subject"] = subject,
+		["text"] = text,
 	})
 end
 
 return {
-	cast = cast_admin___send_email_request;
-	new = new_admin___send_email_request;
+	cast = cast_admin___send_email_request,
+	new = new_admin___send_email_request,
 }
